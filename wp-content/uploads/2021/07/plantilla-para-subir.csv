@@ -1,0 +1,89 @@
+﻿Tipo;SKU;Nombre;Publicado;¿Está destacado?;Visibilidad en el catálogo;Descripción corta;Descripción;Día en que empieza el precio rebajado;Día en que termina el precio rebajado;Estado del impuesto;Clase de impuesto;¿En inventario?;Inventario;Cantidad de bajo inventario;¿Permitir reservas de productos agotados?;¿Vendido individualmente?;Peso (kg);Longitud (cm);Anchura (cm);Altura (cm);¿Permitir valoraciones de clientes?;Nota de compra;Precio rebajado;Precio normal;Categorías;Etiquetas;Clase de envío;Imágenes;Límite de descargas;Días de caducidad de la descarga;Superior;Productos agrupados;Ventas dirigidas;Ventas cruzadas;URL externa;Texto del botón;Posición;Nombre del atributo 1;Valor(es) del atributo 1;Atributo visible 1;Atributo global 1;Nombre del atributo 2;Valor(es) del atributo 2;Atributo visible 2;Atributo global 2;Nombre del atributo 3;Valor(es) del atributo 3;Atributo visible 3;Atributo global 3;
+variable;ABS-CIRCLES;Cuadro Splash Colour;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/abstracto-vertical-ambientada1.jpg, http://prontomarco.test/wp-content/uploads/2021/07/abstracto-vertical1.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1;
+variation;ABS-CIRC-NAT-CAJ-1520;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-1520;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NAT-CAJ-2030;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-2030;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NAT-CAJ-3040;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-3040;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NAT-CAJ-4050;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-4050;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NAT-CAJ-4060;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-4060;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NAT-CAJ-5070;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-5070;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NAT-CAJ-6090;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-CIRCLES;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NAT-CHA-6090;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-CIRCLES;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-1520;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-1520;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-2030;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-2030;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-3040;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-3040;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-4050;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-4050;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-4060;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-4060;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-5070;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-5070;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-NEG-CAJ-6090;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-CIRCLES;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-NEG-CHA-6090;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-CIRCLES;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-1520;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-1520;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-2030;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-2030;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-3040;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-3040;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-4050;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-4050;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-4060;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-4060;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-5070;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-5070;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1;
+variation;ABS-CIRC-BLA-CAJ-6090;Cuadro Circles;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-CIRCLES;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1;
+variation;ABS-CIRC-BLA-CHA-6090;Cuadro Circles;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Vertical;cuadro vertical, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-CIRCLES;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1;

@@ -1,0 +1,89 @@
+﻿ID;Tipo;SKU;Nombre;Publicado;¿Está destacado?;Visibilidad en el catálogo;Descripción corta;Descripción;Día en que empieza el precio rebajado;Día en que termina el precio rebajado;Estado del impuesto;Clase de impuesto;¿En inventario?;Inventario;Cantidad de bajo inventario;¿Permitir reservas de productos agotados?;¿Vendido individualmente?;Peso (kg);Longitud (cm);Anchura (cm);Altura (cm);¿Permitir valoraciones de clientes?;Nota de compra;Precio rebajado;Precio normal;Categorías;Etiquetas;Clase de envío;Imágenes;Límite de descargas;Días de caducidad de la descarga;Superior;Productos agrupados;Ventas dirigidas;Ventas cruzadas;URL externa;Texto del botón;Posición;Nombre del atributo 1;Valor(es) del atributo 1;Atributo visible 1;Atributo global 1;Nombre del atributo 2;Valor(es) del atributo 2;Atributo visible 2;Atributo global 2;Nombre del atributo 3;Valor(es) del atributo 3;Atributo visible 3;Atributo global 3
+46;variable;ABS-SPLASH;Cuadro Splash Colour;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/abstracto-horizontal-ambientada1.jpg, http://prontomarco.test/wp-content/uploads/2021/07/abstracto-horizontal1.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+47;variation;ABS-SPLA-NAT-CAJ-1520;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+48;variation;ABS-SPLA-NAT-CHA-1520;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+49;variation;ABS-SPLA-NAT-CAJ-2030;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+50;variation;ABS-SPLA-NAT-CHA-2030;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+51;variation;ABS-SPLA-NAT-CAJ-3040;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+52;variation;ABS-SPLA-NAT-CHA-3040;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+53;variation;ABS-SPLA-NAT-CAJ-4050;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+54;variation;ABS-SPLA-NAT-CHA-4050;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+55;variation;ABS-SPLA-NAT-CAJ-4060;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+56;variation;ABS-SPLA-NAT-CHA-4060;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+57;variation;ABS-SPLA-NAT-CAJ-5070;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+58;variation;ABS-SPLA-NAT-CHA-5070;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+59;variation;ABS-SPLA-NAT-CAJ-6090;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ABS-SPLASH;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+60;variation;ABS-SPLA-NAT-CHA-6090;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ABS-SPLASH;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+61;variation;ABS-SPLA-NEG-CAJ-1520;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+62;variation;ABS-SPLA-NEG-CHA-1520;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+63;variation;ABS-SPLA-NEG-CAJ-2030;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+64;variation;ABS-SPLA-NEG-CHA-2030;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+65;variation;ABS-SPLA-NEG-CAJ-3040;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+66;variation;ABS-SPLA-NEG-CHA-3040;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+67;variation;ABS-SPLA-NEG-CAJ-4050;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+68;variation;ABS-SPLA-NEG-CHA-4050;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+69;variation;ABS-SPLA-NEG-CAJ-4060;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+70;variation;ABS-SPLA-NEG-CHA-4060;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+71;variation;ABS-SPLA-NEG-CAJ-5070;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+72;variation;ABS-SPLA-NEG-CHA-5070;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+73;variation;ABS-SPLA-NEG-CAJ-6090;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ABS-SPLASH;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+74;variation;ABS-SPLA-NEG-CHA-6090;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ABS-SPLASH;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+87;variation;ABS-SPLA-BLA-CAJ-1520;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+88;variation;ABS-SPLA-BLA-CHA-1520;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+89;variation;ABS-SPLA-BLA-CAJ-2030;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+90;variation;ABS-SPLA-BLA-CHA-2030;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+91;variation;ABS-SPLA-BLA-CAJ-3040;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+92;variation;ABS-SPLA-BLA-CHA-3040;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+93;variation;ABS-SPLA-BLA-CAJ-4050;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+94;variation;ABS-SPLA-BLA-CHA-4050;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+95;variation;ABS-SPLA-BLA-CAJ-4060;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+96;variation;ABS-SPLA-BLA-CHA-4060;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+97;variation;ABS-SPLA-BLA-CAJ-5070;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+98;variation;ABS-SPLA-BLA-CHA-5070;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+99;variation;ABS-SPLA-BLA-CAJ-6090;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ABS-SPLASH;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+100;variation;ABS-SPLA-BLA-CHA-6090;Cuadro Splash Colour;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Abstracto, Abstracto > Horizontal;cuadro horizontal, arte abstracto;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ABS-SPLASH;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1

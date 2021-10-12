@@ -1,0 +1,881 @@
+﻿Tipo;SKU;Nombre;Publicado;¿Está destacado?;Visibilidad en el catálogo;Descripción corta;Descripción;Día en que empieza el precio rebajado;Día en que termina el precio rebajado;Estado del impuesto;Clase de impuesto;¿En inventario?;Inventario;Cantidad de bajo inventario;¿Permitir reservas de productos agotados?;¿Vendido individualmente?;Peso (kg);Longitud (cm);Anchura (cm);Altura (cm);¿Permitir valoraciones de clientes?;Nota de compra;Precio rebajado;Precio normal;Categorías;Etiquetas;Clase de envío;Imágenes;Límite de descargas;Días de caducidad de la descarga;Superior;Productos agrupados;Ventas dirigidas;Ventas cruzadas;URL externa;Texto del botón;Posición;Nombre del atributo 1;Valor(es) del atributo 1;Atributo visible 1;Atributo global 1;Nombre del atributo 2;Valor(es) del atributo 2;Atributo visible 2;Atributo global 2;Nombre del atributo 3;Valor(es) del atributo 3;Atributo visible 3;Atributo global 3
+variable;ILU-ALPH;Cuadro Alphabets;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-horizontal-ambientada1.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-horizontal1.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-ALPH-NAT-CAJ-1520;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-1520;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NAT-CAJ-2030;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-2030;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NAT-CAJ-3040;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-3040;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NAT-CAJ-4050;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-4050;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NAT-CAJ-4060;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-4060;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NAT-CAJ-5070;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-5070;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NAT-CAJ-6090;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ALPH;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NAT-CHA-6090;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ALPH;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-1520;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-1520;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-2030;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-2030;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-3040;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-3040;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-4050;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-4050;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-4060;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-4060;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-5070;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-5070;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-NEG-CAJ-6090;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ALPH;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-NEG-CHA-6090;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ALPH;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-1520;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-1520;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-2030;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-2030;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-3040;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-3040;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-4050;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-4050;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-4060;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-4060;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-5070;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-5070;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-ALPH-BLA-CAJ-6090;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ALPH;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-ALPH-BLA-CHA-6090;Cuadro Alphabets;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ALPH;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-MICK;Cuadro Mickey;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-horizontal-ambientada2.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-horizontal2.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-MICK-NAT-CAJ-1520;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-1520;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NAT-CAJ-2030;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-2030;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NAT-CAJ-3040;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-3040;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NAT-CAJ-4050;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-4050;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NAT-CAJ-4060;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-4060;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NAT-CAJ-5070;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-5070;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NAT-CAJ-6090;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-MICK;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NAT-CHA-6090;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-MICK;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-1520;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-1520;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-2030;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-2030;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-3040;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-3040;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-4050;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-4050;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-4060;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-4060;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-5070;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-5070;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-NEG-CAJ-6090;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-MICK;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-NEG-CHA-6090;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-MICK;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-1520;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-1520;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-2030;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-2030;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-3040;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-3040;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-4050;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-4050;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-4060;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-4060;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-5070;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-5070;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-MICK-BLA-CAJ-6090;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-MICK;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-MICK-BLA-CHA-6090;Cuadro Mickey;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Horizontal;cuadro horizontal, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-MICK;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-CATN;Cuadro Night Cat;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada1.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical1.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-CATN-NAT-CAJ-1520;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-1520;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NAT-CAJ-2030;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-2030;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NAT-CAJ-3040;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-3040;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NAT-CAJ-4050;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-4050;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NAT-CAJ-4060;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-4060;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NAT-CAJ-5070;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-5070;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NAT-CAJ-6090;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-CATN;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NAT-CHA-6090;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-CATN;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-1520;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-1520;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-2030;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-2030;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-3040;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-3040;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-4050;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-4050;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-4060;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-4060;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-5070;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-5070;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-NEG-CAJ-6090;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-CATN;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-NEG-CHA-6090;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-CATN;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-1520;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-1520;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-2030;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-2030;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-3040;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-3040;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-4050;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-4050;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-4060;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-4060;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-5070;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-5070;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-CATN-BLA-CAJ-6090;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-CATN;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-CATN-BLA-CHA-6090;Cuadro Night Cat;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-CATN;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-QUEE;Cuadro Queen;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada2.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical2.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-QUEE-NAT-CAJ-1520;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-1520;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NAT-CAJ-2030;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-2030;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NAT-CAJ-3040;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-3040;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NAT-CAJ-4050;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-4050;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NAT-CAJ-4060;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-4060;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NAT-CAJ-5070;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-5070;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NAT-CAJ-6090;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-QUEE;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NAT-CHA-6090;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-QUEE;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-1520;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-1520;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-2030;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-2030;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-3040;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-3040;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-4050;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-4050;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-4060;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-4060;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-5070;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-5070;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-NEG-CAJ-6090;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-QUEE;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-NEG-CHA-6090;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-QUEE;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-1520;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-1520;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-2030;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-2030;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-3040;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-3040;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-4050;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-4050;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-4060;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-4060;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-5070;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-5070;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-QUEE-BLA-CAJ-6090;Cuadro Queen;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-QUEE;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-QUEE-BLA-CHA-6090;Cuadro Queen;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-QUEE;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-ZOOM;Cuadro Zoom;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada3.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical3.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-ZOOM-NAT-CAJ-1520;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-1520;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NAT-CAJ-2030;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-2030;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NAT-CAJ-3040;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-3040;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NAT-CAJ-4050;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-4050;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NAT-CAJ-4060;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-4060;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NAT-CAJ-5070;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-5070;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NAT-CAJ-6090;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-ZOOM;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NAT-CHA-6090;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-ZOOM;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-1520;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-1520;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-2030;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-2030;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-3040;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-3040;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-4050;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-4050;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-4060;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-4060;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-5070;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-5070;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-NEG-CAJ-6090;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-ZOOM;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-NEG-CHA-6090;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-ZOOM;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-1520;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-1520;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-2030;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-2030;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-3040;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-3040;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-4050;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-4050;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-4060;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-4060;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-5070;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-5070;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-ZOOM-BLA-CAJ-6090;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-ZOOM;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-ZOOM-BLA-CHA-6090;Cuadro Zoom;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-ZOOM;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-FLAD;Cuadro Flamenco Drinking;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada4.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical4.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-FLAD-NAT-CAJ-1520;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-1520;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NAT-CAJ-2030;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-2030;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NAT-CAJ-3040;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-3040;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NAT-CAJ-4050;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-4050;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NAT-CAJ-4060;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-4060;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NAT-CAJ-5070;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-5070;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NAT-CAJ-6090;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FLAD;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NAT-CHA-6090;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FLAD;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-1520;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-1520;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-2030;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-2030;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-3040;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-3040;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-4050;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-4050;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-4060;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-4060;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-5070;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-5070;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-NEG-CAJ-6090;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FLAD;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-NEG-CHA-6090;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FLAD;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-1520;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-1520;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-2030;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-2030;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-3040;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-3040;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-4050;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-4050;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-4060;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-4060;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-5070;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-5070;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-FLAD-BLA-CAJ-6090;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FLAD;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-FLAD-BLA-CHA-6090;Cuadro Flamenco Drinking;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FLAD;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-SEAG;Cuadro Seagulls;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada5.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical5.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-SEAG-NAT-CAJ-1520;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-1520;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NAT-CAJ-2030;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-2030;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NAT-CAJ-3040;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-3040;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NAT-CAJ-4050;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-4050;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NAT-CAJ-4060;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-4060;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NAT-CAJ-5070;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-5070;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NAT-CAJ-6090;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SEAG;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NAT-CHA-6090;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SEAG;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-1520;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-1520;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-2030;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-2030;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-3040;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-3040;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-4050;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-4050;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-4060;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-4060;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-5070;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-5070;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-NEG-CAJ-6090;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SEAG;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-NEG-CHA-6090;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SEAG;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-1520;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-1520;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-2030;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-2030;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-3040;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-3040;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-4050;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-4050;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-4060;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-4060;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-5070;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-5070;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-SEAG-BLA-CAJ-6090;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SEAG;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-SEAG-BLA-CHA-6090;Cuadro Seagulls;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SEAG;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-NIGV;Cuadro Night Volcano;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada6.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical6.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-NIGV-NAT-CAJ-1520;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-1520;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NAT-CAJ-2030;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-2030;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NAT-CAJ-3040;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-3040;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NAT-CAJ-4050;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-4050;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NAT-CAJ-4060;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-4060;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NAT-CAJ-5070;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-5070;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NAT-CAJ-6090;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-NIGV;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NAT-CHA-6090;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-NIGV;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-1520;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-1520;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-2030;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-2030;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-3040;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-3040;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-4050;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-4050;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-4060;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-4060;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-5070;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-5070;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-NEG-CAJ-6090;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-NIGV;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-NEG-CHA-6090;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-NIGV;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-1520;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-1520;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-2030;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-2030;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-3040;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-3040;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-4050;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-4050;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-4060;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-4060;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-5070;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-5070;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-NIGV-BLA-CAJ-6090;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-NIGV;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-NIGV-BLA-CHA-6090;Cuadro Night Volcano;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-NIGV;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-SAIL;Cuadro Sailor;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada7.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical7.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-SAIL-NAT-CAJ-1520;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-1520;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NAT-CAJ-2030;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-2030;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NAT-CAJ-3040;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-3040;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NAT-CAJ-4050;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-4050;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NAT-CAJ-4060;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-4060;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NAT-CAJ-5070;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-5070;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NAT-CAJ-6090;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-SAIL;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NAT-CHA-6090;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-SAIL;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-1520;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-1520;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-2030;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-2030;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-3040;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-3040;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-4050;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-4050;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-4060;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-4060;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-5070;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-5070;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-NEG-CAJ-6090;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-SAIL;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-NEG-CHA-6090;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-SAIL;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-1520;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-1520;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-2030;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-2030;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-3040;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-3040;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-4050;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-4050;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-4060;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-4060;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-5070;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-5070;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-SAIL-BLA-CAJ-6090;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-SAIL;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-SAIL-BLA-CHA-6090;Cuadro Sailor;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-SAIL;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;ILU-FIVE;Cuadro Five;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical-ambientada8.jpg, http://prontomarco.test/wp-content/uploads/2021/07/ilustracion-vertical8.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;ILU-FIVE-NAT-CAJ-1520;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-1520;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NAT-CAJ-2030;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-2030;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NAT-CAJ-3040;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-3040;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NAT-CAJ-4050;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-4050;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NAT-CAJ-4060;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-4060;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NAT-CAJ-5070;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-5070;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NAT-CAJ-6090;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;ILU-FIVE;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NAT-CHA-6090;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;ILU-FIVE;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-1520;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-1520;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-2030;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-2030;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-3040;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-3040;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-4050;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-4050;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-4060;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-4060;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-5070;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-5070;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-NEG-CAJ-6090;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;ILU-FIVE;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-NEG-CHA-6090;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;ILU-FIVE;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-1520;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-1520;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-2030;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-2030;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-3040;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-3040;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-4050;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-4050;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-4060;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-4060;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-5070;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-5070;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;ILU-FIVE-BLA-CAJ-6090;Cuadro Five;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;ILU-FIVE;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;ILU-FIVE-BLA-CHA-6090;Cuadro Five;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Ilustración, Ilustración > Vertical;cuadro vertical, ilustracion;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;ILU-FIVE;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1

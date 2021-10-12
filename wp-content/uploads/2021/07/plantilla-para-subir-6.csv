@@ -1,0 +1,353 @@
+﻿Tipo;SKU;Nombre;Publicado;¿Está destacado?;Visibilidad en el catálogo;Descripción corta;Descripción;Día en que empieza el precio rebajado;Día en que termina el precio rebajado;Estado del impuesto;Clase de impuesto;¿En inventario?;Inventario;Cantidad de bajo inventario;¿Permitir reservas de productos agotados?;¿Vendido individualmente?;Peso (kg);Longitud (cm);Anchura (cm);Altura (cm);¿Permitir valoraciones de clientes?;Nota de compra;Precio rebajado;Precio normal;Categorías;Etiquetas;Clase de envío;Imágenes;Límite de descargas;Días de caducidad de la descarga;Superior;Productos agrupados;Ventas dirigidas;Ventas cruzadas;URL externa;Texto del botón;Posición;Nombre del atributo 1;Valor(es) del atributo 1;Atributo visible 1;Atributo global 1;Nombre del atributo 2;Valor(es) del atributo 2;Atributo visible 2;Atributo global 2;Nombre del atributo 3;Valor(es) del atributo 3;Atributo visible 3;Atributo global 3
+variable;BIK-VILL;Cuadro Village Bike;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal-ambientada1.jpg, http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal1.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;BIK-VILL-NAT-CAJ-1520;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-1520;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NAT-CAJ-2030;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-2030;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NAT-CAJ-3040;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-3040;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NAT-CAJ-4050;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-4050;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NAT-CAJ-4060;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-4060;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NAT-CAJ-5070;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-5070;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NAT-CAJ-6090;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-VILL;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NAT-CHA-6090;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-VILL;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-1520;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-1520;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-2030;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-2030;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-3040;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-3040;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-4050;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-4050;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-4060;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-4060;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-5070;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-5070;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-NEG-CAJ-6090;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-VILL;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-NEG-CHA-6090;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-VILL;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-1520;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-1520;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-2030;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-2030;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-3040;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-3040;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-4050;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-4050;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-4060;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-4060;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-5070;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-5070;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-VILL-BLA-CAJ-6090;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-VILL;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-VILL-BLA-CHA-6090;Cuadro Village Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-VILL;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;BIK-REDB;Cuadro Red Bike;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal-ambientada2.jpg, http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal2.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;BIK-REDB-NAT-CAJ-1520;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-1520;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NAT-CAJ-2030;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-2030;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NAT-CAJ-3040;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-3040;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NAT-CAJ-4050;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-4050;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NAT-CAJ-4060;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-4060;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NAT-CAJ-5070;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-5070;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NAT-CAJ-6090;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-REDB;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NAT-CHA-6090;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-REDB;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-1520;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-1520;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-2030;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-2030;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-3040;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-3040;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-4050;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-4050;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-4060;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-4060;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-5070;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-5070;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-NEG-CAJ-6090;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-REDB;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-NEG-CHA-6090;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-REDB;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-1520;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-1520;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-2030;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-2030;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-3040;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-3040;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-4050;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-4050;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-4060;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-4060;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-5070;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-5070;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-REDB-BLA-CAJ-6090;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-REDB;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-REDB-BLA-CHA-6090;Cuadro Red Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-REDB;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;BIK-LIGB;Cuadro Light Blue Bike;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal-ambientada3.jpg, http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal3.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;BIK-LIGB-NAT-CAJ-1520;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-1520;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NAT-CAJ-2030;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-2030;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NAT-CAJ-3040;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-3040;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NAT-CAJ-4050;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-4050;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NAT-CAJ-4060;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-4060;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NAT-CAJ-5070;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-5070;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NAT-CAJ-6090;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-LIGB;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NAT-CHA-6090;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-LIGB;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-1520;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-1520;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-2030;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-2030;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-3040;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-3040;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-4050;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-4050;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-4060;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-4060;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-5070;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-5070;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-NEG-CAJ-6090;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-LIGB;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-NEG-CHA-6090;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-LIGB;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-1520;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-1520;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-2030;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-2030;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-3040;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-3040;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-4050;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-4050;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-4060;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-4060;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-5070;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-5070;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-LIGB-BLA-CAJ-6090;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-LIGB;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-LIGB-BLA-CHA-6090;Cuadro Light Blue Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-LIGB;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variable;BIK-BLAC;Cuadro Black Bike;1;0;visible;"Decora tu hogar con nuestros diseños y marcos modernos y exclusivos. Este producto es un cuadro listo para colgar, incluye lámina impresa en papel de alto gramaje.
+Disponible en moldura tipo chata o cajón de madera kiry; colores Negro, Blanco o Natural. También disponibles en varias medidas.
+
+Incluye vidrio de 2 mm y accesorios para colgar.";;;;taxable;;1;;;0;0;;;;;1;;;;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal-ambientada4.jpg, http://prontomarco.test/wp-content/uploads/2021/07/bikes-horizontal4.jpg;;;;;;;;;0;Color;Blanco, Natural, Negro;1;1;Medida;15 X 20, 20 X 30, 30 X 40, 40 X 50, 40 X 60, 50 X 70, 60 X 90;1;1;Tipo de Marco;Caja, Chata;1;1
+variation;BIK-BLAC-NAT-CAJ-1520;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;20;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;15;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-1520;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;16;Color;Natural;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NAT-CAJ-2030;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;17;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-2030;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;18;Color;Natural;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NAT-CAJ-3040;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;19;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-3040;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;20;Color;Natural;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NAT-CAJ-4050;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;21;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-4050;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;22;Color;Natural;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NAT-CAJ-4060;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;23;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-4060;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;24;Color;Natural;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NAT-CAJ-5070;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;25;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-5070;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;26;Color;Natural;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NAT-CAJ-6090;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-caja.jpg;;;BIK-BLAC;;;;;;27;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NAT-CHA-6090;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Natural.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/natural-chata.jpg;;;BIK-BLAC;;;;;;28;Color;Natural;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-1520;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;29;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-1520;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;30;Color;Negro;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-2030;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;31;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-2030;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;32;Color;Negro;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-3040;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;33;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-3040;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;34;Color;Negro;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-4050;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;35;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-4050;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;36;Color;Negro;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-4060;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;37;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-4060;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;38;Color;Negro;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-5070;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;39;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-5070;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;40;Color;Negro;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-NEG-CAJ-6090;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-caja.jpg;;;BIK-BLAC;;;;;;41;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-NEG-CHA-6090;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Negro.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/negro-chata.jpg;;;BIK-BLAC;;;;;;42;Color;Negro;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-1520;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;1;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-1520;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;20;15;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;2;Color;Blanco;;1;Medida;15 X 20;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-2030;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;3;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-2030;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;30;20;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;4;Color;Blanco;;1;Medida;20 X 30;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-3040;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;5;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-3040;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;40;30;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;6;Color;Blanco;;1;Medida;30 X 40;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-4050;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;7;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-4050;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;50;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;8;Color;Blanco;;1;Medida;40 X 50;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-4060;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;9;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-4060;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;60;40;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;10;Color;Blanco;;1;Medida;40 X 60;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-5070;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;11;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-5070;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;70;50;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;12;Color;Blanco;;1;Medida;50 X 70;;1;Tipo de Marco;Chata;;1
+variation;BIK-BLAC-BLA-CAJ-6090;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Cajón.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-caja.jpg;;;BIK-BLAC;;;;;;13;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Caja;;1
+variation;BIK-BLAC-BLA-CHA-6090;Cuadro Black Bike;1;0;visible;;"Tipo de Marco: Chata.
+Color de Marco: Blanco.";;;taxable;parent;1;;;0;0;1;90;60;2;0;;;30;Bikes, Bikes > Horizontal;cuadro horizontal, bikes, bicicletas;;http://prontomarco.test/wp-content/uploads/2021/07/blanco-chata.jpg;;;BIK-BLAC;;;;;;14;Color;Blanco;;1;Medida;60 X 90;;1;Tipo de Marco;Chata;;1

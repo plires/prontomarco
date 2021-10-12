@@ -1,0 +1,1 @@
+/home/vagrant/proyectos/prontomarco/wp-content/plugins/query-monitor/wp-content/db.php
