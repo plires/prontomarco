@@ -422,7 +422,7 @@ class Porto_Elementor_Button_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<#
 			let btn_classes = ' btn-' + escape( settings.size );

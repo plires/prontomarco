@@ -198,3 +198,57 @@ p.wishlist-empty, table.wishlist_table tbody td.wishlist-empty {
 .wishlist_table tr td.product-thumbnail a {
     max-width: none
 }
+
+.wishlist-popup {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    #{$right}: 0;
+    z-index: 1003;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    font-size: .8125rem;
+    text-align: $left;
+    transform: translateX(105%);
+    transition: transform .35s;
+
+    .minicart-opened & {
+        transform: translateX(0);
+    }
+
+    .product_list_widget {
+        margin: 0 0 1.25rem;
+
+        li {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #e7e7e7
+        }
+    }
+
+    .product-details {
+        padding-#{$right}: 1rem;
+        position: static;
+
+        a {
+            font-weight: 500
+        }
+
+        .amount {
+            font-size: .8125rem;
+            font-weight: 400;
+        }
+    }
+
+    .remove_from_wishlist.remove {
+        top: 10px;
+        #{$right}: -8px;
+        cursor: pointer;
+    }
+
+    .btn {
+        letter-spacing: .25em;
+        padding: .8125rem 0;
+        border-radius: 2px
+    }
+}

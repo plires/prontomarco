@@ -153,7 +153,7 @@ foreach ( $tabs as $tab ) {
 
 	if ( $tab_title ) {
 		$tab_id    = 'tab-' . ( $tab_id ? $tab_id : sanitize_title( $tab_title ) );
-		$tabs_nav .= '<li class="nav-item"><a href="#' . esc_attr( $tab_id ) . '" id="' . esc_attr( $tab_id ) . '-title" class="nav-link" data-toggle="tab">';
+		$tabs_nav .= '<li class="nav-item"><a href="#' . esc_attr( $tab_id ) . '" id="' . esc_attr( $tab_id ) . '-title" class="nav-link" data-bs-toggle="tab">';
 		$tab_id   .= '-title';
 		if ( $show_icon && $icon_class ) {
 			if ( 'tabs-simple' == $type ) {

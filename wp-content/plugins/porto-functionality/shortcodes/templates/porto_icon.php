@@ -24,7 +24,7 @@ extract(
 			'animation_type'      => '',
 			'icon_animation'      => '',
 			'el_class'            => '',
-			'icon_align'          => 'center',
+			'icon_align'          => '',
 			'css_porto_icon'      => '',
 			'icon_margin_bottom'  => '',
 			'icon_margin_left'    => '',
@@ -75,12 +75,15 @@ if ( $icon_link && function_exists( 'vc_build_link' ) ) {
 $elx_class = '';
 
 if ( 'none' != $icon_style ) {
-	$icon_align = 'center';
+	//$icon_align = 'center';
 }
-if ( 'right' == $icon_align ) {
+/*if ( 'right' == $icon_align ) {
 	$icon_align_style .= 'text-align:right;';
 } elseif ( 'left' == $icon_align ) {
 	$icon_align_style .= 'text-align:left;';
+}*/
+if ( $icon_align ) {
+	$el_class = trim( 'porto-icon-pos-' . $icon_align . ' ' . $el_class );
 }
 
 if ( $icon_margin_bottom ) {

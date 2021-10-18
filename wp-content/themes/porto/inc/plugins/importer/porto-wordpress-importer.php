@@ -1312,10 +1312,6 @@ if ( class_exists( 'WP_Importer' ) ) {
 				if ( $builder_cds && is_array( $builder_cds ) ) {
 					require_once PORTO_BUILDERS_PATH . 'lib/class-condition.php';
 					$cls = new Porto_Builder_Condition();
-					if ( isset( $_POST['post_id'] ) ) {
-						$post_id_backup = $_POST['post_id'];
-					}
-					$_POST['post_id']     = $post_id;
 					$_POST['type']        = array();
 					$_POST['object_type'] = array();
 					$_POST['object_id']   = array();
@@ -1329,12 +1325,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 						$_POST['object_id'][]   = $condition[2];
 						$_POST['object_name'][] = $condition[3];
 					}
-					$cls->save_condition( true );
-					if ( isset( $post_id_backup ) ) {
-						$_POST['post_id'] = $post_id_backup;
-					} else {
-						unset( $_POST['post_id'] );
-					}
+					$cls->save_condition( true, (int) $post_id );
 					unset( $_POST['type'], $_POST['object_type'], $_POST['object_id'], $_POST['object_name'] );
 				}
 

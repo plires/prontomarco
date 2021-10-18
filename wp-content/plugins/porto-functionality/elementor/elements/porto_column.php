@@ -40,7 +40,10 @@ class Porto_Elementor_Column extends Elementor\Element_Column {
 			)
 		);
 		?>
-		<<?php echo $this->get_html_tag() . ' ' . $this->get_render_attribute_string( '_wrapper' ); ?>>
+		<<?php
+		// PHPCS - the method get_html_tag is safe.
+		echo $this->get_html_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		?> <?php $this->print_render_attribute_string( '_wrapper' ); ?>>
 
 		<?php
 		if ( 'banner' === $settings['as_banner_layer'] ) {
@@ -52,7 +55,7 @@ class Porto_Elementor_Column extends Elementor\Element_Column {
 				if ( '' !== $settings['banner_effect'] || '' !== $settings['particle_effect'] ) {
 					// Background Effect
 					$background_wrapclass = '';
-					$background_class   = '';
+					$background_class     = '';
 					if ( $settings['banner_effect'] ) {
 						$background_class = ' ' . $settings['banner_effect'];
 					}
@@ -123,12 +126,12 @@ class Porto_Elementor_Column extends Elementor\Element_Column {
 			}
 		}
 		?>
-			<div <?php echo $this->get_render_attribute_string( $wrapper_attribute_string ); ?>>
+			<div <?php $this->print_render_attribute_string( $wrapper_attribute_string ); ?>>
 		<?php if ( $has_background_overlay ) : ?>
-			<div <?php echo $this->get_render_attribute_string( '_background_overlay' ); ?>></div>
+			<div <?php $this->print_render_attribute_string( '_background_overlay' ); ?>></div>
 		<?php endif; ?>
 		<?php if ( $is_legacy_mode_active ) : ?>
-			<div <?php echo $this->get_render_attribute_string( '_widget_wrapper' ); ?>>
+			<div <?php $this->print_render_attribute_string( '_widget_wrapper' ); ?>>
 		<?php endif; ?>
 		<?php
 	}
@@ -143,7 +146,9 @@ class Porto_Elementor_Column extends Elementor\Element_Column {
 		<?php if ( 'banner' === $settings['as_banner_layer'] && 'yes' == $settings['add_container'] ) : ?>
 			</div>
 		<?php endif; ?>
-		</<?php echo $this->get_html_tag(); ?>>
+		</<?php
+		// PHPCS - the method get_html_tag is safe.
+		echo $this->get_html_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 		<?php
 	}
 
@@ -154,11 +159,12 @@ class Porto_Elementor_Column extends Elementor\Element_Column {
 			$html_tag = 'div';
 		}
 
-		return $html_tag;
+		return Elementor\Utils::validate_html_tag( $html_tag );
 	}
 }
 
 add_action( 'elementor/element/column/layout/after_section_end', 'porto_elementor_column_custom_control', 10, 2 );
+add_action( 'elementor/element/column/section_advanced/after_section_end', 'porto_elementor_mpx_controls', 10, 2 );
 add_filter( 'elementor/column/print_template', 'porto_elementor_print_column_template', 10, 2 );
 add_action( 'elementor/frontend/column/before_render', 'porto_elementor_column_add_custom_attrs', 10, 1 );
 add_action( 'elementor/element/column/section_style/before_section_end', 'porto_elementor_element_add_parallax', 10, 2 );
@@ -176,7 +182,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->start_controls_section(
 		'section_column_additional',
 		array(
-			'label' => __( 'Porto Settings', 'porto-functionality' ),
+			'label' => esc_html__( 'Porto Settings', 'porto-functionality' ),
 			'tab'   => Controls_Manager::TAB_LAYOUT,
 		)
 	);
@@ -185,13 +191,15 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'as_banner_layer',
 		array(
 			'type'    => Controls_Manager::SELECT,
-			'label'   => __( 'Use as', 'porto-functionality' ),
+			'label'   => esc_html__( 'Use as', 'porto-functionality' ),
 			'options' => array(
-				''          => __( 'Default', 'porto-functionality' ),
-				'carousel'  => __( 'Carousel', 'porto-functionality' ),
-				'yes'       => __( 'Banner Layer', 'porto-functionality' ),
-				'grid_item' => __( 'Creative Grid Item', 'porto-functionality' ),
-				'banner'    => __( 'One Layer Banner', 'porto-functionality' ),
+				''          => esc_html__( 'Default', 'porto-functionality' ),
+				'carousel'  => esc_html__( 'Carousel', 'porto-functionality' ),
+				'yes'       => esc_html__( 'Banner Layer', 'porto-functionality' ),
+				'grid_item' => esc_html__( 'Creative Grid Item', 'porto-functionality' ),
+				'banner'    => esc_html__( 'One Layer Banner', 'porto-functionality' ),
+				'is_half'   => esc_html__( 'Half Contanier', 'porto-functionality' ),
+				'sticky'    => esc_html__( 'Sticky Container', 'porto-functionality' ),
 			),
 		)
 	);
@@ -200,7 +208,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_control(
 		'stage_padding',
 		array(
-			'label'     => __( 'Stage Padding (px)', 'porto-functionality' ),
+			'label'     => esc_html__( 'Stage Padding (px)', 'porto-functionality' ),
 			'type'      => Controls_Manager::NUMBER,
 			'min'       => 0,
 			'max'       => 100,
@@ -214,7 +222,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_responsive_control(
 		'items',
 		array(
-			'label'     => __( 'Items', 'porto-functionality' ),
+			'label'     => esc_html__( 'Items', 'porto-functionality' ),
 			'type'      => Controls_Manager::SLIDER,
 			'range'     => array(
 				'px' => array(
@@ -232,7 +240,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_control(
 		'item_margin',
 		array(
-			'label'       => __( 'Item Margin (px)', 'porto-functionality' ),
+			'label'       => esc_html__( 'Item Margin (px)', 'porto-functionality' ),
 			'type'        => Controls_Manager::NUMBER,
 			'default'     => 0,
 			'min'         => '0',
@@ -249,7 +257,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'show_nav',
 		array(
 			'type'      => Controls_Manager::SWITCHER,
-			'label'     => __( 'Show Nav', 'porto-functionality' ),
+			'label'     => esc_html__( 'Show Nav', 'porto-functionality' ),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
 			),
@@ -260,7 +268,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'show_nav_hover',
 		array(
 			'type'      => Controls_Manager::SWITCHER,
-			'label'     => __( 'Show Nav on Hover', 'porto-functionality' ),
+			'label'     => esc_html__( 'Show Nav on Hover', 'porto-functionality' ),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
 				'show_nav'        => 'yes',
@@ -272,13 +280,13 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'nav_pos',
 		array(
 			'type'      => Controls_Manager::SELECT,
-			'label'     => __( 'Nav Position', 'porto-functionality' ),
+			'label'     => esc_html__( 'Nav Position', 'porto-functionality' ),
 			'options'   => array(
-				''                => __( 'Middle', 'porto-functionality' ),
-				'nav-pos-inside'  => __( 'Middle Inside', 'porto-functionality' ),
-				'nav-pos-outside' => __( 'Middle Outside', 'porto-functionality' ),
-				'show-nav-title'  => __( 'Top', 'porto-functionality' ),
-				'nav-bottom'      => __( 'Bottom', 'porto-functionality' ),
+				''                => esc_html__( 'Middle', 'porto-functionality' ),
+				'nav-pos-inside'  => esc_html__( 'Middle Inside', 'porto-functionality' ),
+				'nav-pos-outside' => esc_html__( 'Middle Outside', 'porto-functionality' ),
+				'show-nav-title'  => esc_html__( 'Top', 'porto-functionality' ),
+				'nav-bottom'      => esc_html__( 'Bottom', 'porto-functionality' ),
 			),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
@@ -294,7 +302,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'nav_type',
 		array(
 			'type'      => Controls_Manager::SELECT,
-			'label'     => __( 'Nav Type', 'porto-functionality' ),
+			'label'     => esc_html__( 'Nav Type', 'porto-functionality' ),
 			'options'   => $carousel_nav_types,
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
@@ -307,7 +315,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'show_dots',
 		array(
 			'type'      => Controls_Manager::SWITCHER,
-			'label'     => __( 'Show Dots', 'porto-functionality' ),
+			'label'     => esc_html__( 'Show Dots', 'porto-functionality' ),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
 			),
@@ -318,10 +326,10 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'dots_style',
 		array(
 			'type'      => Controls_Manager::SELECT,
-			'label'     => __( 'Dots Style', 'porto-functionality' ),
+			'label'     => esc_html__( 'Dots Style', 'porto-functionality' ),
 			'options'   => array(
-				''             => __( 'Default', 'porto-functionality' ),
-				'dots-style-1' => __( 'Circle inner dot', 'porto-functionality' ),
+				''             => esc_html__( 'Default', 'porto-functionality' ),
+				'dots-style-1' => esc_html__( 'Circle inner dot', 'porto-functionality' ),
 			),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
@@ -334,11 +342,11 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'dots_pos',
 		array(
 			'type'      => Controls_Manager::SELECT,
-			'label'     => __( 'Dots Position', 'porto-functionality' ),
+			'label'     => esc_html__( 'Dots Position', 'porto-functionality' ),
 			'options'   => array(
-				''                => __( 'Outside', 'porto-functionality' ),
-				'nav-inside'      => __( 'Inside', 'porto-functionality' ),
-				'show-dots-title' => __( 'Top beside title', 'porto-functionality' ),
+				''                => esc_html__( 'Outside', 'porto-functionality' ),
+				'nav-inside'      => esc_html__( 'Inside', 'porto-functionality' ),
+				'show-dots-title' => esc_html__( 'Top beside title', 'porto-functionality' ),
 			),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
@@ -351,11 +359,11 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'dots_align',
 		array(
 			'type'      => Controls_Manager::SELECT,
-			'label'     => __( 'Dots Align', 'porto-functionality' ),
+			'label'     => esc_html__( 'Dots Align', 'porto-functionality' ),
 			'options'   => array(
-				''                  => __( 'Right', 'porto-functionality' ),
-				'nav-inside-center' => __( 'Center', 'porto-functionality' ),
-				'nav-inside-left'   => __( 'Left', 'porto-functionality' ),
+				''                  => esc_html__( 'Right', 'porto-functionality' ),
+				'nav-inside-center' => esc_html__( 'Center', 'porto-functionality' ),
+				'nav-inside-left'   => esc_html__( 'Left', 'porto-functionality' ),
 			),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
@@ -368,7 +376,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'autoplay',
 		array(
 			'type'      => Controls_Manager::SWITCHER,
-			'label'     => __( 'Auto Play', 'porto-functionality' ),
+			'label'     => esc_html__( 'Auto Play', 'porto-functionality' ),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
 			),
@@ -379,7 +387,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'autoplay_timeout',
 		array(
 			'type'      => Controls_Manager::NUMBER,
-			'label'     => __( 'Auto Play Timeout', 'porto-functionality' ),
+			'label'     => esc_html__( 'Auto Play Timeout', 'porto-functionality' ),
 			'default'   => 5000,
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
@@ -392,7 +400,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'fullscreen',
 		array(
 			'type'      => Controls_Manager::SWITCHER,
-			'label'     => __( 'Full Screen', 'porto-functionality' ),
+			'label'     => esc_html__( 'Full Screen', 'porto-functionality' ),
 			'condition' => array(
 				'as_banner_layer' => 'carousel',
 			),
@@ -403,8 +411,8 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'center',
 		array(
 			'type'        => Controls_Manager::SWITCHER,
-			'label'       => __( 'Center Item', 'porto-functionality' ),
-			'description' => __( 'This will add "center" class to the center item.', 'porto-functionality' ),
+			'label'       => esc_html__( 'Center Item', 'porto-functionality' ),
+			'description' => esc_html__( 'This will add "center" class to the center item.', 'porto-functionality' ),
 			'condition'   => array(
 				'as_banner_layer' => 'carousel',
 			),
@@ -417,8 +425,8 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'banner_image',
 		array(
 			'type'        => Controls_Manager::MEDIA,
-			'label'       => __( 'Banner Image', 'porto-functionality' ),
-			'description' => __( 'Upload the image for this banner', 'porto-functionality' ),
+			'label'       => esc_html__( 'Banner Image', 'porto-functionality' ),
+			'description' => esc_html__( 'Upload the image for this banner', 'porto-functionality' ),
 			'condition'   => array(
 				'as_banner_layer' => 'banner',
 			),
@@ -441,7 +449,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'banner_color_bg2',
 		array(
 			'type'      => Controls_Manager::COLOR,
-			'label'     => __( 'Background Color', 'porto-functionality' ),
+			'label'     => esc_html__( 'Background Color', 'porto-functionality' ),
 			'selectors' => array(
 				'{{WRAPPER}} > img' => 'background-color: {{VALUE}};',
 			),
@@ -455,7 +463,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'add_container',
 		array(
 			'type'      => Controls_Manager::SWITCHER,
-			'label'     => __( 'Add Container', 'porto-functionality' ),
+			'label'     => esc_html__( 'Add Container', 'porto-functionality' ),
 			'condition' => array(
 				'as_banner_layer' => 'banner',
 			),
@@ -465,7 +473,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_responsive_control(
 		'min_height',
 		array(
-			'label'      => __( 'Banner Min Height', 'porto-functionality' ),
+			'label'      => esc_html__( 'Banner Min Height', 'porto-functionality' ),
 			'type'       => Controls_Manager::SLIDER,
 			'range'      => array(
 				'px' => array(
@@ -569,7 +577,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 			),
 			'condition'  => array(
 				'as_banner_layer' => 'banner',
-				'banner_effect!' => '',
+				'banner_effect!'  => '',
 			),
 		)
 	);
@@ -580,9 +588,9 @@ function porto_elementor_column_custom_control( $self, $args ) {
 			'type'      => Controls_Manager::SELECT,
 			'label'     => esc_html__( 'Particle Effects', 'porto-functionality' ),
 			'options'   => array(
-				''                    => esc_html__( 'No', 'porto-functionality' ),
-				'snowfall'        => esc_html__( 'Snowfall', 'porto-functionality' ),
-				'sparkle'         => esc_html__( 'Sparkle', 'porto-functionality' ),
+				''         => esc_html__( 'No', 'porto-functionality' ),
+				'snowfall' => esc_html__( 'Snowfall', 'porto-functionality' ),
+				'sparkle'  => esc_html__( 'Sparkle', 'porto-functionality' ),
 			),
 			'condition' => array(
 				'as_banner_layer' => 'banner',
@@ -602,7 +610,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_control(
 		'banner_layer_heading',
 		array(
-			'label'     => __( 'Banner Layer Settings', 'porto-functionality' ),
+			'label'     => esc_html__( 'Banner Layer Settings', 'porto-functionality' ),
 			'type'      => Controls_Manager::HEADING,
 			'condition' => array(
 				'as_banner_layer' => 'banner',
@@ -614,7 +622,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'width',
 		array(
 			'type'       => Controls_Manager::SLIDER,
-			'label'      => __( 'Width', 'porto-functionality' ),
+			'label'      => esc_html__( 'Width', 'porto-functionality' ),
 			'range'      => array(
 				'%'  => array(
 					'step' => 1,
@@ -653,8 +661,8 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'width1',
 		array(
 			'type'                => Controls_Manager::SLIDER,
-			'label'               => __( 'Width', 'porto-functionality' ),
-			'description'         => __( 'This will not work if you use preset layout.', 'porto-functionality' ),
+			'label'               => esc_html__( 'Width', 'porto-functionality' ),
+			'description'         => esc_html__( 'This will not work if you use preset layout.', 'porto-functionality' ),
 			'range'               => array(
 				'%' => array(
 					'step' => 1,
@@ -685,7 +693,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'height',
 		array(
 			'type'       => Controls_Manager::SLIDER,
-			'label'      => __( 'Height', 'porto-functionality' ),
+			'label'      => esc_html__( 'Height', 'porto-functionality' ),
 			'range'      => array(
 				'%'  => array(
 					'step' => 1,
@@ -724,7 +732,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'horizontal',
 		array(
 			'type'        => Controls_Manager::SLIDER,
-			'label'       => __( 'Horizontal Position', 'porto-functionality' ),
+			'label'       => esc_html__( 'Horizontal Position', 'porto-functionality' ),
 			'range'       => array(
 				'%' => array(
 					'step' => 1,
@@ -736,7 +744,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 				'unit' => '%',
 				'size' => 50,
 			),
-			'description' => __( '50 is center, 0 is left and 100 is right.', 'porto-functionality' ),
+			'description' => esc_html__( '50 is center, 0 is left and 100 is right.', 'porto-functionality' ),
 			'condition'   => array(
 				'as_banner_layer' => array( 'yes', 'banner' ),
 			),
@@ -747,7 +755,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		'vertical',
 		array(
 			'type'        => Controls_Manager::SLIDER,
-			'label'       => __( 'Vertical Position', 'porto-functionality' ),
+			'label'       => esc_html__( 'Vertical Position', 'porto-functionality' ),
 			'range'       => array(
 				'%' => array(
 					'step' => 1,
@@ -759,7 +767,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 				'unit' => '%',
 				'size' => 50,
 			),
-			'description' => __( '50 is middle, 0 is top and 100 is bottom.', 'porto-functionality' ),
+			'description' => esc_html__( '50 is middle, 0 is top and 100 is bottom.', 'porto-functionality' ),
 			'condition'   => array(
 				'as_banner_layer' => array( 'yes', 'banner' ),
 			),
@@ -769,23 +777,23 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_responsive_control(
 		'text_align1',
 		array(
-			'label'              => __( 'Text Align', 'elementor' ),
+			'label'              => esc_html__( 'Text Align', 'elementor' ),
 			'type'               => Controls_Manager::CHOOSE,
 			'options'            => array(
 				'left'    => array(
-					'title' => __( 'Left', 'elementor' ),
+					'title' => esc_html__( 'Left', 'elementor' ),
 					'icon'  => 'eicon-text-align-left',
 				),
 				'center'  => array(
-					'title' => __( 'Center', 'elementor' ),
+					'title' => esc_html__( 'Center', 'elementor' ),
 					'icon'  => 'eicon-text-align-center',
 				),
 				'right'   => array(
-					'title' => __( 'Right', 'elementor' ),
+					'title' => esc_html__( 'Right', 'elementor' ),
 					'icon'  => 'eicon-text-align-right',
 				),
 				'justify' => array(
-					'title' => __( 'Justified', 'elementor' ),
+					'title' => esc_html__( 'Justified', 'elementor' ),
 					'icon'  => 'eicon-text-align-justify',
 				),
 			),
@@ -803,7 +811,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_control(
 		'css_anim_type',
 		array(
-			'label'     => __( 'CSS Animation', 'porto-functionality' ),
+			'label'     => esc_html__( 'CSS Animation', 'porto-functionality' ),
 			'type'      => Controls_Manager::ANIMATION,
 			'condition' => array(
 				'as_banner_layer' => array( 'yes', 'banner' ),
@@ -814,7 +822,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_control(
 		'css_anim_delay',
 		array(
-			'label'     => __( 'CSS Animation Delay (ms)', 'porto-functionality' ),
+			'label'     => esc_html__( 'CSS Animation Delay (ms)', 'porto-functionality' ),
 			'type'      => Controls_Manager::NUMBER,
 			'step'      => 50,
 			'min'       => 0,
@@ -829,7 +837,7 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	$self->add_control(
 		'css_anim_duration',
 		array(
-			'label'     => __( 'CSS Animation Duration (ms)', 'porto-functionality' ),
+			'label'     => esc_html__( 'CSS Animation Duration (ms)', 'porto-functionality' ),
 			'type'      => Controls_Manager::NUMBER,
 			'step'      => 100,
 			'min'       => 100,
@@ -842,9 +850,20 @@ function porto_elementor_column_custom_control( $self, $args ) {
 	);
 
 	$self->add_control(
+		'is_half_right',
+		array(
+			'type'      => Controls_Manager::SWITCHER,
+			'label'     => esc_html__( 'Is Right Aligned?', 'porto-functionality' ),
+			'condition' => array(
+				'as_banner_layer' => 'is_half',
+			),
+		)
+	);
+
+	$self->add_control(
 		'porto_el_cls',
 		array(
-			'label'     => __( 'Extra Class', 'porto-functionality' ),
+			'label'     => esc_html__( 'Extra Class', 'porto-functionality' ),
 			'type'      => Controls_Manager::TEXT,
 			'condition' => array(
 				'as_banner_layer!' => '',
@@ -852,12 +871,91 @@ function porto_elementor_column_custom_control( $self, $args ) {
 		)
 	);
 
+	/* start sticky options */
+
+	$self->add_control(
+		'container_selector',
+		array(
+			'label'       => esc_html__( 'Container Selector', 'porto-functionality' ),
+			'description' => esc_html__( 'Closest parent element which contains sticky and background elements.', 'porto-functionality' ),
+			'type'        => Controls_Manager::TEXT,
+			'condition'   => array(
+				'as_banner_layer' => array( 'sticky' ),
+			),
+		)
+	);
+	$self->add_control(
+		'min_width',
+		array(
+			'label'     => esc_html__( 'Min Width (unit: px)', 'porto-functionality' ),
+			'type'      => Controls_Manager::NUMBER,
+			'min'       => 320,
+			'max'       => 1920,
+			'step'      => 1,
+			'default'   => 767,
+			'condition' => array(
+				'as_banner_layer' => array( 'sticky' ),
+			),
+		)
+	);
+	$self->add_control(
+		'offset_top',
+		array(
+			'label'       => esc_html__( 'Top (unit: px)', 'porto-functionality' ),
+			'description' => esc_html__( 'Top position when active', 'porto-functionality' ),
+			'type'        => Controls_Manager::NUMBER,
+			'min'         => 0,
+			'max'         => 500,
+			'step'        => 1,
+			'default'     => 110,
+			'condition'   => array(
+				'as_banner_layer' => array( 'sticky' ),
+			),
+		)
+	);
+	$self->add_control(
+		'offset_bottom',
+		array(
+			'label'       => esc_html__( 'Bottom (unit: px)', 'porto-functionality' ),
+			'description' => __( 'Bottom position when active', 'porto-functionality' ),
+			'type'        => Controls_Manager::NUMBER,
+			'min'         => 0,
+			'max'         => 500,
+			'step'        => 1,
+			'default'     => 0,
+			'condition'   => array(
+				'as_banner_layer' => array( 'sticky' ),
+			),
+		)
+	);
+	$self->add_control(
+		'active_class',
+		array(
+			'label'     => esc_html__( 'Active Class', 'porto-functionality' ),
+			'type'      => Controls_Manager::TEXT,
+			'condition' => array(
+				'as_banner_layer' => array( 'sticky' ),
+			),
+		)
+	);
+	$self->add_control(
+		'autofit',
+		array(
+			'label'     => esc_html__( 'Auto Fit', 'porto-functionality' ),
+			'type'      => Controls_Manager::SWITCHER,
+			'condition' => array(
+				'as_banner_layer' => array( 'sticky' ),
+			),
+		)
+	);
+	/* end sticky options */
+
 	$self->end_controls_section();
 
 	$self->start_controls_section(
 		'section_column_floating_fields',
 		array(
-			'label' => __( 'Floating Animation', 'porto-functionality' ),
+			'label' => esc_html__( 'Floating Animation', 'porto-functionality' ),
 			'tab'   => Controls_Manager::TAB_LAYOUT,
 		)
 	);
@@ -1043,6 +1141,27 @@ function porto_elementor_print_column_template( $content, $self ) {
 			}
 
 			extra_attr += ' data-plugin-options=' + JSON.stringify( extra_options );
+		} else if ('is_half' == settings.as_banner_layer) {
+			extra_class += ' col-half-section';
+			if (settings.is_half_right) {
+				extra_class += ' col-half-section-right';
+			}
+			if (100 === Number(settings._inline_size_tablet)) {
+				extra_class += ' col-fullwidth-md';
+			}
+		} else if ( 'sticky' == settings.as_banner_layer ) {
+			let extra_options = {};
+			extra_class += ' porto-sticky';
+			extra_options['containerSelector'] = settings['container_selector'] ? settings['container_selector'] : '';
+			extra_options['minWidth']          = settings['min_width'] ? Number( settings['min_width'] ) : 767;
+			extra_options['padding']           = {};
+			extra_options['padding']['top']    = settings['offset_top'] ? Number( settings['offset_top'] ) : 110;
+			extra_options['padding']['bottom'] = settings['offset_bottom'] ? Number( settings['offset_bottom'] ) : 0;
+			extra_options['activeClass']       = settings['active_class'] ? settings['active_class'] : 'sticky-active';
+			if ( settings['autofit'] ) {
+				extra_options['autoFit'] = true;
+			}
+			extra_style += ' data-plugin-options=' + JSON.stringify( extra_options );
 		}
 		if (settings.parallax_speed.size) {
 			extra_class += ' porto-parallax';
@@ -1139,8 +1258,8 @@ function porto_elementor_column_add_custom_attrs( $self ) {
 		}
 	} elseif ( 'carousel' == $settings['as_banner_layer'] ) {
 		$items        = 0 < intval( $settings['items']['size'] ) ? $settings['items']['size'] : 1;
-		$items_tablet = 0 < intval( $settings['items_tablet']['size'] ) ? $settings['items_tablet']['size'] : 1;
-		$items_mobile = 0 < intval( $settings['items_mobile']['size'] ) ? $settings['items_mobile']['size'] : 1;
+		$items_tablet = isset( $settings['items_tablet'] ) && 0 < intval( $settings['items_tablet']['size'] ) ? $settings['items_tablet']['size'] : 1;
+		$items_mobile = isset( $settings['items_mobile'] ) && 0 < intval( $settings['items_mobile']['size'] ) ? $settings['items_mobile']['size'] : 1;
 
 		$settings['gap'] = 'no';
 		$extra_class     = array( 'porto-carousel', 'owl-carousel', 'has-ccols' );
@@ -1229,6 +1348,38 @@ function porto_elementor_column_add_custom_attrs( $self ) {
 		$self->add_render_attribute( '_widget_wrapper', 'class', $extra_class );
 		$self->add_render_attribute( '_widget_wrapper', 'data-plugin-options', esc_attr( json_encode( $extra_options ) ) );
 
+	} elseif ( 'is_half' == $settings['as_banner_layer'] ) {
+		$extra_class = array( 'col-half-section' );
+		if ( isset( $settings['is_half_right'] ) && 'yes' == $settings['is_half_right'] ) {
+			$extra_class[] = 'col-half-section-right';
+		}
+		if ( isset( $settings['_inline_size_tablet'] ) && 100 === (int) $settings['_inline_size_tablet'] ) {
+			$extra_class[] = 'col-fullwidth-md';
+		}
+		if ( ! empty( $settings['porto_el_cls'] ) ) {
+			$extra_class[] = esc_attr( trim( $settings['porto_el_cls'] ) );
+		}
+		$wrapper_name = $legacy_enabled ? '_inner_wrapper' : '_widget_wrapper';
+		$self->add_render_attribute( $wrapper_name, 'class', $extra_class );
+	} elseif ( 'sticky' == $settings['as_banner_layer'] ) {
+		$options                      = array();
+		$options['containerSelector'] = ! empty( $settings['container_selector'] ) ? $settings['container_selector'] : '';
+		$options['minWidth']          = ! empty( $settings['min_width'] ) ? (int) $settings['min_width'] : 767;
+		$options['padding']           = array();
+		$options['padding']['top']    = ! empty( $settings['offset_top'] ) ? (int) $settings['offset_top'] : 110;
+		$options['padding']['bottom'] = ! empty( $settings['offset_bottom'] ) ? (int) $settings['offset_bottom'] : 0;
+		$options['activeClass']       = ! empty( $settings['active_class'] ) ? esc_attr( $settings['active_class'] ) : 'sticky-active';
+		if ( ! empty( $settings['autofit'] ) ) {
+			$options['autoFit'] = true;
+		}
+		$options      = json_encode( $options );
+		$wrapper_name = $legacy_enabled ? '_inner_wrapper' : '_widget_wrapper';
+		$extra_class  = array( 'porto-sticky' );
+		if ( ! empty( $settings['porto_el_cls'] ) ) {
+			$extra_class[] = esc_attr( trim( $settings['porto_el_cls'] ) );
+		}
+		$self->add_render_attribute( $wrapper_name, 'class', $extra_class );
+		$self->add_render_attribute( $wrapper_name, 'data-plugin-options', $options );
 	} else {
 		global $porto_grid_layout, $porto_item_count, $porto_grid_type;
 		$is_inner = $self->get_data( 'isInner' );
@@ -1266,6 +1417,13 @@ function porto_elementor_column_add_custom_attrs( $self ) {
 	if ( $floating_attrs ) {
 		foreach ( $floating_attrs as $key => $val ) {
 			$self->add_render_attribute( '_widget_wrapper', $key, $val );
+		}
+	}
+
+	$mpx_attrs = porto_get_mpx_options( $settings );
+	if ( $mpx_attrs ) {
+		foreach ( $mpx_attrs as $key => $val ) {
+			$self->add_render_attribute( '_wrapper', $key, $val );
 		}
 	}
 }

@@ -11,7 +11,7 @@ class Less_Exception_Parser extends Exception {
 	/**
 	 * The current file
 	 *
-	 * @var array
+	 * @var Less_ImportedFile
 	 */
 	public $currentFile;
 
@@ -27,14 +27,21 @@ class Less_Exception_Parser extends Exception {
 	protected $details = array();
 
 	/**
+	 * Constructor
+	 *
 	 * @param string $message
-	 * @param Exception|null $previous Previous exception
-	 * @param int|null $index The current parser index
-	 * @param array|null $currentFile The file
-	 * @param int $code The exception code
+	 * @param Exception $previous Previous exception
+	 * @param integer $index The current parser index
+	 * @param Less_FileInfo|string $currentFile The file
+	 * @param integer $code The exception code
 	 */
 	public function __construct( $message = null, Exception $previous = null, $index = null, $currentFile = null, $code = 0 ) {
-		parent::__construct( $message, $code, $previous );
+		if ( PHP_VERSION_ID < 50300 ) {
+			$this->previous = $previous;
+			parent::__construct( $message, $code );
+		} else {
+			parent::__construct( $message, $code, $previous );
+		}
 
 		$this->currentFile = $currentFile;
 		$this->index = $index;
@@ -49,7 +56,9 @@ class Less_Exception_Parser extends Exception {
 	}
 
 	/**
-	 * Set a message based on the exception info
+	 * Converts the exception to string
+	 *
+	 * @return string
 	 */
 	public function genMessage() {
 		if ( $this->currentFile && $this->currentFile['filename'] ) {

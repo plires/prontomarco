@@ -20,7 +20,7 @@ class Less_VisitorReplacing extends Less_Visitor {
 					$node->accept( $this );
 				}
 
-				$funcName .= "Out";
+				$funcName = $funcName . "Out";
 				if ( isset( $this->_visitFnCache[$funcName] ) ) {
 					$this->$funcName( $node );
 				}

@@ -283,7 +283,7 @@ if ( current_user_can( 'manage_options' ) ) {
 		public function get_plugins_list() {
 			// get transient
 			$plugins = get_site_transient( 'porto_plugins' );
-			if ( ! $plugins ) {
+			if ( false === $plugins && function_exists( 'Porto' ) && Porto()->is_registered() ) {
 				$plugins = $this->update_plugins_list();
 			}
 			if ( ! $plugins ) {
@@ -296,20 +296,30 @@ if ( current_user_can( 'manage_options' ) ) {
 
 			require_once PORTO_PLUGINS . '/importer/importer-api.php';
 			$importer_api = new Porto_Importer_API();
-			$plugins      = $importer_api->get_response( 'plugins_version' );
-			if ( is_wp_error( $plugins ) || ! $plugins ) {
+			$args         = $importer_api->generate_args( false );
+			$url          = $importer_api->get_url( 'plugins_version' );
+			if ( isset( $args['code'] ) ) {
+				$url = add_query_arg( 'code', $args['code'], $url );
+			}
+			$plugins = $importer_api->get_response( $url );
+			if ( ! $plugins || is_wp_error( $plugins ) ) {
+				if ( is_wp_error( $plugins ) ) {
+					set_transient( 'porto_purchase_code_error_msg', $plugins->get_error_message(), HOUR_IN_SECONDS * 24 * 7 );
+				}
+				set_site_transient( 'porto_plugins', array(), HOUR_IN_SECONDS * 24 * 7 );
 				return false;
 			}
-
-			$args = $importer_api->generate_args( false );
+			delete_transient( 'porto_purchase_code_error_msg' );
+			setcookie( 'porto_dismiss_code_error_msg', '', time() - 3600 );
 
 			foreach ( $plugins as $key => $plugin ) {
 				$args['plugin']               = $plugin['slug'];
 				$plugins[ $key ]['source']    = add_query_arg( $args, $importer_api->get_url( 'plugins' ) );
 				$plugins[ $key ]['image_url'] = PORTO_PLUGINS_URI . '/images/' . $args['plugin'] . '.png';
 			}
+
 			// set transient
-			set_site_transient( 'porto_plugins', $plugins, 4 * 24 * HOUR_IN_SECONDS );
+			set_site_transient( 'porto_plugins', $plugins, 7 * 24 * HOUR_IN_SECONDS );
 			return $plugins;
 		}
 

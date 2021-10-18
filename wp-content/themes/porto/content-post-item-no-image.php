@@ -74,9 +74,9 @@ if ( $post_style && 'style-3' == $post_style ) {
 	</div>
 <?php } elseif ( 'style-4' == $post_style ) { ?>
 	<div class="post-item style-4<?php echo 'without-icon' == $porto_settings['post-title-style'] ? ' post-title-simple' : ''; ?>">
-	<span class="thumb-info">
-		<span class="thumb-info-caption">
-			<span class="thumb-info-caption-text">
+	<div class="thumb-info">
+		<div class="thumb-info-caption">
+			<div class="thumb-info-caption-text">
 				<a class="post-title" href="<?php the_permalink(); ?>"><h2 class="m-b-sm m-t-xs"><?php the_title(); ?></h2></a>
 				<div class="post-meta m-b-sm<?php echo ( empty( $porto_settings['post-metas'] ) ? ' d-none' : '' ); ?>">
 					<?php
@@ -153,9 +153,9 @@ if ( $post_style && 'style-3' == $post_style ) {
 					?>
 				</div>
 				<?php echo porto_get_excerpt( $excerpt_length, true, true ); ?>
-			</span>
-		</span>
-	</span>
+			</div>
+		</div>
+	</div>
 	</div>
 <?php } elseif ( 'style-5' == $post_style ) { ?>
 	<div class="post-item style-5<?php echo 'without-icon' == $porto_settings['post-title-style'] ? ' post-title-simple' : ''; ?>">

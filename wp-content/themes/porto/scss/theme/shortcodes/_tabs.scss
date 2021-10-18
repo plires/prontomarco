@@ -183,11 +183,11 @@ h2.resp-accordion {
     margin: 0;
     text-align: $left;
 
-    &.text-left {
+    &.text-left, &.text-start {
         text-align: $left;
     }
 
-    &.text-right {
+    &.text-right, &.text-end {
         text-align: $right;
     }
 

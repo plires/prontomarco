@@ -77,6 +77,8 @@ if ( ! class_exists( 'PortoBuildersHeader' ) ) :
 
 						if ( $should_add_shortcodes ) {
 							$this->add_shortcodes();
+						} else {
+							$this->add_shortcodes( array( 'social' ) );
 						}
 					}
 				);
@@ -173,13 +175,16 @@ if ( ! class_exists( 'PortoBuildersHeader' ) ) :
 			}
 		}
 
-		private function add_shortcodes() {
+		private function add_shortcodes( $global_shortcodes = array() ) {
 			$shortcodes = $this->elements;
 			if ( class_exists( 'Woocommerce' ) ) {
 				$shortcodes = array_merge( $shortcodes, $this->woo_elements );
 			}
 			foreach ( $shortcodes as $tag ) {
 				if ( /*in_array( $tag, array( 'menu-icon', 'divider', 'myaccount' ) ) || */ ! function_exists( 'porto_header_elements' ) ) {
+					continue;
+				}
+				if ( ! empty( $global_shortcodes ) && ! in_array( $tag, $global_shortcodes ) ) {
 					continue;
 				}
 				$shortcode_name = str_replace( '-', '_', $tag );
@@ -1087,8 +1092,8 @@ if ( ! class_exists( 'PortoBuildersHeader' ) ) :
 					999
 				);
 				add_filter(
-					'block_categories',
-					function ( $categories, $post ) {
+					'block_categories_all',
+					function ( $categories ) {
 						return array_merge(
 							$categories,
 							array(
@@ -1101,7 +1106,7 @@ if ( ! class_exists( 'PortoBuildersHeader' ) ) :
 						);
 					},
 					11,
-					2
+					1
 				);
 			}
 
@@ -1699,7 +1704,7 @@ if ( ! class_exists( 'PortoBuildersHeader' ) ) :
 			if ( ! empty( $atts['icon_cl'] ) ) {
 				$custom_icon = $atts['icon_cl'];
 			}
-			echo apply_filters( 'porto_header_builder_mobile_toggle', '<a class="mobile-toggle' . ( empty( $atts['bg_color'] ) && ( ! isset( $porto_settings['mobile-menu-toggle-bg-color'] ) || 'transparent' == $porto_settings['mobile-menu-toggle-bg-color'] ) ? ' pl-0' : '' ) . ( $el_class ? ' ' . esc_attr( $el_class ) : '' ) . '"><i class="' . esc_attr( $custom_icon ) . '"></i></a>' );
+			echo apply_filters( 'porto_header_builder_mobile_toggle', '<a class="mobile-toggle' . ( empty( $atts['bg_color'] ) && ( ! isset( $porto_settings['mobile-menu-toggle-bg-color'] ) || 'transparent' == $porto_settings['mobile-menu-toggle-bg-color'] ) ? ' ps-0' : '' ) . ( $el_class ? ' ' . esc_attr( $el_class ) : '' ) . '"><i class="' . esc_attr( $custom_icon ) . '"></i></a>' );
 			if ( ! $echo ) {
 				return ob_get_clean();
 			}
@@ -1824,12 +1829,16 @@ if ( ! class_exists( 'PortoBuildersHeader' ) ) :
 			if ( ! empty( $atts['color'] ) ) {
 				$inline_style .= 'color:' . esc_attr( $atts['color'] );
 			}
-			if ( $inline_style ) {
-				$inline_style = ' style="' . $inline_style . '"';
-			}
 
-			$wc_count = yith_wcwl_count_products();
-			echo '<a href="' . esc_url( YITH_WCWL()->get_wishlist_url() ) . '"' . ' title="' . esc_attr__( 'Wishlist', 'porto' ) . '" class="my-wishlist' . ( $el_class ? ' ' . esc_attr( $el_class ) : '' ) . '"' . $inline_style . '><i class="' . esc_attr( $icon_cl ) . '"></i><span class="wishlist-count">' . intval( $wc_count ) . '</span></a>';
+			if ( function_exists( 'porto_wishlist' ) ) {
+				echo porto_wishlist( $el_class, $icon_cl, $inline_style );
+			} else {
+				if ( $inline_style ) {
+					$inline_style = ' style="' . $inline_style . '"';
+				}
+				$wc_count = yith_wcwl_count_products();
+				echo '<a href="' . esc_url( YITH_WCWL()->get_wishlist_url() ) . '"' . ' title="' . esc_attr__( 'Wishlist', 'porto' ) . '" class="my-wishlist' . ( $el_class ? ' ' . esc_attr( $el_class ) : '' ) . '"' . $inline_style . '><i class="' . esc_attr( $icon_cl ) . '"></i><span class="wishlist-count">' . intval( $wc_count ) . '</span></a>';
+			}
 			if ( ! $echo ) {
 				return ob_get_clean();
 			}

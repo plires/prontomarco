@@ -299,7 +299,7 @@ class Porto_Elementor_Countdown_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<#
 			view.addRenderAttribute( 'countdown', 'class', 'porto_countdown-div porto_countdown-dateAndTime ' + settings.porto_tz );

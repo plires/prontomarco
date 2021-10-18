@@ -143,15 +143,15 @@ if ( $post_style && 'style-3' == $post_style ) {
 	</div>
 </div>
 <?php } elseif ( 'style-4' == $post_style ) { ?>
-<div class="post-item style-4<?php echo 'without-icon' == $porto_settings['post-title-style'] ? ' post-title-simple' : ''; ?>"> <span class="thumb-info thumb-info-side-image thumb-info-no-zoom">
+<div class="post-item style-4<?php echo 'without-icon' == $porto_settings['post-title-style'] ? ' post-title-simple' : ''; ?>"> <div class="thumb-info thumb-info-side-image thumb-info-no-zoom">
 	<?php if ( $attachment && $attachment_related ) : ?>
-	<a href="<?php the_permalink(); ?>"> <span class="post-image thumb-info-side-image-wrapper"> <img class="img-responsive" width="<?php echo esc_attr( $attachment_related['width'] ); ?>" height="<?php echo esc_attr( $attachment_related['height'] ); ?>" src="<?php echo esc_url( $attachment_related['src'] ); ?>" alt="<?php echo esc_attr( $attachment_related['alt'] ); ?>" />
+	<a href="<?php the_permalink(); ?>"> <span class="post-image thumb-info-side-image-wrapper"> <img class="img-responsive porto-skip-lz" width="<?php echo esc_attr( $attachment_related['width'] ); ?>" height="<?php echo esc_attr( $attachment_related['height'] ); ?>" src="<?php echo esc_url( $attachment_related['src'] ); ?>" alt="<?php echo esc_attr( $attachment_related['alt'] ); ?>" />
 		<?php if ( $porto_settings['post-zoom'] ) : ?>
 	<span class="zoom" data-src="<?php echo esc_url( $attachment['src'] ); ?>" data-title="<?php echo esc_attr( $attachment['caption'] ); ?>"><i class="fas fa-search"></i></span>
 	<?php endif; ?>
 	</span> </a>
 	<?php endif; ?>
-	<span class="thumb-info-caption"> <span class="thumb-info-caption-text"> <a class="post-title" href="<?php the_permalink(); ?>">
+	<div class="thumb-info-caption"> <div class="thumb-info-caption-text"> <a class="post-title" href="<?php the_permalink(); ?>">
 			<h2 class="m-b-sm m-t-xs">
 			<?php the_title(); ?>
 			</h2>
@@ -226,7 +226,7 @@ if ( $post_style && 'style-3' == $post_style ) {
 		?>
 		</div>
 		<?php echo porto_get_excerpt( $excerpt_length, true, true ); ?>
-	</span> </span> </span>
+	</div> </div> </div>
 </div>
 <?php } elseif ( 'style-5' == $post_style ) { ?>
 <div class="post-item style-5<?php echo 'without-icon' == $porto_settings['post-title-style'] ? ' post-title-simple' : ''; ?>">

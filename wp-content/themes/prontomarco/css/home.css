@@ -1,0 +1,270 @@
+/* Slide */
+.prontomarco_home .slide_home { 
+	margin-bottom: 60px;
+}
+
+.prontomarco_home .slide_home #slide_a { 
+	content:url("../img/slide-home/slide-a-mobile.jpg");
+}
+
+.prontomarco_home .slide_home #slide_b { 
+	content:url("../img/slide-home/slide-b-mobile.jpg");
+}
+
+.prontomarco_home .slide_home #slide_c { 
+	content:url("../img/slide-home/slide-c-mobile.jpg");
+}
+
+.prontomarco_home .slide_home #slide_d { 
+	content:url("../img/slide-home/slide-d-mobile.jpg");
+}
+
+.prontomarco_home .slide_home .carousel-indicators li {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* Slide end */
+
+/* Categorias */
+.prontomarco_home .categorias {
+	margin-bottom: 60px;
+}
+
+.prontomarco_home .categorias .col-12 {
+	margin-bottom: 15px;
+}
+
+.prontomarco_home .categorias .img_category_desktop {
+	display: none;
+}
+
+.prontomarco_home h2 {
+	background: black;
+	color: white;
+	padding: 5px;
+	font-size: 1.75rem;
+	max-width: 485px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.prontomarco_home .categorias .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    height: 100%;
+    background: black;
+    opacity: 0.2;
+}
+
+.prontomarco_home .categorias .col-12:hover .overlay {
+    opacity: 0.6;
+}
+
+.prontomarco_home .categorias .col-12:hover .content_title {
+    top: 30px;
+}
+
+.prontomarco_home .categorias .content_title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.prontomarco_home .categorias .content_title h3 {
+	color: white;
+	margin: 0;
+}
+/* Categorias end */
+
+/* Mas vistos */
+.prontomarco_home .mas_vistos {
+	margin-bottom: 60px;
+}
+/* Mas vistos end */
+
+/* Ofertas */
+.prontomarco_home .ofertas {
+	margin-bottom: 60px;
+}
+/* Ofertas end */
+
+/* Iconos */
+.prontomarco_home .iconos {
+	margin-bottom: 60px;
+}
+
+.prontomarco_home .iconos img {
+	max-width: 65%;
+}
+
+.prontomarco_home .iconos h4 br {
+	display: none;
+}
+
+.prontomarco_home .iconos h4 {
+	font-size: 0.65rem;
+}
+/* Iconos end */
+
+/* Newsletter */
+.prontomarco_home .newsletter {
+	margin-bottom: 60px;
+	background: #cccccc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.prontomarco_home .newsletter p {
+	color: black;
+}
+
+.prontomarco_home .newsletter button {
+	color: white;
+	background: black;
+	width: 100%;
+	margin-top: 10px;
+	border-color: black;
+}
+
+.prontomarco_home .newsletter button:hover {
+	color: white;
+	background: #0088cc;
+	border-color: #0088cc;
+}
+/* Newsletter end */
+
+
+/* MEDIA QUERIS */
+
+@media (min-width: 576px) {
+
+	/* Slide */
+	.prontomarco_home .slide_home #slide_a { 
+		content:url("../img/slide-home/slide-a-desktop.jpg");
+	}
+
+	.prontomarco_home .slide_home #slide_b { 
+		content:url("../img/slide-home/slide-b-desktop.jpg");
+	}
+
+	.prontomarco_home .slide_home #slide_c { 
+		content:url("../img/slide-home/slide-c-desktop.jpg");
+	}
+
+	.prontomarco_home .slide_home #slide_d { 
+		content:url("../img/slide-home/slide-d-desktop.jpg");
+	}
+
+	.prontomarco_home .slide_home .carousel-indicators li {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+	}
+	/* Slide end */
+
+	/* Categorias */
+	.prontomarco_home .categorias {
+		margin-bottom: 60px;
+	}
+
+	.prontomarco_home .categorias .img_category_desktop {
+		display: flex;
+	}
+
+	.prontomarco_home .categorias .img_category_mobile {
+		display: none;
+	}
+
+	.prontomarco_home .categorias .col-12 {
+    max-height: 169px!important;
+    overflow: hidden;
+	}
+	/* Categorias end */
+
+}
+
+@media (min-width: 768px) {
+
+	/* Categorias */
+	.prontomarco_home .categorias .col-12 {
+    max-height: 198px!important;
+	}
+	/* Categorias end */
+
+}
+
+@media (min-width: 992px) {
+
+	/* Categorias */
+	.prontomarco_home .categorias .col-12 {
+    max-height: 250px!important;
+	}
+	/* Categorias end */
+
+	/* Iconos */
+	.prontomarco_home .iconos img {
+		max-width: 65%;
+	}
+
+	.prontomarco_home .iconos h4 br {
+		display: inline-block;
+	}
+
+	.prontomarco_home .iconos h4 {
+		font-size: 1rem;
+	}
+	/* Iconos end */
+
+	/* Newsletter */
+	.prontomarco_home .newsletter .col-lg-3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.prontomarco_home .newsletter .col-lg-3 p,
+	.prontomarco_home .newsletter .col-lg-3 button {
+		margin: 0;
+	}
+
+	.prontomarco_home .newsletter .col-lg-3 p {
+		text-align: left;
+	}
+	/* Newsletter end */
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Categorias */
+	.prontomarco_home .categorias .col-12 {
+    max-height:300px!important;
+	}
+	/* Categorias end */
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1700px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}

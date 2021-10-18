@@ -97,7 +97,7 @@ class Less_Tree_Import extends Less_Tree {
 	}
 
 	/**
-	 * @return string|null
+	 * @return string
 	 */
 	public function getPath() {
 		if ( $this->path instanceof Less_Tree_Quoted ) {
@@ -192,6 +192,8 @@ class Less_Tree_Import extends Less_Tree {
 
 	/**
 	 * Using the import directories, get the full absolute path and uri of the import
+	 *
+	 * @param Less_Tree_Import $evald
 	 */
 	public function PathAndUri() {
 		$evald_path = $this->getPath();

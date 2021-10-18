@@ -29,6 +29,14 @@ extract(
 			'filter_style'       => '',
 
 			'orderby'            => '',
+			'order_date'         => 'DESC',
+			'order_id'           => 'DESC',
+			'order_title'        => 'DESC',
+			'order_rand'         => 'DESC',
+			'order_menu_order'   => 'DESC',
+			'order_price'        => 'DESC',
+			'order_popularity'   => 'DESC',
+			'order_rating'       => 'DESC',
 			'order'              => '',
 			'category'           => '',
 			'ids'                => '',
@@ -63,18 +71,69 @@ extract(
 if ( 'list' == $view ) {
 	$columns = 1;
 }
-if ( 'total_sales' == $orderby ) {
-	$orderby = 'popularity';
+$orders = '';
+if ( ! empty( $orderby ) && false !== strpos( $orderby, ',' ) ) {
+	if ( ! is_array( $orderby ) ) {
+		$orderby = explode( ',', $orderby );
+	}
+	$orders = '{';
+	foreach ( $orderby as &$value ) {
+		$value = trim( $value );
+		if ( 'total_sales' == $value ) {
+			$value = 'popularity';
+		}
+		if ( 'onsale' == $value ) {
+			$status  = 'on_sale';
+			$value = '';
+			$order   = '';
+		}
+		if ( 'date' == $value ) {
+			$order = $order_date;
+		} elseif ( 'id' == $value ) {
+			$order = $order_id;
+		} elseif ( 'title' == $value ) {
+			$order = $order_title;
+		} elseif ( 'rand' == $value ) {
+			$order = $order_rand;
+		} elseif ( 'menu_order' == $value ) {
+			$order = $order_menu_order;
+		} elseif ( 'price' == $value ) {
+			$order = $order_price;
+		} elseif ( 'popularity' == $value ) {
+			$order = $order_popularity;
+		} elseif ( 'rating' == $value ) {
+			$order = $order_rating;
+		}
+		$orders .= '"' . $value . '":"' . ( empty( $order ) ? 'DESC' : $order ) . '",';
+	}
+	$orders = rtrim( $orders, ',' ) . '}';
+} else {
+	if ( 'total_sales' == $orderby ) {
+		$orderby = 'popularity';
+	}
+	if ( 'price' == $orderby && 'desc' == strtolower( $order ) ) {
+		$orderby = 'price-desc';
+		$order   = '';
+	}
+	if ( 'onsale' == $orderby ) {
+		$status  = 'on_sale';
+		$orderby = '';
+		$order   = '';
+	}
 }
-if ( 'price' == $orderby && 'desc' == strtolower( $order ) ) {
-	$orderby = 'price-desc';
-	$order   = '';
+
+if ( 'viewed' == $status ) {
+	$viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', wp_unslash( $_COOKIE['woocommerce_recently_viewed'] ) ) : array(); // @codingStandardsIgnoreLine
+	$viewed_products = array_reverse( array_filter( array_map( 'absint', $viewed_products ) ) );
+	if ( empty( $viewed_products ) ) {
+		return;
+	}
+	if ( is_array( $viewed_products ) ) {
+		$ids     = implode( ',', $viewed_products );
+		$orderby = 'post__in';
+	}
 }
-if ( 'onsale' == $orderby ) {
-	$status  = 'on_sale';
-	$orderby = '';
-	$order   = '';
-}
+
 
 global $porto_settings;
 
@@ -124,8 +183,8 @@ if ( ! empty( $show_sort ) || $category_filter || $pagination_style ) {
 	if ( $per_page ) {
 		$output .= '<input type="hidden" name="per_page" value="' . esc_attr( $per_page ) . '" >';
 	}
-	$output .= '<input type="hidden" name="original_orderby" value="' . esc_attr( $orderby ) . '" >';
-	$output .= '<input type="hidden" name="orderby" value="' . esc_attr( $orderby ) . '" >';
+	$output .= '<input type="hidden" name="original_orderby" value="' . esc_attr( is_array( $orderby ) ? implode( ',', $orderby ) : $orderby ) . '" >';
+	$output .= '<input type="hidden" name="orderby" value="' . esc_attr( is_array( $orderby ) ? implode( ',', $orderby ) : $orderby ) . '" >';
 	$output .= '<input type="hidden" name="order" value="' . esc_attr( $order ) . '" >';
 	$output .= '<input type="hidden" name="category" value="' . esc_attr( $category ) . '" >';
 	$output .= '<input type="hidden" name="ids" value="' . esc_attr( $ids ) . '" >';
@@ -290,12 +349,14 @@ if ( $attribute ) {
 if ( $filter ) {
 	$extra_atts .= ' filter="' . esc_attr( $filter ) . '"';
 }
-if ( $orderby ) {
-	$extra_atts .= ' orderby="' . esc_attr( $orderby ) . '"';
+if ( ! empty( $orderby ) ) {
+
+	$extra_atts .= ' orderby="' . esc_attr( is_array( $orderby ) ? $orders : $orderby ) . '"';
 }
-if ( $order ) {
+if ( $order && ! is_array( $orderby ) ) {
 	$extra_atts .= ' order="' . esc_attr( $order ) . '"';
 }
+
 if ( $pagination_style ) {
 	$extra_atts                        .= ' paginate="true"';
 	$porto_settings_backup              = $porto_settings['product-infinite'];
@@ -405,7 +466,6 @@ if ( 'creative' == $view || ( 'grid' == $view && '' !== $spacing ) || ( '0' == $
 if ( $count ) {
 	$extra_atts .= ' limit="' . intval( $count ) . '"';
 }
-
 $output .= do_shortcode( '[' . esc_html( $shortcode ) . ' columns="' . $columns . '"' . $extra_atts . ']' );
 
 if ( 'products-slider' == $view ) {

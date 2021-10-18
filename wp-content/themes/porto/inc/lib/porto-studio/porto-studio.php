@@ -109,9 +109,8 @@ if ( ! class_exists( 'Porto_Studio' ) ) :
 		public function enqueue() {
 			wp_enqueue_style( 'jquery-magnific-popup', PORTO_CSS . '/magnific-popup.min.css', false, '1.1.0', 'all' );
 			wp_enqueue_style( 'porto-studio-fonts', '//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700&ver=5.2.1' );
-			wp_enqueue_script( 'jquery-magnific-popup', PORTO_JS . '/libs/jquery.magnific-popup.min.js', array( 'jquery' ), '1.1.0', true );
-			wp_enqueue_script( 'jquery-waitforimages', PORTO_JS . '/libs/jquery.waitforimages.min.js', array( 'jquery' ), '2.0.2', true );
-			wp_enqueue_script( 'isotope', PORTO_JS . '/libs/isotope.pkgd.min.js', array( 'jquery' ), '3.0.1', true );
+			wp_enqueue_script( 'jquery-magnific-popup', PORTO_JS . '/libs/jquery.magnific-popup.min.js', array( 'jquery-core' ), '1.1.0', true );
+			wp_enqueue_script( 'isotope', PORTO_JS . '/libs/isotope.pkgd.min.js', array( 'jquery-core', 'imagesloaded' ), '3.0.1', true );
 
 			$post_id = false;
 			if ( is_singular() ) {
@@ -372,6 +371,9 @@ if ( ! class_exists( 'Porto_Studio' ) ) :
 					$importer->fetch_attachments = true;
 
 					if ( $is_attachment ) {
+
+						add_filter( 'upload_mimes', array( $this, 'enable_svg_import' ), 99 );
+
 						foreach ( $posts as $old_id => $image_url ) {
 							$post_data = array(
 								'post_title'   => substr( $image_url, strrpos( $image_url, '/' ) + 1, -4 ),
@@ -613,6 +615,11 @@ if ( ! class_exists( 'Porto_Studio' ) ) :
 				}
 				wp_send_json_success();
 			}
+		}
+
+		public function enable_svg_import( $mimes ) {
+			$mimes['svg'] = 'image/svg+xml';
+			return $mimes;
 		}
 	}
 

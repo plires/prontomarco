@@ -105,6 +105,12 @@ $grid-gutter-space: <?php echo (int) $porto_settings['grid-gutter-width']; ?> !d
 <?php if ( ! in_array( 'vc_progress_bar', $unused_shortcode_list ) ) : ?>
 	@import "theme/shortcodes/vc_progress_bar";
 <?php endif; ?>
+<?php if ( ! in_array( 'porto_image_comparison', $unused_shortcode_list ) ) : ?>
+	@import "theme/shortcodes/image_comparison";
+<?php endif; ?>
+<?php if ( ! in_array( 'porto_image_gallery', $unused_shortcode_list ) ) : ?>
+	@import "theme/shortcodes/image_gallery";
+<?php endif; ?>
 
 <?php if ( defined( 'WPB_VC_VERSION' ) ) : ?>
 	<?php if ( ! in_array( 'vc_btn', $unused_shortcode_list ) ) : ?>
@@ -151,5 +157,8 @@ $grid-gutter-space: <?php echo (int) $porto_settings['grid-gutter-width']; ?> !d
 <?php endif; ?>
 <?php if ( class_exists( 'Woocommerce' ) && class_exists( 'WCFMmp' ) ) : ?>
 @import "theme/shortcodes/wcfm";
+<?php endif; ?>
+<?php if ( class_exists( 'Woocommerce' ) && class_exists( 'WOOF' ) ) : ?>
+@import "theme/shortcodes/woof";
 <?php endif; ?>
 .inline-block { display: inline-block; }

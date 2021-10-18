@@ -5,7 +5,7 @@
  *
  * @package Less
  * @subpackage function
- * @see https://lesscss.org/functions/
+ * @see http://lesscss.org/functions/
  */
 class Less_Functions {
 
@@ -385,7 +385,7 @@ return $a / $b;
 
 	//
 	// Copyright (c) 2006-2009 Hampton Catlin, Nathan Weizenbaum, and Chris Eppstein
-	// https://sass-lang.com/
+	// http://sass-lang.com
 	//
 
 	/**
@@ -727,7 +727,7 @@ return $a / $b;
 		}
 		$args = array();
 		foreach ( $order as $a ) {
-			$args[] = $a->toCSS();
+			$args[] = $a->toCSS( $this->env );
 		}
 		return new Less_Tree_Anonymous( ( $isMin ? 'min(' : 'max(' ) . implode( Less_Environment::$_outputMap[','], $args ).')' );
 	}
@@ -914,7 +914,7 @@ return $a / $b;
 		$DATA_URI_MAX_KB = 32;
 		$fileSizeInKB = round( strlen( $buf ) / 1024 );
 		if ( $fileSizeInKB >= $DATA_URI_MAX_KB ) {
-			$url = new Less_Tree_Url( ( $filePathNode ?: $mimetypeNode ), $this->currentFileInfo );
+			$url = new Less_Tree_Url( ( $filePathNode ? $filePathNode : $mimetypeNode ), $this->currentFileInfo );
 			return $url->compile( $this );
 		}
 
@@ -1014,7 +1014,7 @@ return $a / $b;
 	}
 
 	// Color Blending
-	// ref: https://www.w3.org/TR/compositing-1/
+	// ref: http://www.w3.org/TR/compositing-1
 
 	public function colorBlend( $mode, $color1, $color2 ) {
 		$ab = $color1->alpha;	// backdrop

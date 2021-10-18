@@ -58,11 +58,8 @@ class Porto_Admin_Tools {
 				$message = __( 'Porto Studio transients cleared', 'porto' );
 			} elseif ( 'compile_css' == $_GET['action'] ) {
 				$result = porto_compile_css( 'shortcodes' );
-				if ( is_rtl() ) {
-					porto_compile_css( 'bootstrap_rtl' );
-				} else {
-					porto_compile_css( 'bootstrap' );
-				}
+				porto_compile_css( 'bootstrap_rtl' );
+				porto_compile_css( 'bootstrap' );
 				do_action( 'porto_admin_save_theme_settings' );
 				if ( ! $result ) {
 					$result_success = false;
@@ -72,6 +69,51 @@ class Porto_Admin_Tools {
 				}
 			} elseif ( 'refresh_blocks' == $_GET['action'] ) {
 				$this->refresh_blocks();
+				$message = __( 'Refreshed successfully.', 'porto' );
+			} elseif ( 'refresh_conditions' == $_GET['action'] && defined( 'PORTO_BUILDERS_PATH' ) ) {
+				$query = new WP_Query(
+					array(
+						'post_type'      => 'porto_builder',
+						'post_status'    => 'publish',
+						'posts_per_page' => -1,
+						'fields'         => 'ids',
+						'meta_query'     => array(
+							array(
+								'key'     => '_porto_builder_conditions',
+								'compare' => 'EXISTS',
+							),
+						),
+					)
+				);
+				if ( is_array( $query->posts ) && ! empty( $query->posts ) ) {
+					require_once PORTO_BUILDERS_PATH . 'lib/class-condition.php';
+					$cls = new Porto_Builder_Condition();
+
+					set_theme_mod( 'builder_conditions', array() );
+
+					foreach ( $query->posts as $post_id ) {
+						$conditions = get_post_meta( $post_id, '_porto_builder_conditions', true );
+						if ( empty( $conditions ) ) {
+							continue;
+						}
+						$_POST['type']        = array();
+						$_POST['object_type'] = array();
+						$_POST['object_id']   = array();
+						$_POST['object_name'] = array();
+						foreach ( $conditions as $index => $condition ) {
+							if ( ! is_array( $condition ) || 4 !== count( $condition ) ) {
+								continue;
+							}
+							$_POST['type'][]        = $condition[0];
+							$_POST['object_type'][] = $condition[1];
+							$_POST['object_id'][]   = $condition[2];
+							$_POST['object_name'][] = $condition[3];
+						}
+						$cls->save_condition( true, (int) $post_id );
+					}
+					unset( $_POST['type'], $_POST['object_type'], $_POST['object_id'], $_POST['object_name'] );
+				}
+
 				$message = __( 'Refreshed successfully.', 'porto' );
 			}
 		}

@@ -406,102 +406,180 @@ function porto_woocommerce_hide_update_notice( $flag, $notice ) {
 	return $flag;
 }
 
-// ajax add to cart
-add_action( 'wp_ajax_porto_add_to_cart', 'porto_add_to_cart' );
-add_action( 'wp_ajax_nopriv_porto_add_to_cart', 'porto_add_to_cart' );
-function porto_add_to_cart() {
-	ob_start();
+if ( wp_doing_ajax() ) {
+	// ajax add to cart
+	add_action( 'wp_ajax_porto_add_to_cart', 'porto_add_to_cart' );
+	add_action( 'wp_ajax_nopriv_porto_add_to_cart', 'porto_add_to_cart' );
+	function porto_add_to_cart() {
+		ob_start();
 
-	// phpcs:disable WordPress.Security.NonceVerification.Missing
-	if ( ! isset( $_POST['product_id'] ) ) {
-		return;
-	}
+		// phpcs:disable WordPress.Security.NonceVerification.Missing
+		if ( ! isset( $_POST['product_id'] ) ) {
+			return;
+		}
 
-	$product_id        = apply_filters( 'woocommerce_add_to_cart_product_id', absint( $_POST['product_id'] ) );
-	$product           = wc_get_product( $product_id );
-	$quantity          = empty( $_POST['quantity'] ) ? 1 : wc_stock_amount( wp_unslash( $_POST['quantity'] ) );
-	$passed_validation = apply_filters( 'woocommerce_add_to_cart_validation', true, $product_id, $quantity );
-	$product_status    = get_post_status( $product_id );
-	$variation_id      = 0;
-	$variation         = array();
+		$product_id        = apply_filters( 'woocommerce_add_to_cart_product_id', absint( $_POST['product_id'] ) );
+		$product           = wc_get_product( $product_id );
+		$quantity          = empty( $_POST['quantity'] ) ? 1 : wc_stock_amount( wp_unslash( $_POST['quantity'] ) );
+		$passed_validation = apply_filters( 'woocommerce_add_to_cart_validation', true, $product_id, $quantity );
+		$product_status    = get_post_status( $product_id );
+		$variation_id      = 0;
+		$variation         = array();
 
-	if ( $product && 'variation' === $product->get_type() ) {
-		$variation_id = $product_id;
-		$product_id   = $product->get_parent_id();
-		$variation    = $product->get_variation_attributes();
-		if ( ! empty( $variation ) ) {
-			foreach ( $variation as $k => $v ) {
-				if ( empty( $v ) && ! empty( $_REQUEST[ $k ] ) ) {
-					$variation[ $k ] = wp_unslash( $_REQUEST[ $k ] );
+		if ( $product && 'variation' === $product->get_type() ) {
+			$variation_id = $product_id;
+			$product_id   = $product->get_parent_id();
+			$variation    = $product->get_variation_attributes();
+			if ( ! empty( $variation ) ) {
+				foreach ( $variation as $k => $v ) {
+					if ( empty( $v ) && ! empty( $_REQUEST[ $k ] ) ) {
+						$variation[ $k ] = wp_unslash( $_REQUEST[ $k ] );
+					}
 				}
 			}
 		}
+
+		if ( $passed_validation && false !== WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation ) && 'publish' === $product_status ) {
+
+			do_action( 'woocommerce_ajax_added_to_cart', $product_id );
+
+			if ( 'yes' === get_option( 'woocommerce_cart_redirect_after_add' ) ) {
+				wc_add_to_cart_message( array( $product_id => $quantity ), true );
+			}
+
+			WC_AJAX::get_refreshed_fragments();
+
+		} else {
+
+			// If there was an error adding to the cart, redirect to the product page to show any errors.
+			$data = array(
+				'error'       => true,
+				'product_url' => apply_filters( 'woocommerce_cart_redirect_after_error', get_permalink( $product_id ), $product_id ),
+			);
+
+			wp_send_json( $data );
+		}
+		// phpcs:enable
 	}
 
-	if ( $passed_validation && false !== WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation ) && 'publish' === $product_status ) {
+	// ajax remove cart item
+	add_action( 'wp_ajax_porto_cart_item_remove', 'porto_cart_item_remove' );
+	add_action( 'wp_ajax_nopriv_porto_cart_item_remove', 'porto_cart_item_remove' );
+	function porto_cart_item_remove() {
+		//check_ajax_referer( 'porto-nonce', 'nonce' );
+		// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
+		$cart         = WC()->instance()->cart;
+		$cart_id      = sanitize_text_field( $_POST['cart_id'] );
+		$cart_item_id = $cart->find_product_in_cart( $cart_id );
+		if ( $cart_item_id ) {
+			$cart->set_quantity( $cart_item_id, 0 );
+		}
+		$cart_ajax = new WC_AJAX();
+		$cart_ajax->get_refreshed_fragments();
+		// phpcs:enable
+		exit();
+	}
+	// refresh cart fragment
+	add_action( 'wp_ajax_porto_refresh_cart_fragment', 'porto_refresh_cart_fragment' );
+	add_action( 'wp_ajax_nopriv_porto_refresh_cart_fragment', 'porto_refresh_cart_fragment' );
+	function porto_refresh_cart_fragment() {
+		//check_ajax_referer( 'porto-nonce', 'nonce' );
+		// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
+		$cart_ajax = new WC_AJAX();
+		$cart_ajax->get_refreshed_fragments();
+		// phpcs:enable
+		exit();
 
-		do_action( 'woocommerce_ajax_added_to_cart', $product_id );
+	}
 
-		if ( 'yes' === get_option( 'woocommerce_cart_redirect_after_add' ) ) {
-			wc_add_to_cart_message( array( $product_id => $quantity ), true );
+	// refresh wishlist count
+	add_action( 'wp_ajax_porto_refresh_wishlist_count', 'porto_refresh_wishlist_count' );
+	add_action( 'wp_ajax_nopriv_porto_refresh_wishlist_count', 'porto_refresh_wishlist_count' );
+	function porto_refresh_wishlist_count() {
+		//check_ajax_referer( 'porto-nonce', 'nonce' );
+		// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
+		if ( class_exists( 'Woocommerce' ) && defined( 'YITH_WCWL' ) ) {
+			echo yith_wcwl_count_products();
+		}
+		// phpcs:enable
+		exit();
+	}
+
+	add_action( 'wp_ajax_porto_load_wishlist', 'porto_load_wishlist' );
+	add_action( 'wp_ajax_nopriv_porto_load_wishlist', 'porto_load_wishlist' );
+	function porto_load_wishlist() {
+		//check_ajax_referer( 'porto-nonce', 'nonce' );
+		// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
+		if ( ! class_exists( 'Woocommerce' ) || ! defined( 'YITH_WCWL' ) ) {
+			return;
 		}
 
-		WC_AJAX::get_refreshed_fragments();
+		$wishlist       = YITH_WCWL_Wishlist_Factory::get_current_wishlist( array() );
+		$wishlist_items = array();
+		if ( $wishlist && $wishlist->has_items() ) {
+			$wishlist_items = $wishlist->get_items();
+		}
+		?>
 
-	} else {
+		<h3><?php esc_html_e( 'Wishlist', 'porto' ); ?></h3>
 
-		// If there was an error adding to the cart, redirect to the product page to show any errors.
-		$data = array(
-			'error'       => true,
-			'product_url' => apply_filters( 'woocommerce_cart_redirect_after_error', get_permalink( $product_id ), $product_id ),
-		);
+	<?php if ( empty( $wishlist_items ) ) : ?>
+		<p class="empty-msg"><?php esc_html_e( 'No products in wishlist.', 'porto' ); ?></p>
+	<?php else : ?>
+		<ul class="product_list_widget">
+		<?php
+		foreach ( $wishlist_items as $item ) {
+			$product = $item->get_product();
+			if ( $product ) {
+				$id                = $product->get_ID();
+				$product_name      = $product->get_data()['name'];
+				$thumbnail         = $product->get_image( 'product-thumbnail', array() );
+				$product_price     = $product->get_price_html();
+				$product_permalink = $product->is_visible() ? $product->get_permalink() : '';
 
-		wp_send_json( $data );
+				if ( ! $product_price ) {
+					$product_price = '';
+				}
+
+				echo '<li class="wishlist-item">';
+
+				echo '<div class="product-image">';
+				if ( empty( $product_permalink ) ) {
+					echo porto_filter_output( $thumbnail );
+				} else {
+					echo '<a href="' . esc_url( $product_permalink ) . '">' . porto_filter_output( $thumbnail ) . '</a>';
+				}
+				echo '</div>';
+
+				echo '<div class="product-details">';
+
+				if ( empty( $product_permalink ) ) {
+					echo porto_filter_output( $product_name );
+				} else {
+					echo '<a href="' . esc_url( $product_permalink ) . '" class="text-v-dark">' . porto_filter_output( $product_name ) . '</a>';
+				}
+				echo '<span class="quantity">' . porto_filter_output( $product_price ) . '</span>';
+				echo '<span class="remove_from_wishlist remove" data-product_id="' . absint( $id ) . '"></span>';
+
+				echo '</div>';
+				echo '<div class="ajax-loading"></div>';
+
+				echo '</li>';
+			}
+		}
+		?>
+		</ul>
+		<a href="<?php echo esc_url( YITH_WCWL()->get_wishlist_url() ); ?>" class="btn btn-dark btn-modern btn-block btn-sm"><?php esc_html_e( 'Go To Wishlist', 'porto' ); ?></a>
+		<?php
+		endif;
+		// phpcs:enable
+		exit();
 	}
-	// phpcs:enable
-}
 
-// ajax remove cart item
-add_action( 'wp_ajax_porto_cart_item_remove', 'porto_cart_item_remove' );
-add_action( 'wp_ajax_nopriv_porto_cart_item_remove', 'porto_cart_item_remove' );
-function porto_cart_item_remove() {
-	//check_ajax_referer( 'porto-nonce', 'nonce' );
-	// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
-	$cart         = WC()->instance()->cart;
-	$cart_id      = sanitize_text_field( $_POST['cart_id'] );
-	$cart_item_id = $cart->find_product_in_cart( $cart_id );
-	if ( $cart_item_id ) {
-		$cart->set_quantity( $cart_item_id, 0 );
+	// remove notice after remove product from the offcanvas wishlist
+	if ( isset( $_POST['action'] ) && 'remove_from_wishlist' == $_POST['action'] && isset( $_POST['from'] ) && 'theme' == $_POST['from'] ) {
+		add_filter( 'yith_wcwl_product_removed_text', '__return_false' );
 	}
-	$cart_ajax = new WC_AJAX();
-	$cart_ajax->get_refreshed_fragments();
-	// phpcs:enable
-	exit();
-}
-// refresh cart fragment
-add_action( 'wp_ajax_porto_refresh_cart_fragment', 'porto_refresh_cart_fragment' );
-add_action( 'wp_ajax_nopriv_porto_refresh_cart_fragment', 'porto_refresh_cart_fragment' );
-function porto_refresh_cart_fragment() {
-	//check_ajax_referer( 'porto-nonce', 'nonce' );
-	// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
-	$cart_ajax = new WC_AJAX();
-	$cart_ajax->get_refreshed_fragments();
-	// phpcs:enable
-	exit();
-
-}
-
-// refresh wishlist count
-add_action( 'wp_ajax_porto_refresh_wishlist_count', 'porto_refresh_wishlist_count' );
-add_action( 'wp_ajax_nopriv_porto_refresh_wishlist_count', 'porto_refresh_wishlist_count' );
-function porto_refresh_wishlist_count() {
-	//check_ajax_referer( 'porto-nonce', 'nonce' );
-	// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
-	if ( class_exists( 'Woocommerce' ) && defined( 'YITH_WCWL' ) ) {
-		echo yith_wcwl_count_products();
-	}
-	// phpcs:enable
-	exit();
 }
 
 function porto_get_products_by_ids( $product_ids ) {
@@ -1635,13 +1713,15 @@ function porto_woocommerce_dropdown_variation_attribute_options_html( $select_ht
 
 	$html = '';
 	if ( ! empty( $options ) ) {
-		$swatch_options = $product->get_meta( 'swatch_options', true );
-		$key            = md5( sanitize_title( $attribute ) );
+		$swatch_options        = $product->get_meta( 'swatch_options', true );
+		$key                   = md5( sanitize_title( $attribute ) );
+		$show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __( 'Choose an option', 'woocommerce' ); // We'll do our best to hide the placeholder, but we'll need to show something when resetting options.
 
-		$html .= '<ul class="filter-item-list" name="' . esc_attr( $name ) . '">';
+
+		$html .= '<ul class="filter-item-list" data-name="' . esc_attr( $name ) . '">';
 		if ( $product ) {
 			$select_html  = '<select id="' . esc_attr( $id ) . '" class="' . esc_attr( $class ) . '" name="' . esc_attr( $name ) . '" data-attribute_name="attribute_' . esc_attr( sanitize_title( $attribute ) ) . '" data-show_option_none="' . ( $show_option_none ? 'yes' : 'no' ) . '">';
-			$select_html .= '<option value=""></option>';
+			$select_html .= '<option value="">' . esc_html( $show_option_none_text ) . '</option>';
 
 			$attribute_terms = array();
 
@@ -2262,6 +2342,11 @@ if ( ! function_exists( 'porto_woocommerce_subcategory_thumbnail' ) ) :
 endif;
 
 // add variable product attributes & quantity input on shop pages
+if ( class_exists( 'Uni_Cpo' ) ) {
+	remove_filter( 'woocommerce_loop_add_to_cart_link', 'uni_cpo_add_to_cart_button', 10 );
+	add_filter( 'porto_cpo_add_to_cart_url', 'porto_cpo_add_to_cart_url', 10, 2 );
+	add_filter( 'woocommerce_loop_add_to_cart_args', 'porto_cpo_add_to_cart_args', 10, 2 );
+}
 add_filter( 'woocommerce_loop_add_to_cart_link', 'porto_woocommerce_display_quantity_input_on_shop_page', 10, 2 );
 add_action( 'woocommerce_after_shop_loop_item', 'porto_woocommerce_display_variation_on_shop_page' );
 
@@ -2279,7 +2364,31 @@ function porto_woocommerce_display_quantity_input_on_shop_page( $html, $product 
 			)
 		);
 	}
+
 	return $html;
+}
+
+function porto_cpo_add_to_cart_url( $add_to_cart_url, $product ) {
+	if ( class_exists( 'Uni_Cpo' ) ) {
+		$product_id   = intval( $product->get_id() );
+		$product_data = Uni_Cpo_Product::get_product_data_by_id( $product_id );
+		if ( 'on' === $product_data['settings_data']['cpo_enable'] ) {
+			return get_permalink( $product_id );
+		}
+	}
+	return $add_to_cart_url;
+}
+
+function porto_cpo_add_to_cart_args( $args, $product ) {
+
+	if ( class_exists( 'Uni_Cpo' ) ) {
+		$product_id   = intval( $product->get_id() );
+		$product_data = Uni_Cpo_Product::get_product_data_by_id( $product_id );
+		if ( ! empty( $args['class'] ) && 'on' === $product_data['settings_data']['cpo_enable'] ) {
+			$args['class'] = str_replace( 'ajax_add_to_cart', '', $args['class'] );
+		}
+	}
+	return $args;
 }
 
 function porto_woocommerce_display_variation_on_shop_page() {
@@ -2377,7 +2486,7 @@ if ( ! function_exists( 'porto_woocommerce_add_to_cart_notification_html' ) ) :
 				<div class="msg-box">
 					<div class="msg">
 						<?php /* translators: product name div */ ?>
-						<?php printf( esc_html__( '%s has been added to your cart', 'porto' ), '<div class="product-name"></div>' ); ?>:
+						<?php printf( esc_html__( '%s has been added to your cart.', 'porto' ), '<div class="product-name"></div>' ); ?>
 					</div>
 				</div>
 				<button class="btn btn-modern btn-sm btn-gray viewcart btn-sm" data-link=""><?php esc_html_e( 'View Cart', 'porto' ); ?></button>
@@ -2570,4 +2679,116 @@ if ( class_exists( 'WCFMmp' ) ) {
 		}
 		return $args;
 	}
+}
+
+
+/**
+ * Track Product views
+ *
+ * @since 6.2.0
+ */
+/**
+ * Track product views.
+ */
+function porto_wc_track_product_view() {
+	if ( ! is_singular( 'product' ) ) {
+		return;
+	}
+	$recently_viewed = get_theme_mod( '_recently_viewed', array() );
+	if ( empty( $recently_viewed ) ) {
+		return;
+	}
+
+	global $post;
+
+	if ( empty( $_COOKIE['woocommerce_recently_viewed'] ) ) { // @codingStandardsIgnoreLine.
+		$viewed_products = array();
+	} else {
+		$viewed_products = wp_parse_id_list( (array) explode( '|', wp_unslash( $_COOKIE['woocommerce_recently_viewed'] ) ) ); // @codingStandardsIgnoreLine.
+	}
+
+	// Unset if already in viewed products list.
+	$keys = array_flip( $viewed_products );
+
+	if ( isset( $keys[ $post->ID ] ) ) {
+		unset( $viewed_products[ $keys[ $post->ID ] ] );
+	}
+
+	$viewed_products[] = $post->ID;
+
+	if ( count( $viewed_products ) > 15 ) {
+		array_shift( $viewed_products );
+	}
+
+	// Store for session only.
+	wc_setcookie( 'woocommerce_recently_viewed', implode( '|', $viewed_products ) );
+}
+
+add_action( 'template_redirect', 'porto_wc_track_product_view', 20 );
+
+if ( is_admin() ) {
+	// save info if recently viewed products widget is used in the page
+	add_action(
+		'save_post',
+		function( $post_id, $post = false ) {
+			if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+				return;
+			}
+			if ( ! function_exists( 'get_current_screen' ) ) {
+				return;
+			}
+			if ( 'inherit' == get_post_status( $post_id ) ) {
+				return;
+			}
+
+			$is_used     = false;
+			$widget_used = get_theme_mod( '_recently_viewed', array() );
+			if ( isset( $_POST['action'] ) && 'elementor_ajax' == $_POST['action'] ) {
+				$elementor_data = get_post_meta( $post_id, '_elementor_data', true );
+				if ( $elementor_data && ( false !== strpos( $elementor_data, '"status":"viewed"' ) || false !== strpos( $elementor_data, '"widgetType":"wp-widget-woocommerce_recently_viewed_products"' ) ) ) {
+					$is_used = true;
+				}
+			} else {
+				$post_content = '';
+				$screen       = get_current_screen();
+				if ( $screen && 'post' == $screen->base && isset( $_POST['content'] ) ) {
+					$post_content = wp_unslash( $_POST['content'] );
+				}
+				if ( ! $post_content ) {
+					return;
+				}
+				if ( false !== stripos( $post_content, '[porto_widget_woo_recently_viewed ' ) ) {
+					$is_used = true;
+				} elseif ( false !== stripos( $post_content, '[porto_products ' ) && preg_match( '/\[porto_products[^]]*status="viewed"/', $post_content ) ) {
+					$is_used = true;
+				}
+			}
+
+			if ( $is_used ) {
+				if ( ! in_array( $post_id, $widget_used ) ) {
+					$widget_used[] = (int) $post_id;
+				}
+			} else {
+				$index = array_search( $post_id, $widget_used );
+				if ( false !== $index ) {
+					unset( $widget_used[ $index ] );
+				}
+			}
+			set_theme_mod( '_recently_viewed', $widget_used );
+		}
+	);
+
+	add_action(
+		'delete_post',
+		function( $post_id ) {
+			$widget_used = get_theme_mod( '_recently_viewed', array() );
+			if ( in_array( $post_id, $widget_used ) ) {
+				$index = array_search( $post_id, $widget_used );
+				if ( false !== $index ) {
+					unset( $widget_used[ $index ] );
+					set_theme_mod( '_recently_viewed', $widget_used );
+				}
+			}
+		}
+	);
 }

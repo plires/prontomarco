@@ -64,7 +64,7 @@
 						<p><?php esc_html_e( 'Where can I find my purchase code?', 'porto' ); ?></p>
 						<ol>
 							<?php /* translators: $1: opening A tag which has link to the Themeforest downloads page $2: closing A tag */ ?>
-							<li><?php printf( esc_html__( 'Please go to %1$sThemeForest.net/downloads%2$s', 'porto' ), '<a target="_blank" href="https://themeforest.net/downloads">', '</a>' ); ?></li>
+							<li><?php printf( esc_html__( 'Please go to %1$sThemeForest.net/downloads%2$s', 'porto' ), '<a target="_blank" href="https://themeforest.net/downloads" rel="noopener noreferrer">', '</a>' ); ?></li>
 							<?php /* translators: $1 and $2 opening and closing strong tags respectively */ ?>
 							<li><?php printf( esc_html__( 'Click the %1$sDownload%2$s button in Porto row', 'porto' ), '<strong>', '</strong>' ); ?></li>
 							<?php /* translators: $1 and $2 opening and closing strong tags respectively */ ?>
@@ -76,14 +76,14 @@
 				</div>
 				<p class="about-description">
 					<?php /* translators: $1: opening A tag which has link to the Porto documentation $2: closing A tag */ ?>
-					<?php printf( esc_html__( 'Before you get started, please be sure to always check out %1$sthis documentation%2$s. We outline all kinds of good information, and provide you with all the details you need to use Porto.', 'porto' ), '<a href="http://www.portotheme.com/wordpress/porto/documentation" target="_blank">', '</a>' ); ?>
+					<?php printf( esc_html__( 'Before you get started, please be sure to always check out %1$sthis documentation%2$s. We outline all kinds of good information, and provide you with all the details you need to use Porto.', 'porto' ), '<a href="http://www.portotheme.com/wordpress/porto/documentation" target="_blank" rel="noopener noreferrer">', '</a>' ); ?>
 				</p>
 				<p class="about-description">
 					<?php /* translators: $1: opening A tag which has link to the Porto support $2: closing A tag */ ?>
-					<?php printf( esc_html__( 'If you are unable to find your answer in our documentation, we encourage you to contact us through %1$ssupport page%2$s with your site CPanel (or FTP) and WordPress admin details. We are very happy to help you and you will get reply from us more faster than you expected.', 'porto' ), '<a href="http://www.portotheme.com/support" target="_blank">', '</a>' ); ?>
+					<?php printf( esc_html__( 'If you are unable to find your answer in our documentation, we encourage you to contact us through %1$ssupport page%2$s with your site CPanel (or FTP) and WordPress admin details. We are very happy to help you and you will get reply from us more faster than you expected.', 'porto' ), '<a href="http://www.portotheme.com/support" target="_blank" rel="noopener noreferrer">', '</a>' ); ?>
 				</p>
 				<p class="about-description">
-					<a href="https://www.portotheme.com/wordpress/porto/documentation/changelog/" target="_blank"><?php esc_html_e( 'Click here to view change logs.', 'porto' ); ?></a>
+					<a href="https://www.portotheme.com/wordpress/porto/documentation/changelog/" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Click here to view change logs.', 'porto' ); ?></a>
 				</p>
 			</div>
 			<div class="porto-thanks">

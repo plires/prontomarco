@@ -19,9 +19,8 @@ if ( ! class_exists( 'Porto_Elementor_Pro_Compatibility' ) ) :
 		 */
 		public function __construct() {
 
-			add_action( 'init', array( $this, 'init' ), 20 );
-
 			add_action( 'elementor/theme/register_locations', array( $this, 'register_locations' ) );
+			add_action( 'elementor/theme/register_locations', array( $this, 'remove_header_footer_locations' ), 105 );
 
 			add_action( 'porto_elementor_pro_header_location', array( $this, 'do_header' ) );
 			add_action( 'porto_elementor_pro_footer_location', array( $this, 'do_footer' ) );
@@ -57,11 +56,13 @@ if ( ! class_exists( 'Porto_Elementor_Pro_Compatibility' ) ) :
 			elementor_theme_do_location( 'footer' );
 		}
 
-		public function init() {
+		public function remove_header_footer_locations() {
 			$module        = ElementorPro\Modules\ThemeBuilder\Module::instance();
 			$theme_support = $module->get_component( 'theme_support' );
 			if ( $theme_support ) {
-				remove_action( 'elementor/theme/register_locations', array( $theme_support, 'after_register_locations' ), 99 );
+				remove_action( 'get_header', array( $theme_support, 'get_header' ) );
+				remove_action( 'get_footer', array( $theme_support, 'get_footer' ) );
+				remove_filter( 'show_admin_bar', array( $theme_support, 'filter_admin_bar_from_body_open' ) );
 			}
 		}
 	}

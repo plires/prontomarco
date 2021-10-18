@@ -666,8 +666,8 @@ if ( ! class_exists( 'PortoBuildersShop' ) ) :
 					999
 				);
 				add_filter(
-					'block_categories',
-					function ( $categories, $post ) {
+					'block_categories_all',
+					function ( $categories ) {
 						return array_merge(
 							$categories,
 							array(
@@ -680,7 +680,7 @@ if ( ! class_exists( 'PortoBuildersShop' ) ) :
 						);
 					},
 					11,
-					2
+					1
 				);
 			}
 

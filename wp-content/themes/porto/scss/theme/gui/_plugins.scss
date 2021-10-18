@@ -66,18 +66,20 @@ ul[class^="wsp-"] li a:before,
     font-weight: 600;
     font-size: 12px
 }
-.porto-tooltip-wrap.bs-tooltip-top .arrow:before {
+.porto-tooltip-wrap.bs-tooltip-top .tooltip-arrow:before {
+    top: 0;
     border-top-color: #0071a1;
     opacity: .7;
     transition: opacity .2s
 }
-.porto-tooltip-wrap.bs-tooltip-bottom .arrow::before {
+.porto-tooltip-wrap.bs-tooltip-bottom .tooltip-arrow::before {
+    bottom: 0;
     border-bottom-color: #0071a1;
     opacity: .7;
     transition:opacity .2s
 }
-.porto-tooltip-wrap.bs-tooltip-top:hover .arrow::before,
-.porto-tooltip-wrap.bs-tooltip-bottom:hover .arrow::before {
+.porto-tooltip-wrap.bs-tooltip-top:hover .tooltip-arrow::before,
+.porto-tooltip-wrap.bs-tooltip-bottom:hover .tooltip-arrow::before {
     opacity: 1
 }
 /* fix Bootstrap tooltip on magnific popup */
@@ -98,7 +100,7 @@ ul[class^="wsp-"] li a:before,
     }
     label.wpforms-error {
         display: block;
-        color: var(--danger);
+        color: var(--bs-danger);
         font-size: .8em;
         margin-top: .25rem
     }

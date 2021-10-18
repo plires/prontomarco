@@ -9,9 +9,11 @@ if ( ! $porto_settings['share-enable'] ) {
 
 echo '<div class="share-links">';
 
-$nofollow = '';
+$nofollow = ' ';
 if ( $porto_settings['share-nofollow'] ) {
-	$nofollow = ' rel="nofollow"';
+	$nofollow = ' rel="noopener noreferrer nofollow"';
+} else {
+	$nofollow = ' rel="noopener noreferrer"';
 }
 
 $image     = wp_get_attachment_url( get_post_thumbnail_id() );
@@ -30,7 +32,7 @@ if ( class_exists( 'YITH_WCWL' ) && is_user_logged_in() ) {
 }
 $title = esc_attr( get_the_title() );
 if ( porto_is_ajax() && isset( $_GET['action'] ) ) {
-	$tooltip = ' data-tooltip';
+	$tooltip = ' data-bs-tooltip';
 } else {
 	$page_share_pos = ( isset( $porto_settings['page-share-pos'] ) && $porto_settings['page-share-pos'] ) ? $porto_settings['page-share-pos'] : '';
 	$position       = '';
@@ -51,7 +53,7 @@ if ( porto_is_ajax() && isset( $_GET['action'] ) ) {
 		$position = 'bottom';
 	}
 
-	$tooltip = " data-tooltip data-placement='" . esc_attr( $position ) . "'";
+	$tooltip = " data-bs-tooltip data-bs-placement='" . esc_attr( $position ) . "'";
 }
 
 $extra_attr = 'target="_blank" ' . $nofollow . $tooltip;

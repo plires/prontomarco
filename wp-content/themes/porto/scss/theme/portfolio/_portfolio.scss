@@ -190,6 +190,7 @@ h5.portfolio-details-title {
 
 .row > .portfolio-carousel {
     width: 100%;
+    padding: 0;
 }
 .portfolio-carousel {
     .portfolio-item {
@@ -889,4 +890,11 @@ html.gecko {
             margin-#{$left}: 8px;
         }
     }
+}
+
+.porto-grid-item .porto-portfolios {
+    margin-bottom: 0
+}
+.porto-grid-item .portfolio-row .portfolio {
+    padding-bottom: 0
 }

@@ -37,6 +37,7 @@ if ( ! class_exists( 'Porto_Video_Thumbnail' ) ) :
 			// from library
 			$ids = get_post_meta( get_the_ID(), 'porto_product_video_thumbnails' );
 			if ( ! empty( $ids ) ) {
+				wp_enqueue_script( 'jquery-fitvids' );
 				wp_enqueue_script( 'porto-video-thumbnail' );
 
 				foreach ( $ids as $id ) {
@@ -59,23 +60,50 @@ if ( ! class_exists( 'Porto_Video_Thumbnail' ) ) :
 
 			// with video thumbnail shortcode
 			$video_code = get_post_meta( get_the_ID(), 'porto_product_video_thumbnail_shortcode', true );
+			$video_html = '';
 			if ( false !== strpos( $video_code, '[video src="' ) ) {
+				wp_enqueue_script( 'jquery-fitvids' );
 				wp_enqueue_script( 'porto-video-thumbnail' );
 
 				preg_match( '/poster="([^\"]*)"/', $video_code, $poster );
 				$poster = empty( $poster ) ? $featured : $poster[1];
-				$video_code = do_shortcode( preg_replace( '/poster="([^\"]*)"/', '', $video_code ) );
-				?>
+				$video_html = do_shortcode( preg_replace( '/poster="([^\"]*)"/', '', $video_code ) );
+			} else {
+				$youtube_id = preg_match( '/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/', $video_code, $matches );
+				if ( ! empty( $matches ) && ! empty( $matches[1] ) ) {
+					$youtube_id = $matches[1];
+				} else {
+					$youtube_id = '';
+				}
+				if ( ! $youtube_id ) {
+					$vimeo_id = preg_match( '/^(?:https?:\/\/)?(?:www|player\.)?(?:vimeo\.com\/)?(?:video\/|external\/)?(\d+)([^.?&#"\'>]?)/', $video_code, $matches );
+					if ( ! empty( $matches ) && ! empty( $matches[1] ) ) {
+						$vimeo_id = $matches[1];
+					} else {
+						$vimeo_id = '';
+					}
+				}
+				$poster = $featured;
+			}
 
+			if ( $video_html ) {
+				wp_enqueue_script( 'jquery-fitvids' );
+				wp_enqueue_script( 'porto-video-thumbnail' );
+				?>
 				<div class="img-thumbnail">
-					<a href="#" class="porto-video-thumbnail-viewer"><img src="<?php echo esc_url( $poster ); ?>"></a>
+					<a href="<?php echo esc_url( $video_code ); ?>" class="porto-video-thumbnail-viewer popup-<?php echo ! empty( $youtube_id ) ? 'youtube' : 'vimeo'; ?>"><img src="<?php echo esc_url( $poster ); ?>"></a>
 					<script type="text/template" class="porto-video-thumbnail-data">
 						<figure class="post-media fit-video">
-						<?php echo porto_strip_script_tags( $video_code ); ?>
+						<?php echo porto_strip_script_tags( $video_html ); ?>
 						</figure>
 					</script>
 				</div>
-
+				<?php
+			} elseif ( ! empty( $youtube_id ) || ! empty( $vimeo_id ) ) {
+				?>
+				<div class="img-thumbnail">
+					<a href="<?php echo esc_url( $video_code ); ?>" class="porto-video-thumbnail-viewer popup-<?php echo ! empty( $youtube_id ) ? 'youtube' : 'vimeo'; ?>"><img src="<?php echo esc_url( $poster ); ?>"></a>
+				</div>
 				<?php
 			}
 			return ob_get_clean();

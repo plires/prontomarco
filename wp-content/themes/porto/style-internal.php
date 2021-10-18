@@ -211,9 +211,9 @@ endif;
 <?php if ( $is_wide ) : ?>
 	@media (min-width: 1500px) {
 		.left-sidebar.col-lg-3,
-		.right-sidebar.col-lg-3 { -ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%; }
-		.main-content.col-lg-9 { -ms-flex: 0 0 80%; flex: 0 0 80%; max-width: 80%; }
-		.main-content.col-lg-6 { -ms-flex: 0 0 60%; flex: 0 0 60%; max-width: 60%; }
+		.right-sidebar.col-lg-3 { flex: 0 0 auto; width: 20%; }
+		.main-content.col-lg-9 { flex: 0 0 auto; width: 80%; }
+		.main-content.col-lg-6 { flex: 0 0 auto; width: 60%; }
 	}
 	<?php
 endif;
@@ -565,8 +565,8 @@ if ( isset( $porto_product_layout ) && $porto_product_layout ) :
 		}
 	<?php elseif ( 'left_sidebar' === $porto_product_layout ) : ?>
 		@media (min-width: 1200px) {
-			.product-summary-wrap .summary-before { -webkit-flex: 0 0 54%; -ms-flex: 0 0 54%; flex: 0 0 54%; max-width: 54%; }
-			.product-summary-wrap .summary { -webkit-flex: 0 0 46%; -ms-flex: 0 0 46%; flex: 0 0 46%; max-width: 46%; }
+			.product-summary-wrap .summary-before { flex: 0 0 auto; width: 54%; }
+			.product-summary-wrap .summary { flex: 0 0 auto; width: 46%; }
 		}
 		.woocommerce-tabs .resp-tabs-list { display: none; }
 		.woocommerce-tabs h2.resp-accordion { display: block; }
@@ -584,7 +584,7 @@ if ( isset( $porto_product_layout ) && $porto_product_layout ) :
 		#product-tab:not(:last-child) { margin-bottom: 2rem; }
 	<?php elseif ( 'builder' === $porto_product_layout ) : ?>
 		.product-layout-image { position: relative; }
-		.product-layout-image .summary-before { flex: 0 0 100%; max-width: 100%; }
+		.product-layout-image .summary-before { flex: 0 0 auto; width: 100%; }
 		.product-layout-image .labels { margin: 0; }
 		.product-images-block .img-thumbnail { margin-bottom: <?php echo (int) $porto_settings['grid-gutter-width']; ?>px; }
 		.product-images-block .product-images:hover .zoom { opacity: 0; }
@@ -1476,7 +1476,7 @@ if ( $porto_shop_filter_layout ) :
 			.main-content-wrap .left-sidebar { <?php echo porto_filter_output( $left ); ?>: -25%; }
 			.main-content-wrap .right-sidebar { <?php echo porto_filter_output( $right ); ?>: -25%; }
 			.main-content-wrap .main-content { transition: all 0.3s linear 0s; }
-			.main-content-wrap:not(.opened) .main-content { margin-<?php echo porto_filter_output( $left ); ?>: -25%; max-width: 100%; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; min-height: 1px; }
+			.main-content-wrap:not(.opened) .main-content { margin-<?php echo porto_filter_output( $left ); ?>: -25%; width: 100%; min-height: 1px; }
 			.column2-right-sidebar .main-content-wrap:not(.opened) .main-content { margin-<?php echo porto_filter_output( $right ); ?>: -25%; margin-<?php echo porto_filter_output( $left ); ?>: 0; }
 			.main-content-wrap.opened .sidebar { z-index: 0; visibility: visible; }
 			.main-content-wrap.opened .left-sidebar { <?php echo porto_filter_output( $left ); ?>: 0; }
@@ -1564,21 +1564,21 @@ if ( $porto_shop_filter_layout ) :
 
 		<?php if ( in_array( $porto_layout, porto_options_both_sidebars() ) ) : ?>
 			@media (min-width: 768px) {
-				.main-content { flex: 0 0 66.6666%; max-width: 66.6666% }
+				.main-content { flex: 0 0 auto; width: 66.6666% }
 			}
 			@media (min-width: 992px) {
-				.main-content { flex: 0 0 75%; max-width: 75% }
+				.main-content { flex: 0 0 auto; width: 75% }
 			}
 		<?php else : ?>
-			.main-content { flex: 0 0 100%; max-width: 100% }
+			.main-content { flex: 0 0 auto; width: 100% }
 		<?php endif; ?>
 		<?php if ( 'wide-both-sidebar' == $porto_layout ) : ?>
 			@media (min-width: 1500px) {
-				.main-content.col-lg-6 { flex: 0 0 80%; max-width: 80% }
-				.right-sidebar.col-lg-3 { flex: 0 0 20%; max-width: 20% }
+				.main-content.col-lg-6 { flex: 0 0 auto; width: 80% }
+				.right-sidebar.col-lg-3 { flex: 0 0 auto; width: 20% }
 			}
 		<?php endif; ?>
-		.mobile-sidebar.sidebar { position: fixed; padding-top: 0; padding-bottom: 0; <?php echo porto_filter_output( $left ); ?>: 0; top: 0; height: 100%; z-index: 9000; padding: 0; max-width: none; flex: none; transform: translateX(<?php echo porto_filter_output( $rtl ? '100' : '-100' ); ?>%); transition: transform .4s; background: <?php echo ! $is_dark ? '#fff' : esc_html( $porto_settings['color-dark'] ); ?> }
+		.mobile-sidebar.sidebar { position: fixed; padding-top: 0; padding-bottom: 0; <?php echo porto_filter_output( $left ); ?>: 0; top: 0; height: 100%; z-index: 9000; padding: 0; flex: none; transform: translateX(<?php echo porto_filter_output( $rtl ? '100' : '-100' ); ?>%); transition: transform .4s; background: <?php echo ! $is_dark ? '#fff' : esc_html( $porto_settings['color-dark'] ); ?> }
 		html.sidebar-opened .mobile-sidebar { transform: translateX(0) }
 		.mobile-sidebar .sidebar-content { overflow-x: hidden; overflow-y: scroll; height: 100%; padding: .75rem !important; -webkit-overflow-scrolling: touch; }
 		.mobile-sidebar .sidebar-content::-webkit-scrollbar { width: 5px; }
@@ -1650,7 +1650,7 @@ if ( class_exists( 'Woocommerce' ) && ! is_user_logged_in() && ( ! isset( $porto
 	.porto-social-login-section .facebook { background: #3a589d; }
 	.porto-social-login-section .twitter { background: #1aa9e1; }
 	.featured-box .porto-social-login-section i { color: #fff; }
-	.porto-social-login-section .social-button:hover { background: var(--primary); }
+	.porto-social-login-section .social-button:hover { background: var(--bs-primary); }
 	<?php if ( 'yes' !== get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 		#login-form-popup { max-width: 480px; }
 	<?php endif; ?>
@@ -1829,6 +1829,7 @@ if ( ! porto_is_elementor_preview() ) {
 	}
 } else {
 	?>
+	.elementor-widget-porto_steps .elementor-widget-container:after { content: ''; display: table; clear: both }
 	.elementor-edit-area-active .elementor-inner-section.h-100:first-child { margin-top: 0 }
 	<?php
 }

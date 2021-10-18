@@ -37,7 +37,7 @@ if ( current_user_can( 'edit_posts' ) || current_user_can( 'edit_pages' ) ) {
 			},
 			5
 		);
-	} elseif ( defined( 'WPB_VC_VERSION' ) && ! empty( $_REQUEST['vc_editable'] ) ) { // WPBakery Frontend Editor
+	} elseif ( defined( 'WPB_VC_VERSION' ) && ! empty( $_REQUEST['vc_editable'] ) ) { // WPB Frontend editor
 		require_once PORTO_LIB . '/lib/porto-studio/porto-studio.php';
 	}
 }

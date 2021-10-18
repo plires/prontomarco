@@ -35,7 +35,7 @@ if ( ! empty( $product_tabs ) || ! empty( $custom_tabs_title ) || $global_tab_ti
 		ob_start();
 	}
 	?>
-		<ul class="resp-tabs-list">
+		<ul class="resp-tabs-list" role="tablist">
 			<?php
 			$i = 0;
 			foreach ( $product_tabs as $key => $product_tab ) :

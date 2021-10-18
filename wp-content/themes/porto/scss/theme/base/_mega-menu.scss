@@ -27,6 +27,9 @@
             > .avatar {
                 /*display: none;*/
                 margin-#{$right}: .5rem;
+                @if $rtl == 1 {
+                    float: right;
+                }
             }
             > .avatar img {
                 margin-top: -5px;
@@ -526,6 +529,22 @@
             font-size: 1em;
             margin: side-values(0 0 0 5px);
             line-height: 1;
+        }
+    }
+}
+
+.mega-menu .narrow {
+    .sub-menu.pos-left ul.sub-menu {
+        #{$right}: 100%;
+        #{$left}: auto;
+    }
+}
+
+.sub-menu.pos-left li.menu-item-has-children:hover {
+    > a {
+        &:before {
+            margin-#{$right}: 6px;
+            content: if-ltr($fa-var-chevron-left, $fa-var-chevron-right);
         }
     }
 }

@@ -337,7 +337,7 @@ class Porto_Elementor_Pricing_Table_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<#
 			view.addRenderAttribute( 'wrapper', 'class', 'pricing-table' );

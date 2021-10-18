@@ -743,14 +743,14 @@ class Porto_Elementor_Info_Box_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<#
 			if ( settings.icon_img_url && ! settings.icon_img.url ) {
 				settings.icon_img.url = settings.icon_img_url;
 			}
 			view.addRenderAttribute( 'wrapper', 'class', 'porto-sicon-box' );
-			if ( 'top' == settings.pos && 'center' != settings.h_align ) {
+			if ( 'top' == settings.pos && 'center' != settings.h_align && settings.h_align ) {
 				view.addRenderAttribute( 'wrapper', 'class', 'text-' + settings.h_align );
 			}
 			if ( settings.hover_effect ) {

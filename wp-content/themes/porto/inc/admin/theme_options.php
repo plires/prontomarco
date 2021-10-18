@@ -132,6 +132,83 @@ if ( ! porto_is_ajax() ) {
 					remove_theme_mod( '_vc_blocks_menu' );
 				}
 
+				if ( version_compare( $porto_cur_version, '6.2.0', '<' ) && defined( 'PORTO_BUILDERS_PATH' ) ) {
+					$query = new WP_Query(
+						array(
+							'post_type'      => 'porto_builder',
+							'post_status'    => 'publish',
+							'posts_per_page' => -1,
+							'fields'         => 'ids',
+							'meta_query'     => array(
+								array(
+									'key'     => '_porto_builder_conditions',
+									'compare' => 'EXISTS',
+								),
+							),
+						)
+					);
+					if ( is_array( $query->posts ) && ! empty( $query->posts ) ) {
+						if ( ! class_exists( 'Porto_Builder_Condition' ) ) {
+							require_once PORTO_BUILDERS_PATH . 'lib/class-condition.php';
+						}
+						$cls = new Porto_Builder_Condition();
+
+						set_theme_mod( 'builder_conditions', array() );
+
+						if ( isset( $_POST['post_id'] ) ) {
+							$post_id_backup = $_POST['post_id'];
+						}
+						if ( isset( $_POST['type'] ) ) {
+							$type_backup = $_POST['type'];
+						}
+						foreach ( $query->posts as $post_id ) {
+							$conditions = get_post_meta( $post_id, '_porto_builder_conditions', true );
+							if ( empty( $conditions ) ) {
+								continue;
+							}
+							$_POST['post_id']     = $post_id;
+							$_POST['type']        = array();
+							$_POST['object_type'] = array();
+							$_POST['object_id']   = array();
+							$_POST['object_name'] = array();
+							foreach ( $conditions as $index => $condition ) {
+								if ( ! is_array( $condition ) || 4 !== count( $condition ) ) {
+									continue;
+								}
+								$_POST['type'][]        = $condition[0];
+								$_POST['object_type'][] = $condition[1];
+								$_POST['object_id'][]   = $condition[2];
+								$_POST['object_name'][] = $condition[3];
+							}
+							$cls->save_condition( true, (int) $post_id );
+						}
+						if ( isset( $post_id_backup ) ) {
+							$_POST['post_id'] = $post_id_backup;
+						} else {
+							unset( $_POST['post_id'] );
+						}
+						if ( isset( $type_backup ) ) {
+							$_POST['type'] = $type_backup;
+						} else {
+							unset( $_POST['type'] );
+						}
+						unset( $_POST['object_type'], $_POST['object_id'], $_POST['object_name'] );
+					}
+
+					// reset product label options
+					global $porto_settings, $reduxPortoSettings;
+					$product_default_labels = array();
+					if ( ! empty( $porto_settings['product-hot'] ) ) {
+						$product_default_labels[] = 'hot';
+					}
+					if ( ! empty( $porto_settings['product-sale'] ) ) {
+						$product_default_labels[] = 'sale';
+					}
+					if ( ! empty( $product_default_labels ) && isset( $reduxPortoSettings->ReduxFramework ) ) {
+						$reduxPortoSettings->ReduxFramework->set( 'product-labels', $product_default_labels );
+					}
+				}
+
 				update_option( 'porto_version', PORTO_VERSION );
 			},
 			20

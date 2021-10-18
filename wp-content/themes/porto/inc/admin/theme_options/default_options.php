@@ -255,16 +255,16 @@
 	"mainmenu-toplevel-alink-color":"#ffffff",
 	"mainmenu-toplevel-abg-color":"#0088cc",
 	"mainmenu-toplevel-padding1":{
-		"padding-top":0,
-		"padding-bottom":0,
-		"padding-left":0,
-		"padding-right":0
+		"padding-top":10,
+		"padding-bottom":10,
+		"padding-left":16,
+		"padding-right":16
 	},
 	"mainmenu-toplevel-padding2":{
-		"padding-top":0,
-		"padding-bottom":0,
-		"padding-left":0,
-		"padding-right":0
+		"padding-top":9,
+		"padding-bottom":9,
+		"padding-left":14,
+		"padding-right":14
 	},
 	"mainmenu-popup-border":"",
 	"mainmenu-popup-border-color":"#0088cc",
@@ -568,9 +568,7 @@
 	"product-upsells":true,
 	"product-upsells-count":"10",
 	"product-upsells-cols":"4",
-	"product-hot":true,
 	"product-hot-label":"",
-	"product-sale":true,
 	"product-sale-label":"",
 	"product-sale-percent":true,
 	"product-stock":true,

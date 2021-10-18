@@ -10,7 +10,7 @@
 
 global $porto_settings;
 
-$share = porto_get_meta_value( 'page_share' );
+$share         = porto_get_meta_value( 'page_share' );
 $share_enabled = $porto_settings['share-enable'] && 'no' !== $share && ( 'yes' === $share || ( 'yes' !== $share && $porto_settings['page-share'] ) );
 
 do_action( 'yith_wcwl_before_wishlist_share', $wishlist );
@@ -31,7 +31,7 @@ if ( ! $share_enabled && is_page() && get_option( 'yith_wcwl_wishlist_page_id' )
 		$porto_settings['share-facebook'] = '1';
 	}
 	if ( $share_twitter_enabled ) {
-		$porto_settings['share-twitter']  = '1';
+		$porto_settings['share-twitter'] = '1';
 	}
 	if ( $share_pinterest_enabled ) {
 		$porto_settings['share-pinterest'] = '1';
@@ -64,7 +64,7 @@ if ( ! $share_enabled && is_page() && get_option( 'yith_wcwl_wishlist_page_id' )
 			<input class="copy-target" readonly="readonly" type="url" name="yith_wcwl_share_url" id="yith_wcwl_share_url" value="<?php echo esc_attr( $share_link_url ); ?>"/>
 			<?php echo ( ! empty( $share_link_url ) ) ? sprintf( '<small>%s <span class="copy-trigger">%s</span> %s</small>', esc_html__( '(Now', 'yith-woocommerce-wishlist' ), esc_html__( 'copy', 'yith-woocommerce-wishlist' ), esc_html__( 'this wishlist link and share it anywhere)', 'yith-woocommerce-wishlist' ) ) : ''; ?>
 </div>
-	<?php
+		<?php
 endif;
 	do_action( 'yith_wcwl_after_wishlist_share', $wishlist );
 endif;

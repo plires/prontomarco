@@ -30,6 +30,7 @@ abstract class Less_Configurable {
 	 *
 	 * @throws Exception
 	 * @param array|object $options
+	 *
 	 */
 	public function setOptions( $options ) {
 		$options = array_intersect_key( $options, $this->defaultOptions );

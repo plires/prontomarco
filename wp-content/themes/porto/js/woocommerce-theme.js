@@ -109,7 +109,7 @@
 				if ( !$el.find( '.toggle' ).length ) {
 					$el.append( '<span class="toggle"></span>' );
 				}
-				$el.find( '.toggle' ).click( function () {
+				$el.find( '.toggle' ).on('click', function () {
 					if ( $el.next().is( ":visible" ) ) {
 						$el.parent().addClass( 'closed' );
 					} else {
@@ -198,7 +198,7 @@
 					var $this = $( this );
 					if ( !$this.prev().hasClass( 'toggle' ) ) {
 						$this.before(
-							$( '<span class="toggle"></span>' ).click( function () {
+							$( '<span class="toggle"></span>' ).on('click', function () {
 								var $that = $( this );
 								if ( $that.next().is( ":visible" ) ) {
 									$that.parent().removeClass( 'open' ).addClass( 'closed' );
@@ -349,13 +349,21 @@
 						if ( $el.find( '.product-col' ).get( 0 ) ) {
 							portoCalcSliderButtonsPosition( $slider_wrapper, $el.find( '.product-col' ).css( 'padding-left' ) );
 						}
-						//$el.find('.porto-lazyload:not(.lazy-load-loaded)').trigger('appear');
 					},
 					onInitialized: function () {
 						if ( $el.find( '.product-col' ).get( 0 ) ) {
 							portoCalcSliderButtonsPosition( $slider_wrapper, $el.find( '.product-col' ).css( 'padding-left' ) );
 						}
 						//$el.find('.cloned .porto-lazyload:not(.lazy-load-loaded)').themePluginLazyLoad();
+
+						if ( $el.find( '.owl-item.cloned' ).length ) {
+							setTimeout(function() {
+								var ins = $el.find( '.owl-item.cloned .porto-lazyload:not(.lazy-load-loaded)' ).themePluginLazyLoad( { effect: 'fadeIn', effect_speed: 400 } );
+								if (ins && ins.loadAndDestroy) {
+									ins.loadAndDestroy();
+								}
+							}, 100);
+						}
 					},
 					touchDrag: ( count == 1 ) ? false : true,
 					mouseDrag: ( count == 1 ) ? false : true
@@ -368,9 +376,15 @@
 						thisobj.calcOwlHeight( $el );
 					} );
 
-					$( window ).on( 'load', function () {
-						thisobj.calcOwlHeight( $el );
-					} );
+					if (theme.isLoaded) {
+						setTimeout(function() {
+							thisobj.calcOwlHeight( $el );
+						}, 100);
+					} else {
+						$( window ).on( 'load', function () {
+							thisobj.calcOwlHeight( $el );
+						} );
+					}
 				}
 
 				$el.owlCarousel( this.options );
@@ -455,14 +469,14 @@
 
 						// Block widgets and fragments
 						if ( item_count == 0 && ( $( 'body' ).hasClass( 'woocommerce-cart' ) || $( 'body' ).hasClass( 'woocommerce-checkout' ) ) ) {
-							$( '.page-content' ).fadeTo( '400', '0.8' ).block( {
+							$( '.page-content' ).fadeTo( 400, 0.8 ).block( {
 								message: null,
 								overlayCSS: {
 									opacity: 0.2
 								}
 							} );
 						} else {
-							$( '.shop_table.cart, .shop_table.review-order, .updating, .cart_totals' ).fadeTo( '400', '0.8' ).block( {
+							$( '.shop_table.cart, .shop_table.review-order, .updating, .cart_totals' ).fadeTo( 400, 0.8 ).block( {
 								message: null,
 								overlayCSS: {
 									opacity: 0.2
@@ -590,14 +604,16 @@
 						$mc_item.removeClass( 'count-updating' );
 					}, 1000 );
 				}
+
+				//add to cart notifaction style 2,3
+				$( 'body #loading-mask' ).remove();
+
 				$( '.add_to_cart_button.product-adding' ).each( function () {
 					var $link = $( this );
 					$link.removeClass( 'product-adding' );
 					if ( $link.hasClass( 'viewcart-style-1' ) ) {
 						$link.closest( '.product' ).find( '.viewcart' ).addClass( 'added' );
 					} else {
-						//add to cart notifaction style 2
-						$( 'body #loading-mask' ).remove();
 						$link.closest( '.product' ).find( '.loader-container' ).hide();
 						if ( $link.closest( 'li.outofstock' ).length ) {
 							return;
@@ -945,7 +961,7 @@
 				horizontal_filter = '.porto-product-filters:not(.style2)';
 
 			if ( show_toolbar )
-				$( shop_before + ',' + shop_after ).stop( true ).fadeTo( '400', '1' ).block( { message: null, overlayCSS: { opacity: 0.2 } } );
+				$( shop_before + ',' + shop_after ).stop( true ).fadeTo( 400, 1 ).block( { message: null, overlayCSS: { opacity: 0.2 } } );
 			if ( js_porto_vars.use_skeleton_screen.indexOf( 'shop' ) == -1 ) {
 				if ( $shop_container.length ) {
 					$shop_container.addClass( 'yith-wcan-loading' );
@@ -1295,7 +1311,7 @@
 				} );
 			} else {
 				$( document ).on( 'change', '.woocommerce-viewing select.count', function () {
-					$( this ).closest( 'form' ).submit();
+					$( this ).closest( 'form' ).trigger('submit');
 				} );
 			}
 		};
@@ -1312,7 +1328,7 @@
 			}
 
 			if ( $( shop_before + ',' + shop_after ).get( 0 ) )
-				$( shop_before + ',' + shop_after ).stop( true ).fadeTo( '400', '1' ).unblock();
+				$( shop_before + ',' + shop_after ).stop( true ).fadeTo( 400, 1 ).unblock();
 			if ( $( shop_container ).find( '.product' ).get( 0 ) || $( shop_after ).closest( '.porto-products' ).length ) {
 				$( shop_before + ',' + shop_after ).show().data( 'show', true );
 			} else {
@@ -1328,7 +1344,7 @@
 			}
 
 			$( '.woocommerce-ordering' ).off( 'change', 'select.orderby' ).on( 'change', 'select.orderby', function () {
-				$( this ).closest( 'form' ).submit();
+				$( this ).closest( 'form' ).trigger('submit');
 			} );
 
 			// category ajax
@@ -1385,7 +1401,7 @@
 					show_toolbar = $shop_before.data( 'show' );
 
 				if ( show_toolbar )
-					$( shop_before + ',' + shop_after ).stop( true ).show().fadeTo( '400', '0.8' ).block( { message: null, overlayCSS: { opacity: 0.2 } } );
+					$( shop_before + ',' + shop_after ).stop( true ).show().fadeTo( 400, 0.8 ).block( { message: null, overlayCSS: { opacity: 0.2 } } );
 				if ( $( shop_container ).length ) {
 					$( shop_container ).html( '' ).addClass( 'yith-wcan-loading' );
 					if ( !$( shop_container ).children( '.porto-loading-icon' ).length ) {
@@ -1420,7 +1436,7 @@
 			if ( theme.prdctfltr_ajax ) {
 				// select count
 				$( document ).on( 'change', '.woocommerce-viewing select.count', function () {
-					$( this ).closest( 'form' ).submit();
+					$( this ).closest( 'form' ).trigger('submit');
 				} );
 				// page number
 				$( document ).on( 'click', '.woocommerce-pagination:not(.load-more) a.page-numbers', function ( e ) {
@@ -1539,8 +1555,7 @@
 							currentSlide = 0,
 							count = $this.find( '> *' ).length;
 
-						$this.find( '> *:first-child' ).waitForImages( true ).done( function () {
-
+						$this.find( '> *:first-child' ).imagesLoaded( function () {
 							$thumbs_slider.owlCarousel( {
 								rtl: theme.rtl,
 								loop: false,
@@ -1629,7 +1644,12 @@
 								center: centerItem,
 								onInitialized: function () {
 									if ( $this.find( '.owl-item.cloned' ).length ) {
-										$this.find( '.porto-lazyload:not(.lazy-load-loaded)' ).themePluginLazyLoad( { effect: 'fadeIn', effect_speed: 400 } );
+										setTimeout(function() {
+											var ins = $this.find( '.owl-item.cloned .porto-lazyload:not(.lazy-load-loaded)' ).themePluginLazyLoad( { effect: 'fadeIn', effect_speed: 400 } );
+											if (ins && ins.loadAndDestroy) {
+												ins.loadAndDestroy();
+											}
+										}, 100);
 									}
 									//$this.find('.cloned .porto-lazyload:not(.lazy-load-loaded)').themePluginLazyLoad();
 									if ( theme.product_zoom && ( !( 'ontouchstart' in document ) || ( ( 'ontouchstart' in document ) && theme.product_zoom_mobile ) ) ) {
@@ -1889,7 +1909,7 @@
 									},
 									success: function ( res ) {
 										var $res = $( res );
-										$res.waitForImages( function () {
+										$res.imagesLoaded( function () {
 											$( '.skeleton-body.product' ).replaceWith( $res );
 											theme.WooQtyField.initialize();
 											$( window ).trigger( 'resize' );
@@ -2157,7 +2177,7 @@
 						}
 						if ( $thumbs_slider.length ) {
 							$thumbs_slider.trigger( 'to.owl.carousel', [ 0, duration, true ] );
-							$thumbs_slider.find( '.owl-item:eq(0)' ).click();
+							$thumbs_slider.find( '.owl-item:eq(0)' ).trigger('click');
 						}
 
 						if ( o_src ) {
@@ -2201,7 +2221,7 @@
 						}
 						if ( $thumbs_slider.length ) {
 							$thumbs_slider.trigger( 'to.owl.carousel', [ 0, duration, true ] );
-							$thumbs_slider.find( '.owl-item:eq(0)' ).click();
+							$thumbs_slider.find( '.owl-item:eq(0)' ).trigger('click');
 						}
 
 						var $shop_single_image = $product.find( 'div.product-images .woocommerce-main-image' ).length ? $product.find( 'div.product-images .woocommerce-main-image' ) : $( '.single-product div.product-images .woocommerce-main-image' ),
@@ -2428,12 +2448,18 @@
 			theme.WooVariationForm.initialize();
 
 			// Woocommerce Product Image Slider
-			theme.WooProductImageSlider.initialize();
-
-			porto_woocommerce_init();
+			if ( typeof theme.initAsync == 'function' ) {
+				theme.WooProductImageSlider.initialize();
+				porto_woocommerce_init();
+			} else {
+				$.when( theme.asyncDeferred ).done( function() {
+					theme.WooProductImageSlider.initialize();
+					porto_woocommerce_init();
+				} );
+			}
 
 			// Sales Popup
-			if ( typeof theme.salesPopup !== 'undefined' && !document.getElementById( 'yith-woocompare' ) ) {
+			if ( typeof theme.salesPopup !== 'undefined' && !document.getElementById( 'yith-woocompare' ) && window.Worker ) {
 				theme.salesPopup.initialize();
 			}
 
@@ -2566,34 +2592,41 @@
 			} );
 
 			// shortcodes
+			var $ajax_tab_cache = {};
 			$( document ).on( 'click', '.porto-products.show-category .product-categories a', function ( e ) {
 				e.preventDefault();
-				var $this = $( this ), $form = $this.closest( '.porto-products' ).find( '.pagination-form' );
+				var $this = $(this), $form = $this.closest('.porto-products').find('.pagination-form'), id = $this.closest('.porto-products').attr('id'), group = [];
 				$( this ).parent().siblings().removeClass( 'current' );
 				$( this ).parent().addClass( 'current' );
 				if ( typeof $this.data( 'sort_id' ) != 'undefined' ) {
 					$form.find( 'input[name="orderby"]' ).val( $this.data( 'sort_id' ) );
+					group = $this.data('sort_id');
 					$form.find( 'input[name="category"]' ).val( '' );
 				}
 				if ( typeof $this.data( 'cat_id' ) != 'undefined' ) {
 					if ( typeof $this.data( 'sort_id' ) == 'undefined' ) {
 						$form.find( 'input[name="orderby"]' ).val( $form.find( 'input[name="original_orderby"]' ).val() );
+						group = $form.find('input[name="original_orderby"]').val();
 					}
 					if ( typeof $form.data( 'original_cat_id' ) == 'undefined' ) {
 						$form.data( 'original_cat_id', $form.find( 'input[name="category"]' ).val() );
+						group = $form.find('input[name="category"]').val();
 					}
 					if ( $this.data( 'cat_id' ) ) {
 						$form.find( 'input[name="category"]' ).val( $this.data( 'cat_id' ) );
+						group = $this.data('cat_id');
 					} else {
 						if ( $form.data( 'original_cat_id' ) ) {
 							$form.find( 'input[name="category"]' ).val( $form.data( 'original_cat_id' ) );
+							group = $form.data('original_cat_id');
 						} else {
 							$form.find( 'input[name="category"]' ).val( '' );
+							group = '';
 						}
 					}
 				}
 				var data = $form.serialize() + '&product-page=1&action=porto_woocommerce_shortcodes_products&nonce=' + js_porto_vars.porto_nonce;
-				$this.closest( '.porto-products' ).find( 'ul.products' ).trigger( 'porto_update_products', [ data, '' ] );
+				$this.closest('.porto-products').find('ul.products').trigger('porto_update_products', [data, '', $this, id, group]);
 			} );
 			$( document ).on( 'click', '.porto-products .page-numbers a', function ( e ) {
 				var $this = $( this ), pagination_style,
@@ -2620,81 +2653,27 @@
 					theme.scrolltoContainer( $shop_container );
 				}
 			} );
-			$( document ).on( 'porto_update_products', 'ul.products', function ( e, data, pagination_style, $obj ) {
+			$(document).on('porto_update_products', 'ul.products', function (e, data, pagination_style, $obj, id, group) {
 				var $this = $( this );
-				if ( $this.hasClass( 'loading' ) ) {
-					return;
-				}
-				$this.addClass( 'loading' );
-				if ( 'load_more' != pagination_style ) {
-					$this.addClass( 'yith-wcan-loading' );
-					if ( !$this.children( '.porto-loading-icon' ).length ) {
-						$this.append( '<i class="porto-loading-icon"></i>' );
-					}
-				}
-				$.ajax( {
-					url: theme.ajax_url,
-					data: data,
-					type: 'post',
-					success: function ( response ) {
-						if ( $this.data( 'cur_page' ) && $( response ).find( 'ul.products' ).data( 'cur_page' ) ) {
-							$this.data( 'cur_page', $( response ).find( 'ul.products' ).data( 'cur_page' ) );
+				// ajax tab
+				if (undefined == $ajax_tab_cache[id] || -1 == Object.keys($ajax_tab_cache[id]).indexOf(group)) {
+					porto_ajax_load_products($this, data, pagination_style, $ajax_tab_cache, id, group);
+				} else {
+					var response = $ajax_tab_cache[id][group];
+					//animation
+					$this.css('opacity', 0);
+					$this.animate(
+						{
+							'opacity': 1,
+						},
+						400,
+						function () {
+							$this.css('opacity', '');
 						}
-						if ( 'load_more' == pagination_style ) {
-							$this.append( $( response ).find( 'ul.products' ).html() );
-						} else {
-							if ( $this.hasClass( 'owl-carousel' ) ) {
-								$this.parent().css( 'min-height', $this.parent().height() );
-							}
-							if ( $this.hasClass( 'grid-creative' ) && typeof $this.attr( 'data-plugin-masonry' ) != 'undefined' ) {
-								$this.isotope( 'remove', $this.children() );
-								var newItems = $( response ).find( 'ul.products' ).children();
-								$this.append( newItems );
-								$this.isotope( 'appended', newItems );
-								$this.waitForImages( function () {
-									$this.isotope( 'layout' );
-								} );
-							} else {
-								if ( $( response ).find( 'ul.products' ).length ) {
-									$this.html( $( response ).find( 'ul.products' ).html() );
-								} else {
-									$this.html( '' );
-								}
-							}
-						}
+					);
 
-						if ( $this.hasClass( 'owl-carousel' ) ) {
-							$this.trigger( 'destroy.owl.carousel' );
-							theme.requestTimeout( function () {
-								var pluginOptions = $this.data( 'plugin-options' ), opts;
-								if ( pluginOptions )
-									opts = pluginOptions;
-								$this.data( '__wooProductsSlider', '' ).themeWooProductsSlider( opts );
-								$this.parent().css( 'min-height', '' );
-							}, 100 );
-						}
-						if ( $this.closest( '.porto-products' ).find( '.shop-loop-after' ).length ) {
-							if ( $( response ).find( '.shop-loop-after' ).length ) {
-								$this.closest( '.porto-products' ).find( '.shop-loop-after' ).replaceWith( $( response ).find( '.shop-loop-after' ) );
-							} else {
-								$this.closest( '.porto-products' ).find( '.shop-loop-after' ).remove();
-							}
-						}
-						if ( typeof $this.data( 'infinitescroll' ) != 'undefined' ) {
-							var infinitescrollData = $this.data( 'infinitescroll' );
-							infinitescrollData.options.state.currPage = 1;
-							$this.data( 'infinitescroll', infinitescrollData );
-						}
-						$this.removeClass( 'yith-wcan-loading' );
-						if ( 'load_more' == pagination_style && typeof $obj != 'undefined' && typeof $obj.data( 'text' ) != 'undefined' ) {
-							$obj.text( $obj.data( 'text' ) );
-						}
-						$( document ).trigger( "yith-wcan-ajax-filtered" );
-					},
-					complete: function () {
-						$this.removeClass( 'loading' );
-					}
-				} );
+					porto_ajax_load_products_success($this, response, pagination_style);
+				}
 			} );
 		} );
 
@@ -2711,10 +2690,11 @@
 				$this.closest( '.category-section' ).find( '.woocommerce > ul.products' ).trigger( 'porto_update_products', [ data, '' ] );
 			}
 		} );
+		var scrollspyData = null;
 		$( document ).on( 'porto_theme_init', function () {
-			if ( $( '.porto-onepage-category.show-products' ).length ) {
-				$( 'body' ).css( 'position', 'relative' );
-				$( 'body' ).scrollspy( { target: '.porto-onepage-category.show-products .category-list', offset: theme.StickyHeader.sticky_height + theme.adminBarHeight() + theme.sticky_nav_height + 20 } );
+			if ( $( '.porto-onepage-category.show-products' ).length && typeof bootstrap != 'undefined' ) {
+				document.body.style.position = 'relative';
+				scrollspyData = new bootstrap.ScrollSpy( 'body', { target: '.porto-onepage-category.show-products .category-list', offset: theme.StickyHeader.sticky_height + theme.adminBarHeight() + theme.sticky_nav_height + 20 } );
 				var previousScrollTop = 0, $loadObj;
 				window.addEventListener( 'scroll', function () {
 					if ( !$( '.porto-onepage-category.show-products.ajax-load .category-section:not(.ajax-loaded)' ).length ) {
@@ -2845,7 +2825,11 @@
 					$target.removeClass( 'yith-wcan-loading' );
 					$( document ).trigger( 'yith-wcan-ajax-filtered' );
 					$( window ).trigger( 'resize' );
-					$( 'body' ).scrollspy( 'refresh' );
+					if ( scrollspyData ) {
+						setTimeout(function() {
+							scrollspyData.refresh();
+						}, 300);
+					}
 					$target.closest( '.porto-onepage-category' ).removeClass( 'loading' );
 				}
 			} );
@@ -3002,6 +2986,7 @@
 				popupContainer: null,
 				current: 0,
 				products: [],
+				worker: null,
 				initialize: function () {
 					if ( $( '.after-loading-success-message.style-3' ).length == 0 ) {
 						$( 'body' ).append( '<div class="after-loading-success-message style-3 d-block"></div>' );
@@ -3025,78 +3010,35 @@
 					this.build();
 					return this;
 				},
-				appendContent: function () {
-					var self = this,
-						products = self.products,
-						message = js_porto_vars.sales_popup.title,
-						current = self.current,
-						link = products[ current ].link,
-						date = products[ current ].date,
-						image = products[ current ].image,
-						price = products[ current ].price,
-						title = products[ current ].title;
+				appendContent: function (product) {
+					var message = js_porto_vars.sales_popup.title,
+						link = product.link,
+						date = product.date,
+						image = product.image,
+						price = product.price,
+						title = product.title;
+
 					var $content = $( '<div class="sales-msg success-message-container"><p class="sales-popup-title">' + message +
 						'</p><div class="msg-box mb-0"><div class="msg"><div class="product-name"><a href="' + link +
 						'"><h3 class="product-title font-weight-bold line-height-sm mb-1">' + title + '</h3></a></div>' + '<span class="price text-primary">'
 						+ price + '</span><p class="mt-1 mb-0' + ( date == 'not sale' ? ' d-none' : '' ) + '">' + date + '</p></div><img src="' + image + '" alt="' + title + '"/></div><button class="sales-close mfp-close"></button></div>' )
 
-					self.popupContainer.prepend( $content );
+					this.popupContainer.prepend( $content );
 					setTimeout( function () {
 						$content.addClass( 'active' );
 					}, 150 );
 					setTimeout( function () { $content.find( '.sales-close' ).trigger( 'click' ); }, 4000 );
-					self.current = ( current + 1 ) % products.length;
 				},
 				build: function () {
 					var self = this;
 
-					if ( js_porto_vars.sales_popup ) {
-						setTimeout( function () {
-							self.products = JSON.parse( js_porto_vars.sales_popup.products );
-							( function openSalesPopup() {
-								if ( js_porto_vars.sales_popup.type == 'real' ) {
-									$.ajax( {
-										url: theme.ajax_url,
-										data: {
-											action: 'porto_recent_sale_products',
-											nonce: js_porto_vars.porto_nonce,
-										},
-										type: 'post',
-										success: function ( res ) {
-											try {
-												res = JSON.parse( res );
-												if ( res.length ) {
-													self.products = res.concat( self.products );
-													var index = self.products.length - 1;
-													for ( ; index > 0; index-- ) {
-														if ( self.products.findIndex( function ( product ) {
-															return product.id == self.products[ index ].id
-														} ) < index ) {
-															self.products.splice( index, 1 );
-														}
-													}
-													self.products.splice( js_porto_vars.sales_popup.limit );
-													self.current = 0;
-												}
-												self.appendContent();
-											} catch ( error ) {
-												console.warn( error );
-											}
-
-										}
-									} );
-								} else {
-									self.appendContent();
-								}
-
-								if ( self.products.length ) {
-									setTimeout( function () {
-										openSalesPopup();
-									}, js_porto_vars.sales_popup ? parseInt( js_porto_vars.sales_popup.interval ) * 1000 : 60000 );
-								}
-							} )();
-						}, js_porto_vars.sales_popup ? parseInt( js_porto_vars.sales_popup.start ) * 1000 : 5000 );
-					}
+					self.worker = new Worker(js_porto_vars.sales_popup.themeuri + '/inc/lib/woocommerce-sales-popup/worker.js');
+					self.worker.onmessage = function(e) {
+						if (e.data && e.data.title) {
+							self.appendContent(e.data);
+						}
+					};
+					self.worker.postMessage({init: true, vars: js_porto_vars.sales_popup, ajaxurl: theme.ajax_url, nonce: js_porto_vars.porto_nonce});
 					return self;
 				}
 			}
@@ -3265,10 +3207,10 @@ function porto_woocommerce_init( $wrap ) {
 	// Woo Widget Toggle
 	( function ( $ ) {
 
-		if ( $.isFunction( $.fn.themeWooWidgetToggle ) ) {
+		if ( $.fn.themeWooWidgetToggle ) {
 
 			$( function () {
-				$wrap.find( '.widget_product_categories, .widget_price_filter, .widget_layered_nav, .widget_layered_nav_filters, .widget_rating_filter, .porto_widget_price_filter, #wcfmmp-store .widget.sidebar-box, #wcfmmp-store-lists-sidebar .sidebar-box' ).find( '.widget-title' ).each( function () {
+				$wrap.find( '.widget_product_categories, .widget_price_filter, .widget_layered_nav, .widget_layered_nav_filters, .widget_rating_filter, .widget-woof, .porto_widget_price_filter, #wcfmmp-store .widget.sidebar-box, #wcfmmp-store-lists-sidebar .sidebar-box' ).find( '.widget-title' ).each( function () {
 					var $this = $( this ),
 						opts;
 
@@ -3283,10 +3225,10 @@ function porto_woocommerce_init( $wrap ) {
 		}
 
 		// Woo Widget Accordion
-		if ( $.isFunction( $.fn.themeWooWidgetAccordion ) ) {
+		if ( $.fn.themeWooWidgetAccordion ) {
 
 			$( function () {
-				$wrap.find( '.widget_product_categories, .widget_price_filter, .widget_layered_nav, .widget_layered_nav_filters, .widget_rating_filter, #wcfmmp-store .widget.sidebar-box, #wcfmmp-store-lists-sidebar .sidebar-box' ).each( function () {
+				$wrap.find( '.widget_product_categories, .widget_price_filter, .widget_layered_nav, .widget_layered_nav_filters, .widget_rating_filter, .widget-woof, #wcfmmp-store .widget.sidebar-box, #wcfmmp-store-lists-sidebar .sidebar-box' ).each( function () {
 					var $this = $( this ),
 						opts;
 
@@ -3301,7 +3243,7 @@ function porto_woocommerce_init( $wrap ) {
 		}
 
 		// Woo Products Slider
-		if ( $.isFunction( $.fn.themeWooProductsSlider ) ) {
+		if ( $.fn.themeWooProductsSlider ) {
 
 			$( function () {
 				$wrap.find( '.products-slider:not(.manual)' ).each( function () {
@@ -3334,4 +3276,99 @@ function porto_woocommerce_variations_init( $parent_obj ) {
 			} );
 		}
 	}, 100 );
+}
+function porto_ajax_load_products($obj, data, pagination_style, $ajax_tab_cache, id, group) {
+	'use strict';
+	(function ($) {
+		if ($obj.hasClass('loading')) {
+			return;
+		}
+		$obj.addClass('loading');
+		if ('load_more' != pagination_style) {
+			$obj.addClass('yith-wcan-loading');
+			if (!$obj.children('.porto-loading-icon').length) {
+				$obj.append('<i class="porto-loading-icon"></i>');
+			}
+		}
+		if ($ajax_tab_cache[id] == undefined) {
+			$ajax_tab_cache[id] = {};
+		}
+		$.ajax({
+			url: theme.ajax_url,
+			data: data,
+			type: 'post',
+			success: function (response) {
+				//cache
+				if ($(response).length) {
+					$ajax_tab_cache[id][group] = $(response).html();
+				} else {
+					$ajax_tab_cache[id][group] = '';
+				}
+				porto_ajax_load_products_success($obj, response, pagination_style);
+			},
+			complete: function () {
+				$obj.removeClass('loading');
+			}
+		});
+	})(jQuery);
+}
+
+function porto_ajax_load_products_success($obj, success, pagination_style) {
+	'use strict';
+
+	(function ($) {
+		if ($obj.data('cur_page') && $(success).find('ul.products').data('cur_page')) {
+			$obj.data('cur_page', $(success).find('ul.products').data('cur_page'));
+		}
+		if ('load_more' == pagination_style) {
+			$obj.append($(success).find('ul.products').html());
+		} else {
+			if ($obj.hasClass('owl-carousel')) {
+				$obj.parent().css('min-height', $obj.parent().height());
+			}
+			if ($obj.hasClass('grid-creative') && typeof $obj.attr('data-plugin-masonry') != 'undefined') {
+				$obj.isotope('remove', $obj.children());
+				var newItems = $(success).find('ul.products').children();
+				$obj.append(newItems);
+				$obj.isotope('appended', newItems);
+				$obj.imagesLoaded(function () {
+					$obj.isotope('layout');
+				});
+			} else {
+				if ($(success).length) {
+					$obj.html($(success).find('ul.products').html());
+				} else {
+					$obj.html('');
+				}
+			}
+		}
+
+		if ($obj.hasClass('owl-carousel')) {
+			$obj.trigger('destroy.owl.carousel');
+			theme.requestTimeout(function () {
+				var pluginOptions = $obj.data('plugin-options'), opts;
+				if (pluginOptions)
+					opts = pluginOptions;
+				$obj.data('__wooProductsSlider', '').themeWooProductsSlider(opts);
+				$obj.parent().css('min-height', '');
+			}, 100);
+		}
+		if ($obj.closest('.porto-products').find('.shop-loop-after').length) {
+			if ($(success).find('.shop-loop-after').length) {
+				$obj.closest('.porto-products').find('.shop-loop-after').replaceWith($(success).find('.shop-loop-after'));
+			} else {
+				$obj.closest('.porto-products').find('.shop-loop-after').remove();
+			}
+		}
+		if (typeof $obj.data('infinitescroll') != 'undefined') {
+			var infinitescrollData = $obj.data('infinitescroll');
+			infinitescrollData.options.state.currPage = 1;
+			$obj.data('infinitescroll', infinitescrollData);
+		}
+		$obj.removeClass('yith-wcan-loading');
+		if ('load_more' == pagination_style && typeof $obj != 'undefined' && typeof $obj.data('text') != 'undefined') {
+			$obj.text($obj.data('text'));
+		}
+		$(document).trigger("yith-wcan-ajax-filtered");
+	})(jQuery);
 }

@@ -74,7 +74,7 @@
 				//is this supposed to happen only once?
 				if ( settings.one ) {
 					//remove the check
-					w.unbind( 'scroll', check );
+					w.off( 'scroll', check );
 					var i = $.inArray( check, $.fn.appear.checks );
 					if ( i >= 0 ) $.fn.appear.checks.splice( i, 1 );
 				}
@@ -85,7 +85,7 @@
 
 			//bind the modified fn to the element
 			if ( settings.one ) t.one( 'appear', settings.data, modifiedFn );
-			else t.bind( 'appear', settings.data, modifiedFn );
+			else t.on( 'appear', settings.data, modifiedFn );
 			//check whenever the window scrolls
 			w.scroll( check );
 			//check whenever the dom changes
@@ -274,7 +274,7 @@
 				} );
 
 				//Window resize function
-				$( window ).resize( function () {
+				$( window ).on('resize', function () {
 					$respTabs.find( '.resp-accordion-closed' ).removeAttr( 'style' );
 				} );
 			} );
@@ -715,7 +715,7 @@ jQuery( function ( $ ) {
 		var $install_demos = $( '#theme-install-demos' ).isotope(),
 			$demos_filter = $( '.demo-sort-filters' );
 
-		$install_demos.waitForImages( function () {
+		$install_demos.imagesLoaded( function () {
 			$install_demos.isotope( 'layout' );
 		} );
 
@@ -789,7 +789,7 @@ jQuery( function ( $ ) {
 							$this.data( 'total-page', 1 );
 						}
 					}
-					$( '.blocks-wrapper .blocks-list' ).waitForImages( function () {
+					$( '.blocks-wrapper .blocks-list' ).imagesLoaded( function () {
 						$( '.blocks-wrapper .blocks-list' ).isotope( 'layout' );
 						$( '.blocks-wrapper' ).removeClass( 'loading' ).removeClass( 'infiniteloading' );
 						$( '.mfp-wrap.blocks-cont' ).trigger( 'scroll' );
@@ -1026,7 +1026,7 @@ jQuery( function ( $ ) {
 								itemSelector: '.block',
 								layoutMode: 'masonry'
 							} );
-							$blocks_list.waitForImages( function () {
+							$blocks_list.imagesLoaded( function () {
 								$blocks_list.isotope( 'layout' );
 							} );
 
@@ -1456,10 +1456,20 @@ jQuery( function ( $ ) {
 	jQuery( document ).on( 'change', '.pagebuilder-selector input[type="radio"]', function () {
 		var $o = $( this ).closest( '.porto-install-section' ).find( '.message-section' );
 		$o.addClass( 'd-none' ).children( 'div' ).addClass( 'd-none' );
+
+		var should_slide_up = false;
 		if ( $( this ).parent( '.radio' ).hasClass( 'notinstalled' ) ) {
 			$o.removeClass( 'd-none' ).children( '.' + $( this ).val() ).removeClass( 'd-none' ).siblings( 'div' );
 			$( this ).closest( '.porto-install-section' ).find( '.btn-actions' ).slideUp();
-		} else {
+			should_slide_up = true;
+		}
+
+		if ( 'js_composer' == $( this ).val() && $( this ).parent( '.radio' ).hasClass( 'revslider_j' ) && $o.children( '.revslider_j' ).length ) {
+			$o.removeClass( 'd-none' ).children( '.revslider_j' ).removeClass( 'd-none' );
+			$( this ).closest( '.porto-install-section' ).find( '.btn-actions' ).slideUp();
+			should_slide_up = true;
+		}
+		if ( ! should_slide_up ) {
 			$( this ).closest( '.porto-install-section' ).find( '.btn-actions' ).slideDown();
 		}
 
@@ -1486,7 +1496,8 @@ jQuery( function ( $ ) {
 				live_urls = jQuery( this ).find( '.theme-name' ).data( 'live-url' ),
 				live_url = live_urls.js_composer,
 				$o = jQuery( '#porto-install-options .pagebuilder-selector' ),
-				active_p = $o.data( 'active-p' );
+				active_p = $o.data( 'active-p' ),
+				demo_id = jQuery( this ).find( '.theme-name' ).attr( 'id' );
 
 			if ( jQuery( this ).parent().hasClass( 'elementor' ) || jQuery( this ).parent().hasClass( 'vc' ) || jQuery( this ).parent().hasClass( 'gutenberg' ) ) {
 				if ( 'gutenberg' == active_p && !jQuery( this ).parent().hasClass( 'gutenberg' ) ) {
@@ -1495,6 +1506,10 @@ jQuery( function ( $ ) {
 					active_p = 'js_composer';
 				} else if ( 'vc' == active_p && !jQuery( this ).parent().hasClass( 'vc' ) ) {
 					active_p = 'js_composer';
+				}
+				if ( 'hotel-boxed' == demo_id ) {
+					active_p = 'elementor';
+					$o.find( '.radio.js_composer' ).hide();
 				}
 				live_url = live_urls[ active_p ];
 				$o.show();
@@ -1516,6 +1531,11 @@ jQuery( function ( $ ) {
 				} else {
 					$o.next( '.btn-actions' ).show();
 				}
+
+				if ( 'js_composer' == active_p && $o.find( '.message-section' ).children( '.revslider_j' ).length && $( this ).parent().hasClass( 'revslider_j' ) ) {
+					$o.find( '.message-section' ).removeClass( 'd-none' ).children( '.revslider_j' ).removeClass( 'd-none' );
+					$o.next( '.btn-actions' ).hide();
+				}
 			} else {
 				jQuery( '#porto-install-options .pagebuilder-selector' ).hide();
 			}
@@ -1528,8 +1548,7 @@ jQuery( function ( $ ) {
 			$wrap.find( '.porto-install-demo .porto-install-options-section' ).hide();
 			$wrap.find( '.porto-install-demo .plugins-used' ).remove();
 
-			var demo_id = jQuery( this ).find( '.theme-name' ).attr( 'id' ),
-				demo_type = 'js_composer' != active_p && typeof live_urls[ active_p ] != 'undefined' && live_urls[ active_p ] ? active_p + '-' + demo_id : demo_id;
+			var demo_type = 'js_composer' != active_p && typeof live_urls[ active_p ] != 'undefined' && live_urls[ active_p ] ? active_p + '-' + demo_id : demo_id;
 			jQuery( '#porto-install-demo-type' ).val( demo_type ).data( 'o', demo_id ).data( 'title', jQuery( '#' + demo_id ).html() );
 			if ( jQuery( this ).find( '.plugins-used' ).length ) {
 				jQuery( this ).find( '.plugins-used' ).clone().insertAfter( $wrap.find( '.porto-install-section' ) );
@@ -1538,6 +1557,9 @@ jQuery( function ( $ ) {
 			} else {
 				$wrap.find( '.porto-install-demo .porto-install-section' ).show();
 				$wrap.find( '.porto-install-demo .more-options' ).show();
+			}
+			if ( $( this ).parent().hasClass( 'revslider_j' ) ) {
+				$o.find( '.radio.js_composer' ).addClass( 'revslider_j' );
 			}
 			if ( jQuery( '.porto-import-yes:not(:disabled)' ).length ) {
 				jQuery( '.porto-install-demo #import-status' ).html( '' );
@@ -2017,9 +2039,9 @@ jQuery( function ( $ ) {
 				}
 				if ( e.attributes.params && e.attributes.params.el_class ) {
 					var cls = e.attributes.params.el_class.split( ' ' ),
-						c_arr = [ 'd-inline-block', 'd-sm-inline-block', 'd-md-inline-block', 'd-lg-inline-block', 'd-xl-inline-block', 'd-none', 'd-sm-none', 'd-md-none', 'd-lg-none', 'd-xl-none', 'd-sm-block', 'd-md-block', 'd-lg-block', 'd-xl-block', 'd-md-flex', 'd-lg-flex', 'd-xl-flex', 'col-auto', 'col-md-auto', 'col-lg-auto', 'col-xl-auto', 'flex-1', 'ml-auto', 'mr-auto', 'mx-auto', 'h-100', 'h-50', 'w-100' ];
+						c_arr = [ 'd-inline-block', 'd-sm-inline-block', 'd-md-inline-block', 'd-lg-inline-block', 'd-xl-inline-block', 'd-none', 'd-sm-none', 'd-md-none', 'd-lg-none', 'd-xl-none', 'd-sm-block', 'd-md-block', 'd-lg-block', 'd-xl-block', 'd-md-flex', 'd-lg-flex', 'd-xl-flex', 'col-auto', 'col-md-auto', 'col-lg-auto', 'col-xl-auto', 'flex-1', 'ml-auto', 'ms-auto', 'mr-auto', 'me-auto', 'mx-auto', 'h-100', 'h-50', 'w-100' ];
 					cls.forEach( function ( v, i ) {
-						v = jQuery.trim( v );
+						v = v.trim();
 						if ( !v ) {
 							return;
 						}
@@ -2121,6 +2143,7 @@ jQuery( function ( $ ) {
 
 		// remove demo contents
 		$( '.btn-remove-demo-contents' ).on( 'click', function ( e ) {
+			e.preventDefault();
 			$( '.porto-remove-demo .remove-status' ).html( '' );
 			$.magnificPopup.open( {
 				items: {

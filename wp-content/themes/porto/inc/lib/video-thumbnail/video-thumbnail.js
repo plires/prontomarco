@@ -11,25 +11,30 @@ window.theme || ( window.theme = {} );
 
 	var ProductVideoThumbnail = {
 		openVideoPopup: function ( e ) {
+			if ( $(this).hasClass( 'popup-youtube' ) || $(this).hasClass( 'popup-vimeo' ) ) {
+				return;
+			}
 			e.preventDefault();
 
 			var data = $( this ).siblings( '.porto-video-thumbnail-data' ).html();
 
-			$.isFunction( $.fn.magnificPopup ) && $.magnificPopup.open(
-				{
-					type: 'inline',
-					mainClass: "porto-video-popup-wrapper mfp-fade",
-					preloader: false,
-					items: {
-						src: '<div class="porto-video-popup-wrapper mx-auto" style="max-width: 50rem;">' + data + '</div>'
-					},
-					callbacks: {
-						beforeClose: function () {
-							this.container.empty();
+			if ( $.fn.magnificPopup ) {
+				$.magnificPopup.open(
+					{
+						type: 'inline',
+						mainClass: "porto-video-popup-wrapper mfp-fade",
+						preloader: false,
+						items: {
+							src: '<div class="porto-video-popup-wrapper mx-auto" style="max-width: 50rem;">' + data + '</div>'
+						},
+						callbacks: {
+							beforeClose: function () {
+								this.container.empty();
+							}
 						}
 					}
-				}
-			);
+				);
+			}
 		}
 	};
 

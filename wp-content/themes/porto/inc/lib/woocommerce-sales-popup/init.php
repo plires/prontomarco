@@ -13,36 +13,64 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( wp_doing_ajax() ) {
 	function porto_recent_sale_products() {
-		check_ajax_referer( 'porto-nonce', 'nonce' );
-		global $wpdb;
-		global $porto_settings;
-		$date   = date( 'Y-m-d H:i:s', strtotime( '-' . $porto_settings['woo-sales-popup-interval'] . ' seconds' ) );
-		$result = $wpdb->get_results( $wpdb->prepare( 'select product_id, date_created from ' . $wpdb->prefix . 'wc_order_product_lookup where date_created>=\'' . $date . '\' ORDER BY date_created DESC' ) );
+		//check_ajax_referer( 'porto-nonce', 'nonce' );
+		// phpcs:disable WordPress.Security.NonceVerification.NoNonceVerification
+		global $wpdb, $porto_settings;
 
-		$products = array();
-		if ( $result ) {
-			$original_post = $GLOBALS['post'];
-			foreach ( $result as $item ) {
-				$GLOBALS['post'] = get_post( $item->product_id ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
-					setup_postdata( $GLOBALS['post'] );
-				global $product;
-				$date       = $item->date_created;
-				$p_img      = wp_get_attachment_image_src( $product->get_image_id(), 'woocommerce_gallery_thumbnail' );
-				$products[] = array(
-					'id'     => esc_html( $item->product_id ),
-					'title'  => esc_html( $product->get_title() ),
-					'link'   => esc_url( $product->get_permalink() ),
-					'image'  => $p_img ? esc_js( $p_img[0] ) : '',
-					'price'  => $product->get_price_html(),
-					'rating' => (float) $product->get_average_rating(),
-					'date'   => Porto_Woocommerce_Sales_Popup::get_period_from( strtotime( $date ) ),
-				);
+		if ( ! empty( $_POST['load_first'] ) ) {
+			$atts = array(
+				'limit' => (int) $porto_settings['woo-sales-popup-count'],
+			);
+			$type = 'best_selling_products';
 
+			switch ( $porto_settings['woo-sales-popup'] ) {
+				case 'popular':
+					$type = 'best_selling_products';
+					break;
+				case 'rating':
+					$type = 'top_rated_products';
+					break;
+				case 'sale':
+					$type = 'sale_products';
+					break;
+				case 'featured':
+					$type = 'featured_products';
+					break;
+				case 'recent':
+					$type            = 'recent_products';
+					$atts['orderby'] = 'date';
+					$atts['order']   = 'DESC';
+					break;
 			}
-			$GLOBALS['post'] = $original_post; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
-			wp_reset_postdata();
+
+			$products = new Porto_Woocommerce_Sales_Popup( $atts, $type );
+
+			echo json_encode( $products->get_products() );
+		} else {
+
+			$date   = date( 'Y-m-d H:i:s', strtotime( '-' . $porto_settings['woo-sales-popup-interval'] . ' seconds' ) );
+			$result = $wpdb->get_results( $wpdb->prepare( 'select product_id, date_created from ' . $wpdb->prefix . 'wc_order_product_lookup where date_created>=\'' . $date . '\' ORDER BY date_created DESC' ) );
+
+			$products = array();
+			if ( $result ) {
+				foreach ( $result as $item ) {
+					$product    = wc_get_product( $item->product_id );
+					$date       = $item->date_created;
+					$products[] = array(
+						'id'     => esc_html( $item->product_id ),
+						'title'  => esc_html( $product->get_title() ),
+						'link'   => esc_url( $product->get_permalink() ),
+						'image'  => esc_js( wp_get_attachment_image_src( $product->get_image_id(), 'woocommerce_gallery_thumbnail' )[0] ),
+						'price'  => $product->get_price_html(),
+						'rating' => (float) $product->get_average_rating(),
+						'date'   => Porto_Woocommerce_Sales_Popup::get_period_from( strtotime( $date ) ),
+					);
+
+				}
+			}
+			echo json_encode( $products );
 		}
-		echo json_encode( $products );
+		// phpcs: enable
 		die();
 	}
 	add_action( 'wp_ajax_porto_recent_sale_products', 'porto_recent_sale_products' );
@@ -62,25 +90,19 @@ if ( class_exists( 'WC_Shortcode_Products' ) && ! class_exists( 'Porto_Woocommer
 			$products = $this->get_query_results();
 			$result   = array();
 			if ( $products && $products->ids ) {
-				$original_post = $GLOBALS['post'];
 				foreach ( $products->ids as $product_id ) {
-					$GLOBALS['post'] = get_post( $product_id ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
-					setup_postdata( $GLOBALS['post'] );
-					global $product;
+					$product  = wc_get_product( $product_id );
 					$date     = $wpdb->get_var( $wpdb->prepare( 'select date_created from ' . $wpdb->prefix . 'wc_order_product_lookup where product_id=%d order by date_created DESC', $product_id ) );
-					$p_img    = wp_get_attachment_image_src( $product->get_image_id(), 'woocommerce_gallery_thumbnail' );
 					$result[] = array(
 						'id'     => esc_html( $product_id ),
 						'title'  => esc_html( $product->get_title() ),
 						'link'   => esc_url( $product->get_permalink() ),
-						'image'  => $p_img ? esc_js( $p_img[0] ) : '',
+						'image'  => esc_js( wp_get_attachment_image_src( $product->get_image_id(), 'woocommerce_gallery_thumbnail' )[0] ),
 						'price'  => $product->get_price_html(),
 						'rating' => (float) $product->get_average_rating(),
 						'date'   => isset( $date ) ? self::get_period_from( strtotime( $date ) ) : 'not sale',
 					);
 				}
-				$GLOBALS['post'] = $original_post; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
-				wp_reset_postdata();
 			}
 			return $result;
 		}
@@ -114,33 +136,6 @@ if ( ! function_exists( 'porto_sales_popup_data' ) ) {
 	function porto_sales_popup_data() {
 
 		global $porto_settings;
-		$atts = array(
-			'limit' => (int) $porto_settings['woo-sales-popup-count'],
-		);
-
-		$type = 'best_selling_products';
-
-		switch ( $porto_settings['woo-sales-popup'] ) {
-			case 'popular':
-				$type = 'best_selling_products';
-				break;
-			case 'rating':
-				$type = 'top_rated_products';
-				break;
-			case 'sale':
-				$type = 'sale_products';
-				break;
-			case 'featured':
-				$type = 'featured_products';
-				break;
-			case 'recent':
-				$type            = 'recent_products';
-				$atts['orderby'] = 'date';
-				$atts['order']   = 'DESC';
-				break;
-		}
-
-		$products = new Porto_Woocommerce_Sales_Popup( $atts, $type );
 
 		return array(
 			'title'    => esc_js( $porto_settings['woo-sales-popup-title'] ),
@@ -148,7 +143,7 @@ if ( ! function_exists( 'porto_sales_popup_data' ) ) {
 			'start'    => (int) $porto_settings['woo-sales-popup-start-delay'],
 			'interval' => (int) $porto_settings['woo-sales-popup-interval'],
 			'limit'    => (int) $porto_settings['woo-sales-popup-count'],
-			'products' => json_encode( $products->get_products() ),
+			'themeuri' => esc_url( PORTO_URI ),
 		);
 	}
 }

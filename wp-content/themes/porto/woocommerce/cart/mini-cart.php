@@ -18,7 +18,7 @@ $has_items = ( ! WC()->cart->is_empty() );
 <?php
 	if ( empty( $porto_settings['minicart-content'] ) ) {
 		$items = sizeof( WC()->cart->get_cart() );
-		echo '<div class="total-count text-v-dark">';
+		echo '<div class="total-count text-v-dark clearfix">';
 			/* translators: %s: Items count */
 			echo '<span>' . sprintf( esc_html( _n( '%d ITEM', '%d ITEMS', $items, 'porto' ) ), $items ) . '</span>';
 			echo '<a class="text-v-dark pull-right" href="' . esc_url( wc_get_cart_url() ) . '">' . esc_html__( 'VIEW CART', 'porto' ) . '</a>';

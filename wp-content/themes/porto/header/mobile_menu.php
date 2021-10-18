@@ -18,13 +18,23 @@ if ( 'overlay' == $porto_settings['menu-type'] ) {
 }
 
 $is_preset = porto_header_type_is_preset();
+
+$is_load_menu = ( isset( $_POST['action'] ) && 'porto_lazyload_menu' == $_POST['action'] );
+
+$extra_cls = '';
+if ( ! $is_load_menu ) {
+	$extra_cls .= ' skeleton-body';
+	if ( empty( $porto_settings_optimize['lazyload_menu'] ) ) {
+		$extra_cls .= ' porto-ajax-loading';
+	}
+}
 ?>
 
 <div id="nav-panel">
 	<div class="container">
-		<div class="mobile-nav-wrap<?php echo empty( $porto_settings_optimize['lazyload_menu'] ) ? '' : ' skeleton-body'; ?>">
+		<div class="mobile-nav-wrap<?php echo esc_attr( $extra_cls ); ?>">
 		<?php
-		if ( empty( $porto_settings_optimize['lazyload_menu'] ) ) {
+		if ( $is_load_menu ) {
 
 			// show top navigation and mobile menu
 			$menu = porto_mobile_menu( '19' == $header_type || empty( $header_type ) );
@@ -53,6 +63,8 @@ $is_preset = porto_header_type_is_preset();
 					echo '<div class="menu-wrap">' . $switcher . '</div>';
 				}
 			}
+		} else {
+			echo '<i class="porto-loading-icon"></i>';
 		}
 		?>
 		</div>

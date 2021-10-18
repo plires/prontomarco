@@ -35,7 +35,7 @@
 			<tbody>
 				<tr>
 					<td>
-						<h4><?php esc_html_e( 'Plugin transients' ); ?></h4>
+						<h4><?php esc_html_e( 'Plugin transients', 'porto' ); ?></h4>
 						<p><?php esc_html_e( 'This tool will clear the plugin(Porto Functionality, Revolution Slider and WPBakery Page Builder) update transients cache.', 'porto' ); ?></p>
 					</td>
 					<td>
@@ -44,7 +44,7 @@
 				</tr>
 				<tr>
 					<td>
-						<h4><?php esc_html_e( 'Studio Block transients' ); ?></h4>
+						<h4><?php esc_html_e( 'Studio Block transients', 'porto' ); ?></h4>
 						<p><?php esc_html_e( 'This tool will clear the Porto Studio block transients cache.', 'porto' ); ?></p>
 					</td>
 					<td>
@@ -53,20 +53,29 @@
 				</tr>
 				<tr>
 					<td>
-						<h4><?php esc_html_e( 'Compile all css' ); ?></h4>
+						<h4><?php esc_html_e( 'Compile all css', 'porto' ); ?></h4>
 						<p><?php esc_html_e( 'This tool will compile shortcodes css, bootstrap css and dynamic styles.', 'porto' ); ?></p>
 					</td>
 					<td>
-						<a href="<?php echo esc_url( admin_url( 'admin.php?page=porto-tools&action=compile_css&_wpnonce=' . $nonce ) ); ?>" class="btn btn-dark"><?php esc_html_e( 'Compile CSS', 'porto' ); ?></a>
+						<a href="<?php echo esc_url( admin_url( 'admin.php?page=porto-tools&action=compile_css&_wpnonce=' . $nonce ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Compile CSS', 'porto' ); ?></a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<h4><?php esc_html_e( 'Refresh templates information' ); ?></h4>
-						<p><?php esc_html_e( 'This tool will refresh information about Porto templates used in pages, posts, sidebars, menus, etc.', 'porto' ); ?></p>
+						<h4><?php esc_html_e( 'Refresh templates information', 'porto' ); ?></h4>
+						<p><?php esc_html_e( 'This tool will reset the information about Porto templates used in pages, posts, sidebars, menus, etc.', 'porto' ); ?></p>
 					</td>
 					<td>
 						<a href="<?php echo esc_url( admin_url( 'admin.php?page=porto-tools&action=refresh_blocks&_wpnonce=' . $nonce ) ); ?>" class="btn btn-dark"><?php esc_html_e( 'Refresh Templates', 'porto' ); ?></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4><?php esc_html_e( 'Refresh Templates\' display conditions', 'porto' ); ?></h4>
+						<p><?php esc_html_e( 'This tool will reset the display conditions for all templates.', 'porto' ); ?></p>
+					</td>
+					<td>
+						<a href="<?php echo esc_url( admin_url( 'admin.php?page=porto-tools&action=refresh_conditions&_wpnonce=' . $nonce ) ); ?>" class="btn btn-dark"><?php esc_html_e( 'Refresh Conditions', 'porto' ); ?></a>
 					</td>
 				</tr>
 			</tbody>

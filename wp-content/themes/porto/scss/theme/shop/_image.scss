@@ -63,7 +63,8 @@
         text-align: center;
 
         .onhot,
-        .onsale {
+        .onsale,
+        .onnew {
             padding: 5px 11px;
             margin-bottom: 5px;
         }
@@ -74,6 +75,10 @@
 
         .onsale {
             background: $sale-bg;
+        }
+
+        .onnew {
+            @include background(linear-gradient(135deg, var(--porto-new-bgc, #08c) 0, var(--porto-new-bgc, #0169fe) 80%));
         }
 
         .tooltip {

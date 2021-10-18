@@ -19,6 +19,24 @@
     width: auto;
     line-height: 1
 }
+
+.porto-just-icon-wrapper[class*="porto-icon-pos-"] {
+    display: block;
+}
+.porto-icon-pos-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.porto-icon-pos-right {
+    margin-#{$left}: auto;
+}
+.porto-icon-pos-left.none {
+    text-align: $left;
+}
+.porto-icon-pos-right.none {
+    text-align: $right;
+}
+
 .porto-icon.circle {
     border-radius: 50%
 }

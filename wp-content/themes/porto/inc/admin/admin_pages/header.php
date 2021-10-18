@@ -3,6 +3,7 @@
 	$items = array(
 		'porto' => array( 'admin.php?page=porto', __( 'Dashboard', 'porto' ) ),
 	);
+	$items['page_layouts'] = array( 'admin.php?page=porto-page-layouts', __( 'Page Layouts', 'porto' ) );
 	if ( get_theme_mod( 'theme_options_use_new_style', false ) ) {
 		$items['theme_options']    = array( 'customize.php', __( 'Theme Options', 'porto' ) );
 		$items['advanced_options'] = array( 'themes.php?page=porto_settings', __( 'Advanced', 'porto' ) );

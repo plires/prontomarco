@@ -1165,10 +1165,23 @@ if ( ! function_exists( 'porto_check_builder_condition' ) ) :
 					if ( ! $object_id || ( false === strpos( $c, 'single/' ) && false === strpos( $c, 'taxonomy/' ) && false === strpos( $c, 'archive/' ) ) || ! get_post( $object_id ) ) {
 						continue;
 					}
-					$c = str_replace( 'taxonomy/', '', $c );
+
+					if ( false === strpos( $c, 'single/' ) ) {
+						$c = str_replace( 'taxonomy/', '', $c );
+					}
+
 					if ( 0 === strpos( $c, 'single/' ) ) {
 						$c = str_replace( 'single/', '', $c );
-						if ( is_singular( $c ) ) {
+						if ( 0 === strpos( $c, 'taxonomy/' ) ) {
+							$c = str_replace( 'taxonomy/', '', $c );
+							if ( is_singular() ) {
+								$terms = wp_get_post_terms( get_the_ID(), $c, array( 'fields' => 'names' ) );
+								if ( ! empty( $terms ) ) {
+									$porto_settings['conditions'][ $location ] = (int) $object_id;
+									return (int) $object_id;
+								}
+							}
+						} elseif ( is_singular( $c ) ) {
 							$porto_settings['conditions'][ $location ] = (int) $object_id;
 							return (int) $object_id;
 						}
@@ -1185,12 +1198,6 @@ if ( ! function_exists( 'porto_check_builder_condition' ) ) :
 						$c = str_replace( 'archive/', '', $c );
 						$f = 'is_porto_' . $c . 's_page';
 						if ( ( function_exists( $f ) && $f() ) || is_post_type_archive( $c ) ) {
-							$porto_settings['conditions'][ $location ] = (int) $object_id;
-							return (int) $object_id;
-						}
-					} elseif ( is_singular() ) {
-						$terms = wp_get_post_terms( get_the_ID(), $c, array( 'fields' => 'names' ) );
-						if ( ! empty( $terms ) ) {
 							$porto_settings['conditions'][ $location ] = (int) $object_id;
 							return (int) $object_id;
 						}

@@ -233,7 +233,7 @@ class Porto_Elementor_Fancytext_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<#
 			view.addRenderAttribute( 'wrapper', 'class', 'word-rotator ' + settings.animation_effect );

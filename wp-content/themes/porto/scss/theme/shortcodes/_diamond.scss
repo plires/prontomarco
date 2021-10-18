@@ -5,23 +5,12 @@
     position: relative;
     text-align: center;
     max-width: 1110px;
-
-    .csstransforms3d & {
-        padding: side-values(50px 0 12px 57px);
-    }
-
-    .no-csstransforms3d & {
-        max-width: 1035px;
-    }
+    padding: side-values(50px 0 12px 57px);
 
     > li {
         display: inline-block;
         font-size: 18px;
         margin-#{$right}: 135px;
-
-        .no-csstransforms3d & {
-            margin: side-values(0 20px 20px 0);
-        }
     }
 
     .diamond {
@@ -32,6 +21,13 @@
         position: relative;
         text-decoration: none;
         width: 245px;
+        overflow: hidden;
+        @if $rtl == 1{
+            transform: rotate(45deg);
+        }
+        @else {
+            transform: rotate(-45deg);
+        }
 
         &:after {
             transition: .2s;
@@ -60,16 +56,6 @@
                 }
             }
 
-        }
-
-        .csstransforms3d & {
-            overflow: hidden;
-            @if $rtl == 1{
-                transform: rotate(45deg);
-            }
-            @else {
-                transform: rotate(-45deg);
-            }
         }
     }
 
@@ -135,7 +121,6 @@
     .porto-diamonds > li:nth-child(7) { position: absolute; margin: side-values(93px 0 0 -133px); }
 }
 @media (max-width: #{$screen-lg - 1}px) {
-    .csstransforms3d .porto-diamonds,
     .porto-diamonds { width: 748px; margin: 0 auto; padding: side-values(75px 0 0 75px); }
     .porto-diamonds > li { margin: 0; position: static; float: $left }
     .porto-diamonds > li:nth-child(2n+1) { clear: both; }
@@ -147,7 +132,6 @@
 }
 
 @media (max-width: 748px) {
-    .csstransforms3d .porto-diamonds,
     .porto-diamonds {
         margin: side-values(40px 0 0 -222px);
         padding: side-values(25px 0 0 50%);

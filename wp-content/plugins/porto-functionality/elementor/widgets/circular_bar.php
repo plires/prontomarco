@@ -214,7 +214,7 @@ class Porto_Elementor_Circular_Bar_Widget extends \Elementor\Widget_Base {
 		include PORTO_DIR . '/vc_templates/vc_pie.php';
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		global $porto_settings;
 		?>
 		<#

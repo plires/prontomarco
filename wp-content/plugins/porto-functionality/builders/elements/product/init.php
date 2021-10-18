@@ -155,13 +155,13 @@ class PortoCustomProduct {
 				add_action(
 					'enqueue_block_editor_assets',
 					function () {
-						wp_enqueue_script( 'porto_single_product_blocks', PORTO_FUNC_URL . 'builders/elements/product/gutenberg/blocks.min.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-data', 'wp-editor' ), PORTO_VERSION, true );
+						wp_enqueue_script( 'porto_single_product_blocks', PORTO_FUNC_URL . 'builders/elements/product/gutenberg/blocks.min.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-data'/*, 'wp-editor'*/ ), PORTO_VERSION, true );
 					},
 					1000
 				);
 				add_filter(
-					'block_categories',
-					function ( $categories, $post ) {
+					'block_categories_all',
+					function ( $categories ) {
 						return array_merge(
 							$categories,
 							array(
@@ -174,7 +174,7 @@ class PortoCustomProduct {
 						);
 					},
 					11,
-					2
+					1
 				);
 			}
 		}

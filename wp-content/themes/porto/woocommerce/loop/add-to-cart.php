@@ -50,7 +50,8 @@ $porto_woo_version = porto_get_woo_version_number();
 						esc_html( $product->add_to_cart_text() ),
 						( $product->is_purchasable() && $product->is_in_stock() && isset( $porto_settings['category-addlinks-convert'] ) && $porto_settings['category-addlinks-convert'] ) ? 'span' : 'a'
 					),
-					$product
+					$product,
+					$args
 				);
 			} else {
 				echo apply_filters(
@@ -58,14 +59,15 @@ $porto_woo_version = porto_get_woo_version_number();
 					sprintf(
 						'<%s href="%s" data-quantity="%s" class="' . $viewcart_style . ' %s" %s>%s</%s>',
 						( $product->is_purchasable() && $product->is_in_stock() && isset( $porto_settings['category-addlinks-convert'] ) && $porto_settings['category-addlinks-convert'] ) ? 'span' : 'a',
-						esc_url( $product->add_to_cart_url() ),
+						esc_url( apply_filters( 'porto_cpo_add_to_cart_url', $product->add_to_cart_url(), $product ) ),
 						esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
 						esc_attr( ( isset( $args['class'] ) ? $args['class'] . ( ! in_array( 'button', explode( ' ', $args['class'] ) ) ? ' button' : '' ) : 'button' ) . ( $product->is_purchasable() && $product->is_in_stock() ? '' : ' add_to_cart_read_more' ) ),
 						isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
 						esc_html( $product->add_to_cart_text() ),
 						( $product->is_purchasable() && $product->is_in_stock() && isset( $porto_settings['category-addlinks-convert'] ) && $porto_settings['category-addlinks-convert'] ) ? 'span' : 'a'
 					),
-					$product
+					$product,
+					$args
 				);
 			}
 		} else {
@@ -92,7 +94,8 @@ $porto_woo_version = porto_get_woo_version_number();
 					isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
 					esc_html( $porto_settings['catalog-readmore-label'] )
 				),
-				$product
+				$product,
+				$args
 			);
 		}
 

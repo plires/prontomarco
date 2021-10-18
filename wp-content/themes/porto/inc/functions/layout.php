@@ -2051,9 +2051,10 @@ function porto_header_socials( $el_class = '' ) {
 		return '';
 	}
 
-	$nofollow = '';
 	if ( $porto_settings['header-socials-nofollow'] ) {
-		$nofollow = ' rel="nofollow"';
+		$nofollow = ' rel="nofollow noopener noreferrer"';
+	} else {
+		$nofollow = ' rel="noopener noreferrer"';
 	}
 
 	ob_start();
@@ -2260,6 +2261,28 @@ function porto_minicart( $el_class = '' ) {
 	return apply_filters( 'porto_minicart', ob_get_clean() );
 }
 
+function porto_wishlist( $el_class, $icon_cl = 'porto-icon-wishlist-2', $inline_style = '' ) {
+	if ( ! class_exists( 'Woocommerce' ) || ! defined( 'YITH_WCWL' ) ) {
+		return;
+	}
+
+	ob_start();
+	$wc_count = yith_wcwl_count_products();
+	global $porto_settings;
+	if ( ! empty( $porto_settings['wl-offcanvas'] ) ) {
+		echo '<div class="wishlist-offcanvas' . ( $el_class ? ' ' . esc_attr( $el_class ) : '' ) . '">';
+	}
+	echo '<a href="' . esc_url( YITH_WCWL()->get_wishlist_url() ) . '"' . ' title="' . esc_attr__( 'Wishlist', 'porto' ) . '" class="my-wishlist' . ( $el_class && empty( $porto_settings['wl-offcanvas'] ) ? ' ' . esc_attr( $el_class ) : '' ) . '"' . ( $inline_style ? ' style="' . esc_attr( $inline_style ) . '"' : '' ) . '><i class="' . esc_attr( $icon_cl ) . '"></i><span class="wishlist-count">' . intval( $wc_count ) . '</span></a>';
+
+	if ( ! empty( $porto_settings['wl-offcanvas'] ) ) {
+		echo '<div class="wishlist-popup"></div>';
+
+		echo '<div class="minicart-overlay"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.minicart-svg{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="minicart-svg" x1="7" x2="25" y1="7" y2="25"/><line class="minicart-svg" x1="7" x2="25" y1="25" y2="7"/></g></svg></div>';
+		echo '</div>';
+	}
+	return apply_filters( 'porto_wishlist', ob_get_clean() );
+}
+
 function porto_account_menu( $el_class ) {
 	global $porto_settings;
 	if ( empty( $porto_settings['show-account-dropdown'] ) ) {
@@ -2386,7 +2409,8 @@ function porto_render_rich_snippets( $title_tag = true, $author_tag = true, $upd
 
 	if ( isset( $porto_settings['rich-snippets'] ) && $porto_settings['rich-snippets'] ) {
 		if ( $title_tag ) {
-			echo '<span class="entry-title" style="display: none;">' . get_the_title() . '</span>';
+			$title_tag = is_string( $title_tag ) ? esc_html( $title_tag ) : 'span';
+			echo '<' . $title_tag . ' class="entry-title" style="display: none;">' . get_the_title() . '</' . $title_tag . '>';
 		}
 		if ( $author_tag ) {
 			echo '<span class="vcard" style="display: none;"><span class="fn">';
@@ -2947,7 +2971,7 @@ if ( ! function_exists( 'porto_portfolio_category_image' ) ) :
 	}
 endif;
 
-function porto_header_elements( $elements, $el_class = '' ) {
+function porto_header_elements( $elements, $el_class = '', $is_mobile = false ) {
 	if ( ! $elements || empty( $elements ) ) {
 		return;
 	}
@@ -2997,7 +3021,11 @@ function porto_header_elements( $elements, $el_class = '' ) {
 				} elseif ( 'social' == $key ) {
 					echo porto_header_socials( $el_class );
 				} elseif ( 'menu-icon' == $key ) {
-					echo '<a class="mobile-toggle"><i class="fas fa-bars"></i></a>';
+					if ( $is_mobile && 'overlay' == $porto_settings['menu-type'] ) {
+						echo porto_main_menu();
+					} else {
+						echo '<a class="mobile-toggle" href="#"><i class="fas fa-bars"></i></a>';
+					}
 				} elseif ( 'nav-top' == $key ) {
 					echo porto_top_navigation( $el_class );
 				} elseif ( 'main-menu' == $key ) {
@@ -3029,8 +3057,7 @@ function porto_header_elements( $elements, $el_class = '' ) {
 				} elseif ( 'myaccount' == $key && class_exists( 'Woocommerce' ) ) {
 					echo porto_account_menu( $el_class );
 				} elseif ( 'wishlist' == $key && class_exists( 'Woocommerce' ) && defined( 'YITH_WCWL' ) ) {
-					$wc_count = yith_wcwl_count_products();
-					echo '<a href="' . esc_url( YITH_WCWL()->get_wishlist_url() ) . '"' . ' title="' . esc_attr__( 'Wishlist', 'porto' ) . '" class="my-wishlist' . ( $el_class ? ' ' . esc_attr( $el_class ) : '' ) . '"><i class="porto-icon-wishlist-2"></i><span class="wishlist-count">' . intval( $wc_count ) . '</span></a>';
+					echo porto_wishlist( $el_class );
 				} elseif ( 'compare' == $key && defined( 'YITH_WOOCOMPARE' ) && class_exists( 'YITH_Woocompare' ) ) {
 					global $yith_woocompare;
 					$compare_count = isset( $yith_woocompare->obj->products_list ) ? sizeof( $yith_woocompare->obj->products_list ) : 0;

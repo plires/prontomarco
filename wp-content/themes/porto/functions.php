@@ -2,6 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die();
 }
+
 /**
  * Define variables
  */
@@ -19,6 +20,7 @@ define( 'PORTO_JS', PORTO_URI . '/js' );                          // javascript 
 define( 'PORTO_PLUGINS_URI', PORTO_URI . '/inc/plugins' );             // plugins uri
 define( 'PORTO_OPTIONS_URI', PORTO_URI . '/inc/admin/theme_options' ); // theme options uri
 define( 'PORTO_LIB_URI', PORTO_URI . '/inc/lib' );                     // library uri
+define( 'PORTO_API_URL', 'https://sw-themes.com/activation/porto_wp/' );
 
 $theme_version = '';
 $theme         = wp_get_theme();
@@ -173,7 +175,7 @@ if ( ! function_exists( 'porto_setup' ) ) :
 		if ( ( isset( $porto_settings['google-webfont-loader'] ) && $porto_settings['google-webfont-loader'] ) || ( function_exists( 'vc_is_inline' ) && vc_is_inline() ) ) {
 			add_filter( 'wp_head', 'porto_google_webfont_loader' );
 		}
-		if ( ! empty( $porto_settings_optimize['lazyload_menu'] ) ) {
+		if ( porto_is_ajax() && isset( $_POST['action'] ) && 'porto_lazyload_menu' == $_POST['action'] ) {
 			add_action( 'template_redirect', 'porto_action_lazyload_menu', 20 );
 		}
 
@@ -255,17 +257,25 @@ if ( is_admin() ) {
 		if ( wp_style_is( 'owl.carousel', 'enqueued' ) ) {
 			$required_css[] = 'owl.carousel';
 		}
+		porto_register_style( 'porto-css-vars', 'theme_css_vars', false, true );
+		wp_enqueue_style( 'porto-css-vars' );
+		$required_css[] = 'porto-css-vars';
+
+		global $porto_settings;
+
+		$xl = (int) $porto_settings['container-width'];
 
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'porto-blocks-editor', PORTO_CSS . '/editor_rtl.css', $required_css, PORTO_VERSION );
+			wp_enqueue_style( 'porto-blocks-editor-responsive-xl', PORTO_CSS . '/editor_responsive_xl_rtl.css', array( 'porto-blocks-editor' ), PORTO_VERSION, '(min-width: ' . ( (int) $xl + (int) $porto_settings['grid-gutter-width'] + 1 ) . 'px)' );
 		} else {
 			wp_enqueue_style( 'porto-blocks-editor', PORTO_CSS . '/editor.css', $required_css, PORTO_VERSION );
+			wp_enqueue_style( 'porto-blocks-editor-responsive-xl', PORTO_CSS . '/editor_responsive_xl.css', array( 'porto-blocks-editor' ), PORTO_VERSION, '(min-width: ' . ( (int) $xl + (int) $porto_settings['grid-gutter-width'] + 1 ) . 'px)' );
 		}
 
 		porto_register_style( 'porto-blocks-editor-dynamic', 'style-editor', false, true, array( 'porto-blocks-editor' ) );
 		wp_enqueue_style( 'porto-blocks-editor-dynamic' );
 
-		global $porto_settings;
 		$theme_options_custom_css = $porto_settings['css-code'];
 		if ( $theme_options_custom_css ) {
 			wp_add_inline_style( 'porto-blocks-editor-dynamic', wp_strip_all_tags( preg_replace( '#<style[^>]*>(.*)</style>#is', '$1', $theme_options_custom_css ) ) );
@@ -425,7 +435,18 @@ function porto_css() {
 		}
 	}
 
+	// css vars
+	porto_register_style( 'porto-css-vars', 'theme_css_vars', false, true );
+	if ( ! is_customize_preview() ) {
+		wp_enqueue_style( 'porto-css-vars' );
+	}
+
+	// load wpbakery css
 	if ( ! wp_style_is( 'js_composer_front' ) ) {
+		wp_enqueue_style( 'js_composer_front' );
+	} else {
+		// include js composer css after css vars
+		wp_dequeue_style( 'js_composer_front' );
 		wp_enqueue_style( 'js_composer_front' );
 	}
 	// load ultimate addons default js
@@ -546,6 +567,7 @@ function porto_css() {
 
 	wp_enqueue_style( 'bootstrap' );
 	wp_enqueue_style( 'porto-plugins' );
+
 	wp_enqueue_style( 'porto-theme' );
 	wp_enqueue_style( 'porto-shortcodes' );
 	if ( class_exists( 'WooCommerce' ) ) {
@@ -686,7 +708,7 @@ function porto_pre_scripts() {
 		wp_register_script( 'easypiechart', PORTO_JS . '/libs/easypiechart.min.js', array(), '2.1.4', true );
 		wp_register_script( 'jquery-mousewheel', PORTO_JS . '/libs/jquery.mousewheel.min.js', array(), '3.1.13', true );
 		wp_register_script( 'jquery-vide', PORTO_JS . '/libs/jquery.vide.min.js', array(), '0.5.1', true );
-		wp_register_script( 'jquery-lazyload', PORTO_JS . '/libs/jquery.lazyload.min.js', array(), '1.9.7', true );
+		wp_register_script( 'lazyload', PORTO_JS . '/libs/lazyload.min.js', array(), '1.9.7', true );
 	}
 }
 
@@ -726,37 +748,31 @@ function porto_scripts() {
 			$min_suffix = '.min';
 		}
 		// porto scripts
-		wp_register_script( 'popper', PORTO_JS . '/libs/popper.min.js', array( 'jquery', 'jquery-migrate' ), '1.12.5', true );
-		wp_enqueue_script( 'popper' );
-
 		$optimize_suffix = '';
 		if ( isset( $porto_settings_optimize['optimize_bootstrap'] ) && $porto_settings_optimize['optimize_bootstrap'] ) {
 			$optimize_suffix = '.optimized';
 		}
-		wp_register_script( 'bootstrap', PORTO_JS . '/bootstrap' . $optimize_suffix . $min_suffix . '.js', array( 'popper' ), '4.1.3', true );
+		wp_register_script( 'bootstrap', PORTO_JS . '/bootstrap' . $optimize_suffix . $min_suffix . '.js', array(), '5.0.1', true );
 		wp_enqueue_script( 'bootstrap' );
 
 		/* plugins */
 		//wp_deregister_script( 'isotope' );
 		wp_register_script( 'jquery-cookie', PORTO_JS . '/libs/jquery.cookie.min.js', array(), '1.4.1', true );
 		wp_register_script( 'owl.carousel', PORTO_JS . '/libs/owl.carousel.min.js', array(), '2.3.4', true );
-		//wp_register_script( 'jquery-appear', PORTO_JS . '/libs/jquery.appear.min.js', array(), null, true );
 		wp_register_script( 'jquery-fitvids', PORTO_JS . '/libs/jquery.fitvids.min.js', array(), '1.1', true );
 		wp_register_script( 'jquery-matchHeight', PORTO_JS . '/libs/jquery.matchHeight.min.js', array(), null, true );
 		wp_register_script( 'modernizr', PORTO_JS . '/libs/modernizr.js', array(), '2.8.3', true );
-		wp_register_script( 'jquery-magnific-popup', PORTO_JS . '/libs/jquery.magnific-popup.min.js', array(), '1.1.0', true );
+		wp_register_script( 'jquery-magnific-popup', PORTO_JS . '/libs/jquery.magnific-popup.min.js', array( 'jquery-core', 'imagesloaded' ), '1.1.0', true );
 		wp_register_script( 'jquery-selectric', PORTO_JS . '/libs/jquery.selectric.min.js', array(), '1.9.6', true );
-		wp_register_script( 'jquery-waitforimages', PORTO_JS . '/libs/jquery.waitforimages.min.js', array(), '2.0.2', true );
+		//wp_register_script( 'jquery-waitforimages', PORTO_JS . '/libs/jquery.waitforimages.min.js', array(), '2.0.2', true );
 		wp_register_script( 'skrollr', PORTO_JS . '/libs/skrollr.min.js', array(), '0.6.30', true );
+		wp_register_script( 'jquery-parallax', PORTO_JS . '/libs/jquery.parallax.min.js', array(), null, true );
 
 		wp_enqueue_script( 'jquery-cookie' );
 		wp_enqueue_script( 'owl.carousel' );
 		//wp_enqueue_script( 'jquery-appear' );
-		wp_enqueue_script( 'jquery-fitvids' );
-		wp_enqueue_script( 'jquery-matchHeight' );
-		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'jquery-magnific-popup' );
-		wp_enqueue_script( 'jquery-waitforimages' );
+		//wp_enqueue_script( 'jquery-waitforimages' );
 
 		if ( $porto_settings['show-searchform'] && isset( $porto_settings['search-cats'] ) && $porto_settings['search-cats'] ) {
 			wp_enqueue_script( 'jquery-selectric' );
@@ -800,7 +816,7 @@ function porto_scripts() {
 		wp_enqueue_script( 'porto-theme-async' );
 		wp_register_script( 'porto-kute', PORTO_JS . '/libs/kute' . $min_suffix . '.js', array( 'jquery', 'porto-theme' ), PORTO_VERSION, true );
 		if ( class_exists( 'Woocommerce' ) ) {
-			wp_register_script( 'porto-woocommerce-theme', PORTO_JS . '/woocommerce-theme' . $min_suffix . '.js', array( 'porto-theme' ), PORTO_VERSION, true );
+			wp_register_script( 'porto-woocommerce-theme', PORTO_JS . '/woocommerce-theme' . $min_suffix . '.js', array( 'imagesloaded', 'porto-theme' ), PORTO_VERSION, true );
 			wp_enqueue_script( 'porto-woocommerce-theme' );
 		}
 
@@ -949,17 +965,6 @@ function porto_admin_css() {
 	wp_enqueue_style( 'porto_admin', PORTO_CSS . '/admin.min.css', $deps, PORTO_VERSION, 'all' );
 	wp_enqueue_style( 'porto_admin_bar', PORTO_CSS . '/admin_bar.css', $deps, PORTO_VERSION, 'all' );
 	porto_enqueue_revslider_css();
-
-	/**
-	 * Compatibility with dokan plugin
-	 * WordPress color picker doesn't work because of dokan chart.
-	 */
-	if ( defined( 'DOKAN_PLUGIN_VERSION' ) ) {
-		if ( ( ! empty( $_GET['page'] ) && 'pwaforwp' == $_GET['page'] ) || // pwa-for-wp page
-			'term.php' == $GLOBALS['pagenow'] && ! empty( $_GET['taxonomy'] ) && ! empty( $_GET['post_type'] ) && 'product' == $_GET['post_type'] ) { // product attribute page
-			wp_deregister_script( 'dokan-chart' );
-		}
-	}
 }
 
 function porto_admin_scripts() {
@@ -986,6 +991,14 @@ function porto_admin_scripts() {
 	}
 
 	wp_localize_script( 'porto-admin', 'js_porto_admin_vars', $admin_vars );
+
+	/**
+	 * Compatibility with dokan plugin
+	 * WordPress color picker doesn't work because of dokan chart.
+	 */
+	if ( defined( 'DOKAN_PLUGIN_VERSION' ) && ( empty( $_GET['page'] ) || 'dokan' != $_GET['page'] ) ) { // register dokan chart js only in dokan dashboard page
+		wp_deregister_script( 'dokan-chart' );
+	}
 }
 
 function porto_enqueue_revslider_css() {

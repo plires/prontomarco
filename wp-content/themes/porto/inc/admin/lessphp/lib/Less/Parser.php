@@ -7,6 +7,7 @@ require_once dirname( __FILE__ ).'/Cache.php';
  *
  * @package Less
  * @subpackage parser
+ *
  */
 class Less_Parser {
 
@@ -93,6 +94,7 @@ class Less_Parser {
 
 	/**
 	 * Reset the parser state completely
+	 *
 	 */
 	public function Reset( $options = null ) {
 		$this->rules = array();
@@ -101,7 +103,7 @@ class Less_Parser {
 		self::$imports = array();
 		self::$contentsMap = array();
 
-		$this->env = new Less_Environment();
+		$this->env = new Less_Environment( $options );
 
 		// set new options
 		if ( is_array( $options ) ) {
@@ -115,6 +117,7 @@ class Less_Parser {
 	/**
 	 * Set one or more compiler options
 	 *  options: import_dirs, cache_dir, cache_method
+	 *
 	 */
 	public function SetOptions( $options ) {
 		foreach ( $options as $option => $value ) {
@@ -124,6 +127,7 @@ class Less_Parser {
 
 	/**
 	 * Set one compiler option
+	 *
 	 */
 	public function SetOption( $option, $value ) {
 		switch ( $option ) {
@@ -170,11 +174,12 @@ class Less_Parser {
 	 */
 	public function getCss() {
 		$precision = ini_get( 'precision' );
-		@ini_set( 'precision', '16' );
+		@ini_set( 'precision', 16 );
 		$locale = setlocale( LC_NUMERIC, 0 );
 		setlocale( LC_NUMERIC, "C" );
 
 		try {
+
 			$root = new Less_Tree_Ruleset( array(), $this->rules );
 			$root->root = true;
 			$root->firstRoot = true;
@@ -278,11 +283,13 @@ class Less_Parser {
 	}
 
 	/**
+	 *
 	 * This method gets the value of the less variable from the rules object.
 	 * Since the objects vary here we add the logic for extracting the css/less value.
 	 *
 	 * @param $var
-	 * @return string
+	 *
+	 * @return bool|string
 	 */
 	private function getVariableValue( $var ) {
 		if ( !is_a( $var, 'Less_Tree' ) ) {
@@ -298,10 +305,6 @@ class Less_Parser {
 				return $this->findVarByName( $var->name );
 			case 'Keyword':
 				return $var->value;
-			case 'Url':
-				// Based on Less_Tree_Url::genCSS()
-				// Recurse to serialize the Less_Tree_Quoted value
-				return 'url(' . $this->getVariableValue( $var->value ) . ')';
 			case 'Rule':
 				return $this->getVariableValue( $var->value );
 			case 'Value':
@@ -332,6 +335,7 @@ class Less_Parser {
 			default:
 				throw new Exception( "type missing in switch/case getVariableValue for ".$var->type );
 		}
+		return false;
 	}
 
 	private function rgb2html( $r, $g = -1, $b = -1 ) {
@@ -353,6 +357,7 @@ class Less_Parser {
 
 	/**
 	 * Run pre-compile visitors
+	 *
 	 */
 	private function PreVisitors( $root ) {
 		if ( Less_Parser::$options['plugins'] ) {
@@ -366,6 +371,7 @@ class Less_Parser {
 
 	/**
 	 * Run post-compile visitors
+	 *
 	 */
 	private function PostVisitors( $evaldRoot ) {
 		$visitors = array();
@@ -399,7 +405,7 @@ class Less_Parser {
 	 * Parse a Less string into css
 	 *
 	 * @param string $str The string to convert
-	 * @param string|null $file_uri The url of the file
+	 * @param string $uri_root The url of the file
 	 * @return Less_Tree_Ruleset|Less_Parser
 	 */
 	public function parse( $str, $file_uri = null ) {
@@ -524,6 +530,7 @@ class Less_Parser {
 
 	/**
 	 * @deprecated 1.5.1.2
+	 *
 	 */
 	public function SetCacheDir( $dir ) {
 		if ( !file_exists( $dir ) ) {
@@ -667,6 +674,7 @@ class Less_Parser {
 
 	/**
 	 * Set up the input buffer
+	 *
 	 */
 	public function SetInput( $file_path ) {
 		if ( $file_path ) {
@@ -688,9 +696,10 @@ class Less_Parser {
 
 	/**
 	 * Free up some memory
+	 *
 	 */
 	public function UnsetInput() {
-		$this->input = $this->pos = $this->input_len = $this->furthest = null;
+		unset( $this->input, $this->pos, $this->input_len, $this->furthest );
 		$this->saveStack = array();
 	}
 
@@ -1900,6 +1909,7 @@ class Less_Parser {
 	/**
 	 * Custom less.php parse function for finding simple name-value css pairs
 	 * ex: width:100px;
+	 *
 	 */
 	private function parseNameValue() {
 		$index = $this->pos;
@@ -2094,7 +2104,7 @@ class Less_Parser {
 	private function parseMediaFeatures() {
 		$features = array();
 
-		do {
+		do{
 			$e = $this->parseMediaFeature();
 			if ( $e ) {
 				$features[] = $e;
@@ -2108,7 +2118,7 @@ class Less_Parser {
 			}
 		} while ( $e );
 
-		return $features ?: null;
+		return $features ? $features : null;
 	}
 
 	private function parseMedia() {
@@ -2401,6 +2411,7 @@ class Less_Parser {
 	/**
 	 * An operand is anything that can be part of an operation,
 	 * such as a Color, or a Variable
+	 *
 	 */
 	private function parseOperand() {
 		$negate = false;
@@ -2427,12 +2438,15 @@ class Less_Parser {
 	 * Expressions either represent mathematical operations,
 	 * or white-space delimited Entities.
 	 *
+	 *	 1px solid black
+	 * @var * 2
+	 *
 	 * @return Less_Tree_Expression|null
 	 */
 	private function parseExpression() {
 		$entities = array();
 
-		do {
+		do{
 			$e = $this->MatchFuncs( array( 'parseAddition','parseEntity' ) );
 			if ( $e ) {
 				$entities[] = $e;
@@ -2444,7 +2458,7 @@ class Less_Parser {
 					}
 				}
 			}
-		} while ( $e );
+		}while ( $e );
 
 		if ( $entities ) {
 			return $this->NewObj1( 'Less_Tree_Expression', $entities );
@@ -2533,10 +2547,11 @@ class Less_Parser {
 	/**
 	 * Round numbers similarly to javascript
 	 * eg: 1.499999 to 1 instead of 2
+	 *
 	 */
-	public static function round( $input, $precision = 0 ) {
+	public static function round( $i, $precision = 0 ) {
 		$precision = pow( 10, $precision );
-		$i = $input * $precision;
+		$i = $i * $precision;
 
 		$ceil = ceil( $i );
 		$floor = floor( $i );

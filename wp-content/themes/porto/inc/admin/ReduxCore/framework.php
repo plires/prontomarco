@@ -193,7 +193,7 @@ if ( ! class_exists( 'ReduxFramework' ) ) {
 			}
 
 			if ( empty( $this->args['footer_credit'] ) ) {
-				$this->args['footer_credit'] = '<span id="footer-thankyou">' . sprintf( __( 'Options panel created using %1$s', 'redux-framework' ), '<a href="' . esc_url( $this->framework_url ) . '" target="_blank">' . esc_html__( 'Redux Framework', 'redux-framework' ) . '</a> v' . self::$_version ) . '</span>';
+				$this->args['footer_credit'] = '<span id="footer-thankyou">' . sprintf( __( 'Options panel created using %1$s', 'redux-framework' ), '<a href="' . esc_url( $this->framework_url ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Redux Framework', 'redux-framework' ) . '</a> v' . self::$_version ) . '</span>';
 			}
 
 			if ( empty( $this->args['menu_title'] ) ) {

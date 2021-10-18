@@ -235,6 +235,9 @@ function porto_load_icon_shortcode() {
 					'heading'    => __( 'Alignment', 'porto-functionality' ),
 					'param_name' => 'icon_align',
 					'value'      => array(
+						''       => array(
+							'title' => esc_html__( 'Default', 'porto-functionality' ),
+						),
 						'left'   => array(
 							'title' => esc_html__( 'Left', 'porto-functionality' ),
 							'icon'  => 'fas fa-align-left',
@@ -248,7 +251,7 @@ function porto_load_icon_shortcode() {
 							'icon'  => 'fas fa-align-right',
 						),
 					),
-					'std'        => 'center',
+					'std'        => '',
 				),
 				$custom_class,
 				array(

@@ -55,15 +55,16 @@ $show_border = $border_color = $border_type = $border_size = $enable_typewriter 
 extract(
 	shortcode_atts(
 		array(
-			'skin'         => 'custom',
-			'show_border'  => false,
-			'border_skin'  => 'custom',
-			'border_color' => '',
-			'border_type'  => 'bottom-border',
-			'border_size'  => '',
-			'enable_typewriter' => false,
-			'typewriter_delay'  => 0,
-			'typewriter_width'  => 0,
+			'skin'                 => 'custom',
+			'show_border'          => false,
+			'border_skin'          => 'custom',
+			'border_color'         => '',
+			'border_type'          => 'bottom-border',
+			'border_size'          => '',
+			'enable_typewriter'    => false,
+			'typewriter_animation' => 'fadeIn',
+			'typewriter_delay'     => 0,
+			'typewriter_width'     => 0,
 		),
 		$atts
 	)
@@ -135,7 +136,7 @@ if ( $animation_type ) {
 } elseif ( $floating_start_pos && $floating_speed ) {
 	$floating_options = array(
 		'startPos' => $floating_start_pos,
-		'speed' => $floating_speed,
+		'speed'    => $floating_speed,
 	);
 	if ( $floating_transition ) {
 		$floating_options['transition'] = true;
@@ -153,7 +154,7 @@ if ( $animation_type ) {
 	$style .= ' data-plugin-float-element data-plugin-options="' . esc_attr( json_encode( $floating_options ) ) . '"';
 } elseif ( ! empty( $enable_typewriter ) ) {
 	$typewriter_options = array(
-		'startDelay' => 0,
+		'startDelay'     => 0,
 		'minWindowWidth' => 0,
 	);
 	if ( ! empty( $typewriter_delay ) ) {
@@ -161,7 +162,10 @@ if ( $animation_type ) {
 	}
 	if ( ! empty( $typewriter_width ) ) {
 		$typewriter_options['minWindowWidth'] = (int) $typewriter_width;
-	}	
+	}
+	if ( ! empty( $typewriter_animation ) ) {
+		$typewriter_options['animationName'] = $typewriter_animation;
+	}
 	$style .= ' data-plugin-animated-letters data-plugin-options="' . esc_attr( json_encode( $typewriter_options ) ) . '"';
 }
 
