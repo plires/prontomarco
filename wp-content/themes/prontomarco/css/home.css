@@ -119,34 +119,6 @@
 }
 /* Iconos end */
 
-/* Newsletter */
-.prontomarco_home .newsletter {
-	margin-bottom: 60px;
-	background: #cccccc;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.prontomarco_home .newsletter p {
-	color: black;
-}
-
-.prontomarco_home .newsletter button {
-	color: white;
-	background: black;
-	width: 100%;
-	margin-top: 10px;
-	border-color: black;
-}
-
-.prontomarco_home .newsletter button:hover {
-	color: white;
-	background: #0088cc;
-	border-color: #0088cc;
-}
-/* Newsletter end */
-
-
 /* MEDIA QUERIS */
 
 @media (min-width: 576px) {
@@ -227,23 +199,6 @@
 		font-size: 1rem;
 	}
 	/* Iconos end */
-
-	/* Newsletter */
-	.prontomarco_home .newsletter .col-lg-3 {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.prontomarco_home .newsletter .col-lg-3 p,
-	.prontomarco_home .newsletter .col-lg-3 button {
-		margin: 0;
-	}
-
-	.prontomarco_home .newsletter .col-lg-3 p {
-		text-align: left;
-	}
-	/* Newsletter end */
 
 }
 

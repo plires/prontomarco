@@ -38,3 +38,113 @@ body, h1, h2, h3, h4, h5, h6, p {
   }
 }
 /* Comunes end */
+
+/* Newsletter */
+.newsletter {
+  margin-bottom: 60px;
+  background: #cccccc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.newsletter p {
+  color: black;
+}
+
+.newsletter button {
+  color: white;
+  background: black;
+  width: 100%;
+  margin-top: 10px;
+  border-color: black;
+}
+
+.newsletter button:hover {
+  color: white;
+  background: #7fa8ae;
+  border-color: #7fa8ae;
+}
+/* Newsletter end */
+
+/* Header  */
+#header .share-links a:not(:hover) {
+  color: white;
+}
+
+.porto-icon-user-2 {
+  color: white;
+  -webkit-transition: all ease-in-out .3s; /* Safari */
+  transition: all ease-in-out .3s;
+}
+
+.porto-icon-user-2:hover {
+  opacity: 0.7;
+}
+
+#header .main-menu > li.menu-item > a {
+  -webkit-transition: all ease-in-out .3s; /* Safari */
+  transition: all ease-in-out .3s;
+}
+/* Header end */
+
+/* Footer */
+#footer .logo img {
+  max-width: 150px;
+}
+
+#footer .footer-bottom {
+  padding: 5px 0;
+}
+
+#footer .widget p {
+  margin: 0;
+}
+/* Footer end */
+
+/* MEDIA QUERIS */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+  /* Newsletter */
+  .newsletter .col-lg-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter .col-lg-3 p,
+  .newsletter .col-lg-3 button {
+    margin: 0;
+  }
+
+  .newsletter .col-lg-3 p {
+    text-align: left;
+  }
+  /* Newsletter end */
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1700px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}
+
