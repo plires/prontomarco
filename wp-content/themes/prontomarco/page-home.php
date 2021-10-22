@@ -86,7 +86,7 @@
 		<div class="row">
 
 			<div class="col-12 col-sm-4">
-				<a href="#">
+				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ABSTRACTOS ) ); ?>">
 					<div class="overlay transition"></div>
 						<img 
 				      	class="img-fluid" 
@@ -99,7 +99,7 @@
 			</div>
 
 			<div class="col-12 col-sm-8">
-				<a href="#">
+				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ANIMALES_PLANTAS ) ); ?>">
 					<div class="overlay transition"></div>
 						<img 
 					      	class="img-fluid img_category_mobile" 
@@ -120,7 +120,7 @@
 		<div class="row">
 
 			<div class="col-12 col-sm-8">
-				<a href="#">
+				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_BIKES ) ); ?>">
 					<div class="overlay transition"></div>
 						<img 
 					      	class="img-fluid img_category_mobile" 
@@ -137,7 +137,7 @@
 			</div>
 
 			<div class="col-12 col-sm-4">
-				<a href="#">
+				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_BLANCO_NEGRO ) ); ?>">
 					<div class="overlay transition"></div>
 						<img 
 				      	class="img-fluid" 
@@ -154,7 +154,7 @@
 		<div class="row">
 
 			<div class="col-12 col-sm-4">
-				<a href="#">
+				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_CONCEPTO ) ); ?>">
 					<div class="overlay transition"></div>
 						<img 
 				      	class="img-fluid" 
@@ -167,7 +167,7 @@
 			</div>
 
 			<div class="col-12 col-sm-8">
-				<a href="#">
+				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ILUSTRACION ) ); ?>">
 					<div class="overlay transition"></div>
 						<img 
 					      	class="img-fluid img_category_mobile" 
@@ -215,7 +215,7 @@
 
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2>OFERTAS</h2>
+				<h2>DESTACADOS</h2>
 				<img 
 		      	class="img-fluid arrow" 
 		      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/flecha-abajo.png'; ?>" 

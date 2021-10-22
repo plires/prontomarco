@@ -39,6 +39,16 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 /* Comunes end */
 
+/* Breadcums */
+.page-top .yoast-breadcrumbs a, .page-top .breadcrumbs-wrap a, .page-top .product-nav .product-link {
+  color: white;
+}
+
+.page-top .yoast-breadcrumbs, .page-top .breadcrumbs-wrap {
+  color: #7fa8ae;
+}
+/* Breadcums end */
+
 /* Newsletter */
 .newsletter {
   margin-bottom: 60px;
