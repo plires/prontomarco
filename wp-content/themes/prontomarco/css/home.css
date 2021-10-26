@@ -101,24 +101,6 @@
 }
 /* Ofertas end */
 
-/* Iconos */
-.prontomarco_home .iconos {
-	margin-bottom: 60px;
-}
-
-.prontomarco_home .iconos img {
-	max-width: 65%;
-}
-
-.prontomarco_home .iconos h4 br {
-	display: none;
-}
-
-.prontomarco_home .iconos h4 {
-	font-size: 0.65rem;
-}
-/* Iconos end */
-
 /* MEDIA QUERIS */
 
 @media (min-width: 576px) {
@@ -185,20 +167,6 @@
     max-height: 250px!important;
 	}
 	/* Categorias end */
-
-	/* Iconos */
-	.prontomarco_home .iconos img {
-		max-width: 65%;
-	}
-
-	.prontomarco_home .iconos h4 br {
-		display: inline-block;
-	}
-
-	.prontomarco_home .iconos h4 {
-		font-size: 1rem;
-	}
-	/* Iconos end */
 
 }
 

@@ -1,0 +1,79 @@
+.prontomarco_contacto {
+  margin-bottom: 60px;
+}
+
+/* Formulario */
+.prontomarco_contacto .formulario {
+  margin-bottom: 60px;
+}
+
+.prontomarco_contacto .formulario h1 {
+  background: black;
+  color: white;
+  padding: 5px;
+  font-size: 1.5rem;
+  max-width: 485px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.prontomarco_contacto .formulario img {
+  margin-bottom: 30px;
+}
+
+.prontomarco_contacto .formulario label {
+  margin-bottom: 10px;
+}
+
+.prontomarco_contacto .formulario input {
+  margin-bottom: 15px;
+}
+
+.prontomarco_contacto .formulario textarea {
+  resize: none;
+}
+
+.prontomarco_contacto .formulario button {
+  float: right;
+}
+/* Formulario end */
+
+/* Mapa */
+.prontomarco_contacto .mapa {
+  margin-bottom: 30px;
+}
+/* Mapa end */
+
+
+
+/* MEDIA QUERIS */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1700px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}
+

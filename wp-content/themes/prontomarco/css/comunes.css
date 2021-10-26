@@ -1,6 +1,7 @@
 /* Comunes  */
 body, h1, h2, h3, h4, h5, h6, p {
 	font-family: 'Josefin Sans', sans-serif!important;
+  line-height: 1.5;
 }
 
 #main .container-fluid:nth-child(1),
@@ -113,6 +114,24 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 /* Header end */
 
+/* Iconos */
+.iconos {
+  margin-bottom: 60px;
+}
+
+.iconos img {
+  max-width: 65%;
+}
+
+.iconos h4 br {
+  display: none;
+}
+
+.iconos h4 {
+  font-size: 0.65rem;
+}
+/* Iconos end */
+
 /* Footer */
 #footer .logo img {
   max-width: 150px;
@@ -125,6 +144,12 @@ body, h1, h2, h3, h4, h5, h6, p {
 #footer .widget p {
   margin: 0;
 }
+
+#footer .widget i {
+  margin: 0;
+  margin-right: 10px;
+}
+
 /* Footer end */
 
 /* MEDIA QUERIS */
@@ -155,6 +180,20 @@ body, h1, h2, h3, h4, h5, h6, p {
     text-align: left;
   }
   /* Newsletter end */
+
+  /* Iconos */
+  .iconos img {
+    max-width: 65%;
+  }
+
+  .iconos h4 br {
+    display: inline-block;
+  }
+
+  .iconos h4 {
+    font-size: 1rem;
+  }
+  /* Iconos end */
 
 }
 
