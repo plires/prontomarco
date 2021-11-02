@@ -225,7 +225,7 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<?php echo do_shortcode( ' [porto_products view="products-slider"] ' ); ?>
+				<?php echo do_shortcode( ' [porto_top_rated_products view="products-slider"] ' ); ?>
 			</div>
 		</div>
 

@@ -1,0 +1,122 @@
+2021-11-02T16:31:12+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/page-home.php(228): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/template-loader.php(106): include('...')
+#6 /home/vagrant/code/prontomarco/wp-blog-header.php(19): require_once('...')
+#7 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#8 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:31:13+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/page-home.php(228): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/template-loader.php(106): include('...')
+#6 /home/vagrant/code/prontomarco/wp-blog-header.php(19): require_once('...')
+#7 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#8 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:32:45+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-includes/class-wp-hook.php(303): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/plugin.php(189): WP_Hook->apply_filters()
+#6 /home/vagrant/code/prontomarco/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(603): apply_filters()
+#7 /home/vagrant/code/prontomarco/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(406): WP_REST_Revisions_Controller->prepare_item_for_response()
+#8 /home/vagrant/code/prontomarco/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(300): WP_REST_Autosaves_Controller->prepare_item_for_response()
+#9 /home/vagrant/code/prontomarco/wp-includes/rest-api/class-wp-rest-server.php(1140): WP_REST_Autosaves_Controller->get_items()
+#10 /home/vagrant/code/prontomarco/wp-includes/rest-api/class-wp-rest-server.php(987): WP_REST_Server->respond_to_request()
+#11 /home/vagrant/code/prontomarco/wp-includes/rest-api.php(495): WP_REST_Server->dispatch()
+#12 /home/vagrant/code/prontomarco/wp-includes/rest-api.php(2832): rest_do_request()
+#13 [internal function]: rest_preload_api_request()
+#14 /home/vagrant/code/prontomarco/wp-includes/block-editor.php(444): array_reduce()
+#15 /home/vagrant/code/prontomarco/wp-admin/edit-form-blocks.php(68): block_editor_rest_api_preload()
+#16 /home/vagrant/code/prontomarco/wp-admin/post.php(187): require('...')
+#17 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:32:48+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/page-home.php(228): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/template-loader.php(106): include('...')
+#6 /home/vagrant/code/prontomarco/wp-blog-header.php(19): require_once('...')
+#7 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#8 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:32:50+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/page-home.php(228): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/template-loader.php(106): include('...')
+#6 /home/vagrant/code/prontomarco/wp-blog-header.php(19): require_once('...')
+#7 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#8 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:32:59+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-includes/class-wp-hook.php(303): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/plugin.php(189): WP_Hook->apply_filters()
+#6 /home/vagrant/code/prontomarco/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php(603): apply_filters()
+#7 /home/vagrant/code/prontomarco/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(406): WP_REST_Revisions_Controller->prepare_item_for_response()
+#8 /home/vagrant/code/prontomarco/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php(300): WP_REST_Autosaves_Controller->prepare_item_for_response()
+#9 /home/vagrant/code/prontomarco/wp-includes/rest-api/class-wp-rest-server.php(1140): WP_REST_Autosaves_Controller->get_items()
+#10 /home/vagrant/code/prontomarco/wp-includes/rest-api/class-wp-rest-server.php(987): WP_REST_Server->respond_to_request()
+#11 /home/vagrant/code/prontomarco/wp-includes/rest-api.php(495): WP_REST_Server->dispatch()
+#12 /home/vagrant/code/prontomarco/wp-includes/rest-api.php(2832): rest_do_request()
+#13 [internal function]: rest_preload_api_request()
+#14 /home/vagrant/code/prontomarco/wp-includes/block-editor.php(444): array_reduce()
+#15 /home/vagrant/code/prontomarco/wp-admin/edit-form-blocks.php(68): block_editor_rest_api_preload()
+#16 /home/vagrant/code/prontomarco/wp-admin/post.php(187): require('...')
+#17 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:33:17+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/page-home.php(228): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/template-loader.php(106): include('...')
+#6 /home/vagrant/code/prontomarco/wp-blog-header.php(19): require_once('...')
+#7 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#8 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
+2021-11-02T16:33:18+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php:18
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_shortcodes/porto_widget_woo_top_rated_products.php(10): include()
+#1 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(356): porto_shortcode_widget_woo_top_rated_products()
+#2 [internal function]: do_shortcode_tag()
+#3 /home/vagrant/code/prontomarco/wp-includes/shortcodes.php(228): preg_replace_callback()
+#4 /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/page-home.php(228): do_shortcode()
+#5 /home/vagrant/code/prontomarco/wp-includes/template-loader.php(106): include('...')
+#6 /home/vagrant/code/prontomarco/wp-blog-header.php(19): require_once('...')
+#7 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#8 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
+
