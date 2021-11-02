@@ -120,3 +120,7 @@ Stack trace:
 #8 {main}
   thrown en /home/vagrant/code/prontomarco/wp-content/plugins/porto-functionality/shortcodes/woo_templates/porto_widget_woo_top_rated_products.php en la línea 18
 
+2021-11-02T18:25:23+00:00 CRITICAL syntax error, unexpected token ":" en /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/inc/newsletter.php en la línea 13
+
+2021-11-02T18:25:24+00:00 CRITICAL syntax error, unexpected token ":" en /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/inc/newsletter.php en la línea 13
+

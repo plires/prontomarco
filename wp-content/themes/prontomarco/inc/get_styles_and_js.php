@@ -22,6 +22,9 @@
 		// AOS JS
 		wp_enqueue_script( 'aos-js', get_stylesheet_directory_uri() . '/node_modules/aos/dist/aos.js' );
 
+		// Validate Forms
+		wp_enqueue_script( 'scripts-validate-forms', get_stylesheet_directory_uri() . '/js/validate-forms.js' );
+
 		// Bootstrap 4.1
 		wp_enqueue_script( 'bootstrap-4-1-js', get_stylesheet_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js' );
 
