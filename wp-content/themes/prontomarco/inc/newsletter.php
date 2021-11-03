@@ -51,6 +51,7 @@
 
 					<div class="col-lg-3 input-group">
 						<input 
+							required 
 							type="text" 
 							class="form-control" 
 							name="name" 
@@ -64,6 +65,7 @@
 					</div>
 					<div class="col-lg-3 input-group">
 						<input 
+							required 
 							type="email" 
 							class="form-control" 
 							name="email" 

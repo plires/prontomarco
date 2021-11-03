@@ -74,6 +74,10 @@ body, h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 30px;
 }
 
+.newsletter input {
+  margin-bottom: 15px!important;
+}
+
 .newsletter p {
   color: black;
 }
@@ -106,6 +110,9 @@ body, h1, h2, h3, h4, h5, h6, p {
   border-color: #7fa8ae;
 }
 
+.newsletter .invalid-feedback {
+  margin-bottom: 10px;
+}
 /* Newsletter end */
 
 /* Header  */
@@ -180,6 +187,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 @media (min-width: 992px) {
 
   /* Newsletter */
+  .newsletter input {
+    margin-bottom: 0!important;
+  }
+  
   .newsletter .col-lg-3 {
     display: flex;
     justify-content: center;
@@ -213,7 +224,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 @media (min-width: 1200px) {
-
+ 
 }
 
 @media (min-width: 1400px) {
