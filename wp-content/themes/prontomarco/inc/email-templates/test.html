@@ -369,14 +369,14 @@
     <![endif]-->
   </head>
   <body>
-    <span class="preheader">Nuevo contacto</span>
+    <span class="preheader">Gracias por tu contacto</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center">
           <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
             <tr style="text-align: center;">
               <td align="center" style="text-align: center;" class="email-masthead">
-                <a style="display: inline-block;" href="https://base3home.com" class="f-fallback email-masthead_name">
+                <a style="display: inline-block;" href="https://tiendacuadros.com.ar" class="f-fallback email-masthead_name">
                   <img src="https://base3home.com/wp-content/uploads/2021/02/logo-fijo.png" style="margin: auto; padding: 0; border: none; display: block;" border="0" alt="logo base3 home" />
                 </a>
               </td>
@@ -387,38 +387,34 @@
                   <tr>
                     <td class="content-cell">
                       <div class="f-fallback">
-                        <br />
-                        <br />
-                        <br />
-                        <h1>Nueva suscripción al newsletter.</h1>
-                        <br />
-                        <br />
+                        <h1>Hola, '.$post["name"].'!</h1>
+                        <p>Muchas gracias por tu contacto, te estaremos contestando a la brevedad posible!</p>
                         <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td class="attributes_content">
                               <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                 <tr>
                                   <td class="attributes_item">
-                                    <span class="f-fallback" style="color: #fff;"> <strong>Nombre:</strong> '.$post["name"].' </span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="attributes_item">
-                                    <span class="f-fallback" style="color: #fff;"> <strong>Email:</strong> '.$post["email"].' </span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="attributes_item">
-                                    <span class="f-fallback" style="color: #fff;"> <strong>Fecha:</strong> '.date("F j, Y, g:i a").' </span>
+                                    <span class="f-fallback" style="color: #fff;"> <strong>Tu mensaje:</strong> '.$post["comments"].' </span>
                                   </td>
                                 </tr>
                               </table>
                             </td>
                           </tr>
                         </table>
+                        <p>Mientras tanto te invitamos a seguir viendo nuestros productos</p>
                         <br />
-                        <br />
-                        <br />
+                        <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td align="center">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                <tr>
+                                  <td align="center"><a href="https://tiendacuadros.com.ar/tienda/" class="f-fallback button" target="_blank">VER PRODUCTOS</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
                         <br />
                         <table class="body-sub" role="presentation">
                           <tr>
@@ -427,8 +423,6 @@
                                 Este correo electrónico es confidencial y para uso exclusivo de la(s) persona(s) a quien(es) se dirige. Si el lector de esta transmisión electrónica no es el destinatario, se le notifica que cualquier
                                 distribución o copia de la misma está estrictamente prohibida. Si ha recibido este correo por error le solicitamos notificar inmediatamente a la persona que lo envió y borrarlo definitivamente de su sistema.
                               </p>
-                              <br />
-                              <br />
                             </td>
                           </tr>
                         </table>
@@ -462,3 +456,4 @@
     </table>
   </body>
 </html>
+
