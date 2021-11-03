@@ -1,3 +1,8 @@
+<?php
+	$name = isset($_GET['form_newsletter']['name']) ? $_GET['form_newsletter']['name'] : '';
+	$email = isset($_GET['form_newsletter']['email']) ? $_GET['form_newsletter']['email'] : '';
+?>
+
 <!-- Newsletter -->
 <section id="newsletter" class="newsletter container">
 
@@ -15,24 +20,7 @@
 
 					</ul>
 
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				    <span aria-hidden="true">&times;</span>
-				  </button>
-
-				</div>
-
-			<?php endif ?>
-
-			<?php if ( isset($_GET['errors']) ): ?>
-
-				<div class="alert alert-danger alert-dismissible fade show" role="alert">
-					<ul>
-
-						<li><?= $_GET['errors']; ?></li>
-
-					</ul>
-
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				  <button type="button" class="close transition" data-dismiss="alert" aria-label="Close">
 				    <span aria-hidden="true">&times;</span>
 				  </button>
 
@@ -43,7 +31,7 @@
 			<?php if (isset($_GET['exito'])): ?>
 				<div class="alert alert-success alert-dismissible fade show" role="alert">
 				  Suscripción <strong>exitosa!</strong>
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				  <button type="button" class="close transition" data-dismiss="alert" aria-label="Close">
 				    <span aria-hidden="true">&times;</span>
 				  </button>
 				</div>
@@ -66,7 +54,7 @@
 							type="text" 
 							class="form-control" 
 							name="name" 
-							value="<?php echo ( isset($_GET['name']) ? $_GET['name'] : '' ); ?>" 
+							value="<?= $name ?>" 
 							placeholder="Nombre">
 
 						<div class="invalid-feedback">
@@ -79,7 +67,7 @@
 							type="email" 
 							class="form-control" 
 							name="email" 
-							value="<?php echo ( isset($_GET['email']) ? $_GET['email'] : '' ); ?>" 
+							value="<?= $email ?>" 
 							placeholder="Email">
 
 						<div class="invalid-feedback">

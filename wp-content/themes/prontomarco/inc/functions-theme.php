@@ -14,14 +14,14 @@
 
 		try {
 	    //Server settings
-	    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-      // $mail->SMTPDebug = 2; //Alternative to above constant
+	    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+      $mail->SMTPDebug = 2; //Alternative to above constant
 	    $mail->isSMTP();                                            //Send using SMTP
 	    $mail->Host       = SMTP;                     //Set the SMTP server to send through
 	    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 	    $mail->Username   = SMTP_USER;                     //SMTP username
 	    $mail->Password   = SMTP_PASS;                               //SMTP password
-	    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+	    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	    $mail->Port       = EMAIL_PORT;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
 	    $mail->CharSet = EMAIL_CHARSET;
@@ -46,6 +46,7 @@
 
 	    $mail->send();
 		} catch (Exception $e) {
+	    var_dump($e);exit;
 
 			if ($method === 'ajax') {
 				/* Retornar mensaje de error.	*/
@@ -66,14 +67,28 @@
 					'form["email"]' => $post['email'] ,
 					'form["phone"]' => $post['phone'] ,
 					'form["comments"]' => $post['comments'] ,
-					'errors_contact["email"]' => 'No se pudo enviar el email'
+					'errors_contact["email"]' => 'No se pudo enviar el email, intente nuevamente por favor.'
 				), $url . '#contacto') );
 				exit;
+
 			} else {
-				wp_redirect( add_query_arg( array( 'errors' => "No se pudo enviar el mail" ), $url . '#newsletter') );
+
+				wp_redirect( 
+					add_query_arg( 
+						array( 
+							'errors_newsletter["send"]' => "No se pudo enviar el mail de agradecimiento, aunque la suscripción fue exitosa.",
+							'form_newsletter["name"]' => $post['name'],
+							'form_newsletter["email"]' => $post['email']
+						), 
+						$url . '#newsletter'
+					) 
+				);
 				exit;
+
 			}
+
 		}
+
 	}
 
 	function setEmailTemplateAndSubject($template, $post) {
@@ -86,18 +101,18 @@
       case 'Newsletter Cliente':
 
         include('email-templates/newsletter-to-client.php'); 
-        $subject = 'Nueva Suscripcion a Newsletter Base3 Home.';
+        $subject = 'Nueva Suscripcion a Newsletter Tienda Cuadros.';
         break;
       
       case 'Newsletter Usuario':
         include('email-templates/newsletter-to-user.php'); 
-        $subject = 'Gracias por tu contacto.';
+        $subject = 'Gracias por tu suscripcion.';
         break;
 
       case 'Contacto Cliente':
 
         include('email-templates/contacto-to-client.php'); 
-        $subject = 'Nuevo contacto Base3 Home.';
+        $subject = 'Nuevo contacto Tienda Cuadros.';
         break;
       
       case 'Contacto Usuario':

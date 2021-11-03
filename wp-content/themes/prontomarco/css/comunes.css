@@ -91,6 +91,21 @@ body, h1, h2, h3, h4, h5, h6, p {
   background: #7fa8ae;
   border-color: #7fa8ae;
 }
+
+.newsletter .close {
+  color: black;
+  background: transparent;
+  width: auto;
+  margin-top: 0;
+  border-color: black;
+}
+
+.newsletter .close:hover {
+  color: #255525;
+  background: transparent;
+  border-color: #7fa8ae;
+}
+
 /* Newsletter end */
 
 /* Header  */

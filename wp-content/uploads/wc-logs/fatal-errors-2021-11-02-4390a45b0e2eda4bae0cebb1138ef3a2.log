@@ -124,3 +124,5 @@ Stack trace:
 
 2021-11-02T18:25:24+00:00 CRITICAL syntax error, unexpected token ":" en /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/inc/newsletter.php en la línea 13
 
+2021-11-02T21:56:02+00:00 CRITICAL syntax error, unexpected single-quoted string "form_newsletter["email"]", expecting ")" en /home/vagrant/proyectos/prontomarco/wp-content/themes/prontomarco/php/formulario-newsletter.php en la línea 43
+

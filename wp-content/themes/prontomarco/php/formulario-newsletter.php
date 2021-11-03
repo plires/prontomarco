@@ -27,8 +27,8 @@ function procesar_formulario_newsletter() {
 
 			// AddEmailToPerfit($origin, $_POST['email']); // Alta en Sistema Perfit
 
-			// sendEmail('Cliente', 'Newsletter Cliente', $_POST, $actual_url[0]); // Enviar email Cliente
-			// sendEmail('Usuario', 'Newsletter Usuario', $_POST, $actual_url[0]); // Enviar email Usuario
+			sendEmail('Cliente', 'Newsletter Cliente', $_POST, $actual_url[0]); // Enviar email Cliente
+			sendEmail('Usuario', 'Newsletter Usuario', $_POST, $actual_url[0]); // Enviar email Usuario
 
 			/* Redireccionar al usuario a la misma u a otra nueva página con una variable de éxito.	*/
 			wp_redirect( $actual_url[0] . '?exito=1' . '#newsletter'); exit;
@@ -36,7 +36,14 @@ function procesar_formulario_newsletter() {
 		} else {
 
 		// Enviamos al usuario a la misma página con una variable GET de error.
-			wp_redirect( add_query_arg( array( 'errors' => "Este email ya esta registrado", 'email' => $_POST['email'] ), $actual_url[0] . '#newsletter') ); exit;
+			wp_redirect( add_query_arg( 
+				array( 
+					'errors_newsletter["repeat"]' => "Este email ya esta registrado", 
+					'form_newsletter["name"]' => $_POST['name'],
+					'form_newsletter["email"]' => $_POST['email']
+				), 
+				$actual_url[0] . '#newsletter') ); 
+			exit;
 
 		}
 		
@@ -44,8 +51,8 @@ function procesar_formulario_newsletter() {
 
 		// Enviamos al usuario a la misma página con una variable GET de error.
 		wp_redirect( add_query_arg( array( 
-			'form_newsletter["name"]' => $post['name'] ,
-			'form_newsletter["email"]' => $post['email'] ,
+			'form_newsletter["name"]' => $_POST['name'] ,
+			'form_newsletter["email"]' => $_POST['email'] ,
 			'errors_newsletter["name"]' => $errors_newsletter['name'] ,
 			'errors_newsletter["email"]' => $errors_newsletter['email'],
 		), $actual_url[0] . '#newsletter') );
