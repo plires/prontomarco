@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+<?php
+	$name = isset($_GET['form']['name']) ? $_GET['form']['name'] : '';
+	$email = isset($_GET['form']['email']) ? $_GET['form']['email'] : '';
+	$phone = isset($_GET['form']['phone']) ? $_GET['form']['phone'] : '';
+	$comments = isset($_GET['form']['comments']) ? $_GET['form']['comments'] : '';
+?>
+
 <!-- Contacto -->
 <section class="prontomarco_contacto">
 
@@ -16,7 +23,7 @@
 	<!-- Header end -->
 
 	<!-- Formulario -->
-	<section class="formulario container">
+	<section id="contacto" class="formulario container">
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<h1>CONTACTANOS</h1>
@@ -28,33 +35,104 @@
 
 			<div class="col-md-12">
 
-				<form method="post">
+				<?php if (isset($_GET['errors_contact'])): ?>
+
+					<div style="width: 100%;" class="alert alert-danger alert-dismissible fade show" role="alert">
+					  <ul>
+								
+							<?php foreach ($_GET["errors_contact"] as $error): ?>
+								<li><?= $error; ?></li>
+							<?php endforeach ?>
+							 
+						</ul>
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+
+				<?php endif ?>
+
+				<?php if (isset($_GET['exito_form_contacto'])): ?>
+					<div style="width: 100%;" class="alert alert-success alert-dismissible fade show" role="alert">
+					  Formulario enviado con éxito!
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				<?php endif ?>
+
+				<form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post" class="needs-validation" novalidate>
+
+					<input type="hidden" name="action" value="contacto">
+					<?php wp_nonce_field('graba_contacto', 'contacto_nonce'); ?>
 
 					<!-- Nombre -->
 					<div class="form-group">
+
 						<label for="name">Nombre</label>
-						<input type="text" class="form-control" name="name" placeholder="Ej: Juan Perez">
+
+						<input 
+							required 
+							type="text" 
+							class="form-control" 
+							name="name" 
+							value="<?= $name ?>" 
+							placeholder="Ej: Juan Perez">
+
+						<div class="invalid-feedback">
+			        Ingresá tu nombre
+			      </div>
+
 					</div>
 					<!-- Nombre end -->
 
 					<!-- Email -->
 					<div class="form-group">
+
 						<label for="email">Email</label>
-						<input type="email" class="form-control" name="email" placeholder="ej: juanperez@gmail.com">
+						<input 
+							required 
+							type="email" 
+							class="form-control" 
+							name="email" 
+							value="<?= $email ?>" 
+							placeholder="ej: juanperez@gmail.com">
+
+						<div class="invalid-feedback">
+			        Ingresá tu email
+			      </div>
+
 					</div>
 					<!-- Email end -->
 
 					<!-- Telefono -->
 					<div class="form-group">
+
 						<label for="phone">Teléfono</label>
-						<input type="tel" class="form-control" name="phone" placeholder="ej: 11 5054 2415">
+						<input 
+							type="tel" 
+							class="form-control" 
+							name="phone" 
+							value="<?= $phone ?>" 
+							placeholder="ej: 11 5054 2415">
+
 					</div>
 					<!-- Telefono end -->
 
 					<!-- Comentarios -->
 					<div class="form-group">
+
 						<label for="comments">Comentarios</label>
-						<textarea class="form-control" name="comments" rows="5" placeholder="ej: Necesito información..."></textarea>
+						<textarea 
+							required 
+							class="form-control" 
+							name="comments" rows="5" 
+							placeholder="ej: Necesito información..."><?= $comments ?></textarea>
+
+						<div class="invalid-feedback">
+			        Ingresá tus comentarios
+			      </div>
+
 					</div>
 					<!-- Comentarios end -->
 					

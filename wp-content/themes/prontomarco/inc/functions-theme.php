@@ -271,16 +271,15 @@
 
 		// SIEMPRE SE DEBEN SANITIZAR LOS VALORES
 		$name = sanitize_text_field( $post['name'] );
-		$lastname = sanitize_text_field( isset($post['lastname']) );
 		$email = sanitize_text_field( $post['email'] );
 		$phone = sanitize_text_field( $post['phone'] );
 		$comments = sanitize_text_field( $post['comments'] );
 		$created_at = date("Y-m-d H:i:s");
 
 		/* Grabar el registro en base de datos */
-		$sql = "INSERT INTO $tablename (name, lastname, email, phone, comments, created_at) VALUES (%s, %s, %s, %s, %s, %s)";
+		$sql = "INSERT INTO $tablename (name, email, phone, comments, created_at) VALUES (%s, %s, %s, %s, %s)";
 
-		$prepare_query = $wpdb->prepare( $sql, $name, $lastname, $email, $phone, $comments, $created_at );
+		$prepare_query = $wpdb->prepare( $sql, $name, $email, $phone, $comments, $created_at );
 		$record_saved = $wpdb->query($prepare_query);
 
 		return $record_saved;
@@ -291,9 +290,7 @@
 
 		$errors_contact = [];
 		$name = '';
-		$lastname = '';
 		$email = '';
-		$phone = '';
 		$comments = '';
 
 		if ( !wp_verify_nonce($post['contacto_nonce'], 'graba_contacto') ) {
@@ -306,20 +303,10 @@
 			$name = $post['name'];
 		}
 
-		if ( isset($post['lastname']) ) {
-			$lastname = $post['lastname'];
-		}
-
 		if ( empty($post['email']) || !is_email($post['email']) ) {
 			$errors_contact['email'] = 'Por favor ingresá un email válido';
 		} else {
 			$email = $post['email'];
-		}
-
-		if ( empty($post['phone']) ) {
-			$errors_contact['phone'] = 'Por favor ingresá un teléfono de contacto';
-		} else {
-			$phone = $post['phone'];
 		}
 
 		if ( empty($post['comments']) ) {
