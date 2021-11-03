@@ -1,0 +1,164 @@
+/* Pop Up */
+#pop_up_overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255, 0.5);
+  backdrop-filter: blur(15px);
+  z-index: 19;
+}
+
+#pop_up input { 
+  margin-bottom: 10px;
+}
+
+#pop_up .invalid-feedback { 
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
+#pop_up .btn-primary { 
+  color: white;
+}
+
+#pop_up .btn-primary:hover { 
+  color: black;
+  background: white;
+}
+
+.pop_up { 
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 15%);
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.pop_up .logo_pop { 
+  margin: 15px auto 15px auto;
+}
+
+#pop_up_overlay.show{ 
+  display: flex;
+}
+
+.pop_up.show { 
+  display: flex;
+}
+
+.pop_up .content { 
+  position: relative;
+  background: white;
+  box-shadow:0px 0px 10px grey; 
+  padding: 20px;
+  max-width: 800px;
+  width: calc(100% - 20px);
+}
+
+.pop_up .content .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  display: inline-block;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+
+.pop_up .image { position: relative; }
+
+.pop_up #image_pop_up { content:url("../img/pop-up/cuadros-mobile.jpg"); }
+
+.pop_up h2 { text-align: center; font-size: 1.5rem; margin-bottom: 5px; }
+.pop_up p { text-align: center; }
+.pop_up .btn-primary { font-size: 1.5rem; color: black; width: 100%; margin-top: 20px; }
+
+.pop_up .content_spinner {
+  display: none;
+  justify-content: center;
+  margin-top: 15px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all ease-in-out .3s;
+}
+
+.pop_up .content_spinner.show { display: flex; opacity: 1; transform: scale(1); }
+
+.pop_up .spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: var(--primary-color);
+  text-align: center;
+  animation: spin 1s ease infinite;
+}
+
+.pop_up #popup_response { margin: 0; margin-top: 15px; }
+/* Pop Up end */
+
+
+
+
+/* MEDIA QUERIS */
+
+@media (min-width: 576px) {
+  /* Pop Up */
+  .pop_up .content { 
+    display: flex;
+  }
+
+  .pop_up .image { 
+    max-width: 60%;
+  }
+
+  .pop_up #image_pop_up { content:url("../img/pop-up/cuadros.jpg")!important; }
+
+  .pop_up .news { 
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  /* Pop Up end */
+
+}
+
+@media (min-width: 768px) {
+  /* Pop Up */
+  .pop_up form { margin-top: 40px; }
+
+  .pop_up .news { 
+    max-width: 47%;
+  }
+  /* Pop Up end */
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1700px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}
+

@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<!-- Pop Up -->
+<div id="pop_up_overlay"></div>
+<?php include('template-parts/pop-up-newsletter.php'); ?>
+
 <!-- Home -->
 <section class="prontomarco_home">
 

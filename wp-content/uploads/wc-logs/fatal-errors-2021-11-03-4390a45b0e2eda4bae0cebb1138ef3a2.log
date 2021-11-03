@@ -8,3 +8,13 @@ Stack trace:
 #5 {main}
   thrown en /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/functions.php en la línea 8
 
+2021-11-03T18:47:13+00:00 CRITICAL Uncaught Error: Failed opening required 'php/formulario-newsletter-pop-up.phsp' (include_path='.:/usr/share/php') in /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/functions.php:8
+Stack trace:
+#0 /home/vagrant/code/prontomarco/wp-settings.php(546): include()
+#1 /home/vagrant/code/prontomarco/wp-config.php(96): require_once('...')
+#2 /home/vagrant/code/prontomarco/wp-load.php(50): require_once('...')
+#3 /home/vagrant/code/prontomarco/wp-blog-header.php(13): require_once('...')
+#4 /home/vagrant/code/prontomarco/index.php(17): require('...')
+#5 {main}
+  thrown en /home/vagrant/code/prontomarco/wp-content/themes/prontomarco/functions.php en la línea 8
+

@@ -28,6 +28,10 @@
 		// Bootstrap 4.1
 		wp_enqueue_script( 'bootstrap-4-1-js', get_stylesheet_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js' );
 
+		if (is_front_page()) {
+			wp_enqueue_script( 'pop-up', get_stylesheet_directory_uri() . '/js/pop-up.js' );
+		}
+
 		if ( is_rtl() ) {
 			wp_deregister_style( 'styles-child-rtl' );
 			wp_register_style( 'styles-child-rtl', esc_url( get_stylesheet_directory_uri() ) . '/style_rtl.css' );

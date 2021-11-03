@@ -14,8 +14,8 @@
 
 		try {
 	    //Server settings
-	    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-      $mail->SMTPDebug = 2; //Alternative to above constant
+	    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+      // $mail->SMTPDebug = 2; //Alternative to above constant
 	    $mail->isSMTP();                                            //Send using SMTP
 	    $mail->Host       = SMTP;                     //Set the SMTP server to send through
 	    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
