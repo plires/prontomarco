@@ -297,10 +297,10 @@
         -premailer-cellpadding: 0;
         -premailer-cellspacing: 0;
         text-align: center;
-        color: #fff;
+        color: #ffffff;
       }
       .email-footer p {
-        color: #fff;
+        color: #ffffff;
       }
       .body-action {
         width: 100%;
@@ -369,7 +369,7 @@
     <![endif]-->
   </head>
   <body>
-    <span class="preheader">Gracias por tu contacto</span>
+    <span class="preheader">Nuevo contacto</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center">
@@ -387,29 +387,40 @@
                   <tr>
                     <td class="content-cell">
                       <div class="f-fallback">
-                        <h1>Hola, '.$post["name"].'!</h1>
-                        <p>Muchas gracias por tu contacto, te estaremos contestando a la brevedad posible!</p>
+                        <br />
+                        <br />
+                        <br />
+                        <h1>Nuevo contacto desde el formulario.</h1>
+                        <br />
+                        <br />
                         <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td class="attributes_content">
                               <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                                 <tr>
                                   <td class="attributes_item">
-                                    <span class="f-fallback" style="color: #fff;"> <strong>Tu mensaje:</strong> '.$post["comments"].' </span>
+                                    <span class="f-fallback" style="color: #fff;"> <strong>Nombre:</strong> '.$post["name"].' </span>
                                   </td>
                                 </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                        <p>Mientras tanto te invitamos a seguir viendo nuestros productos</p>
-                        <br />
-                        <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td align="center">
-                              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
-                                  <td align="center"><a href="https://tiendacuadros.com.ar/tienda/" class="f-fallback button" target="_blank">VER PRODUCTOS</a></td>
+                                  <td class="attributes_item">
+                                    <span class="f-fallback" style="color: #fff;"> <strong>Email:</strong> '.$post["email"].' </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="attributes_item">
+                                    <span class="f-fallback" style="color: #fff;"> <strong>Teléfono:</strong> '.$post["phone"].' </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="attributes_item">
+                                    <span class="f-fallback" style="color: #fff;"> <strong>Comentarios:</strong> '.$post["comments"].' </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="attributes_item">
+                                    <span class="f-fallback" style="color: #fff;"> <strong>Fecha:</strong> '.date("F j, Y, g:i a").' </span>
+                                  </td>
                                 </tr>
                               </table>
                             </td>
@@ -442,8 +453,7 @@
                         Blanco Encalada 43 - San Isidro. <br />
                         (11) 4766.0433 <br />
                         info@tiendacuadros.com.ar <br />
-                        Lu - Vi / 10:00 Hs - 18:30 Hs
-                        Sábado / 10:00 Hs - 13:30 Hs
+                        Lu - Vi / 10:00 Hs - 18:30 Hs Sábado / 10:00 Hs - 13:30 Hs
                       </p>
                     </td>
                   </tr>
@@ -456,4 +466,3 @@
     </table>
   </body>
 </html>
-
