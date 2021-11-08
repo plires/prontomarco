@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Porto\n"
 "POT-Creation-Date: 2021-10-02 12:46+0300\n"
-"PO-Revision-Date: 2021-10-19 21:01+0000\n"
+"PO-Revision-Date: 2021-10-19 21:13+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -46,7 +46,7 @@ msgstr ""
 #: inc/lib/porto-studio/blocks.tpl.php:44 taxonomy-faq_cat.php:70
 #: taxonomy-portfolio_cat.php:99
 msgid "Show All"
-msgstr ""
+msgstr "Mostrar Todo"
 
 #: archive-member.php:42 taxonomy-member_cat.php:35
 #, php-format
@@ -607,7 +607,7 @@ msgstr ""
 
 #: functions.php:989
 msgid "Search for..."
-msgstr ""
+msgstr "Buscar..."
 
 #: header/header_9.php:142 woocommerce/myaccount/dashboard.php:37
 msgid "Logout"
@@ -1101,7 +1101,7 @@ msgstr ""
 #: inc/admin/theme_options/settings.php:2657
 #: inc/admin/theme_options/settings.php:3604
 msgid "Search Form"
-msgstr ""
+msgstr "Formulario de búsqueda"
 
 #: inc/admin/customizer/header-builder.php:45
 msgid "Social Icons"
@@ -2411,12 +2411,13 @@ msgstr ""
 #: inc/admin/theme_options/settings.php:147
 msgid "Loading overlay is shown until whole page is loaded."
 msgstr ""
+"La superposición de carga se muestra hasta que se carga la página completa."
 
 #: inc/admin/theme_options/settings.php:149
 #: inc/admin/theme_options/settings.php:5124
 #: inc/admin/theme_options/settings.php:5377 woocommerce/loop/pagination.php:29
 msgid "Show"
-msgstr ""
+msgstr "Mostrar"
 
 #: inc/admin/theme_options/settings.php:150
 #: inc/admin/theme_options/settings.php:3138
@@ -3159,6 +3160,8 @@ msgid ""
 "This will display quick search results whenever you input characters in the "
 "search box."
 msgstr ""
+"Esto mostrará resultados de búsqueda rápida cada vez que ingrese caracteres "
+"en el cuadro de búsqueda."
 
 #: inc/admin/theme_options/settings.php:569
 msgid "Search by SKU"
@@ -6022,7 +6025,7 @@ msgstr ""
 #: inc/admin/theme_options/settings.php:6244
 #: inc/admin/theme_options/settings.php:6588
 msgid "Sort Categories Order By"
-msgstr ""
+msgstr "Ordenar categorías Ordenar por"
 
 #: inc/admin/theme_options/settings.php:5349
 #: inc/admin/theme_options/settings.php:6251
@@ -6524,7 +6527,7 @@ msgstr ""
 
 #: inc/admin/theme_options/settings.php:6602
 msgid "Sort Items Order By"
-msgstr ""
+msgstr "Ordenar artículos Ordenar por"
 
 #: inc/admin/theme_options/settings.php:6609
 msgid "Sort Order for Items"
@@ -7693,12 +7696,12 @@ msgstr ""
 #: inc/functions/layout.php:1964 inc/functions/layout.php:2035 searchform.php:6
 #: woocommerce/yith-woocommerce-ajax-search.php:45
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: inc/functions/layout.php:1986
 #: woocommerce/yith-woocommerce-ajax-search.php:26
 msgid "Search&hellip;"
-msgstr ""
+msgstr "Buscar..."
 
 #: inc/functions/layout.php:2002
 #: woocommerce/yith-woocommerce-ajax-search.php:30
@@ -7743,7 +7746,7 @@ msgstr ""
 #: inc/functions/layout/breadcrumbs.php:271
 #, php-format
 msgid "Search - %s"
-msgstr ""
+msgstr "Buscar - %s"
 
 #: inc/functions/layout/page-title.php:173
 #, php-format
@@ -7779,7 +7782,7 @@ msgstr ""
 #: inc/functions/layout/page-title.php:197
 #, php-format
 msgid "Search Results - %s"
-msgstr ""
+msgstr "Buscar Resultados - %s"
 
 #: inc/functions/layout/page-title.php:193
 msgid "404 - Page Not Found"
@@ -8421,7 +8424,7 @@ msgstr ""
 
 #: inc/functions/woocommerce.php:2461
 msgid "In stock"
-msgstr ""
+msgstr "En stock"
 
 #: inc/functions/woocommerce.php:2464
 msgid "Add to cart"
@@ -9805,7 +9808,7 @@ msgstr ""
 
 #: index.php:113 search.php:81
 msgid "Nothing Found"
-msgstr ""
+msgstr "No se encontraron resultados"
 
 #: index.php:117
 #, php-format
@@ -9817,12 +9820,16 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with "
 "different keywords."
 msgstr ""
+"Lo siento, pero nada coincide con los términos de búsqueda. Vuelva a "
+"intentarlo con palabras clave diferentes."
 
 #: index.php:123 search.php:94
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Parece que no podemos encontrar lo que estás buscando. Quizás la búsqueda "
+"pueda ayudar."
 
 #: js/libs/modernizr.js:4
 msgid "perspective"
@@ -10280,7 +10287,7 @@ msgstr "No se encontraron productos que coincidan con su selección."
 
 #: woocommerce/loop/orderby.php:15
 msgid "Sort By"
-msgstr ""
+msgstr "Ordenar por"
 
 #: woocommerce/loop/orderby.php:16
 msgid "Shop order"
@@ -10918,7 +10925,7 @@ msgstr "Quitar este producto"
 
 #: woocommerce/wishlist-view.php:209
 msgid "In Stock"
-msgstr ""
+msgstr "En Stock"
 
 #: woocommerce/wishlist-view.php:218
 #, php-format

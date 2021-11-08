@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Porto\n"
 "POT-Creation-Date: 2021-10-02 12:46+0300\n"
-"PO-Revision-Date: 2021-10-19 21:13+0000\n"
+"PO-Revision-Date: 2021-11-08 15:02+0000\n"
 "Last-Translator: \n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -304,7 +304,7 @@ msgstr ""
 #: content-blog-masonry.php:250 content-blog-medium.php:42
 #: content-blog-timeline.php:193 content-blog-woocommerce.php:109
 msgid "Read more..."
-msgstr ""
+msgstr "Leer más..."
 
 #: content-blog-medium-alt.php:16
 msgid "Posted By "
@@ -336,11 +336,11 @@ msgstr ""
 
 #: content-blog-medium-alt.php:120
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"
 
 #: content-blog-modern.php:135
 msgid "Read more +"
-msgstr ""
+msgstr "Leer más +"
 
 #: content-member.php:178 content-member.php:198 content-member.php:224
 msgid "Follow Me"
@@ -480,7 +480,7 @@ msgstr ""
 #: content-post-item-no-image.php:32 content-post-item.php:72
 #: content-post-item.php:305 inc/functions/post.php:200
 msgid "Read More"
-msgstr ""
+msgstr "Leer Más"
 
 #: content-post-item-no-image.php:214 content-post-item.php:315
 msgid "by"
@@ -7790,7 +7790,7 @@ msgstr ""
 
 #: inc/functions/post.php:202
 msgid "read more"
-msgstr ""
+msgstr "leer más"
 
 #: inc/functions/post.php:281
 #, php-format
@@ -8344,7 +8344,7 @@ msgstr ""
 #: inc/functions/woocommerce.php:1675
 #, php-format
 msgid "Read More About %s"
-msgstr ""
+msgstr "Leer más acerca de%s"
 
 #: inc/functions/woocommerce.php:1922
 msgid "Filters:"
