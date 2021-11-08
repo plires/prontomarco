@@ -376,7 +376,7 @@
 
   	$image = esc_url( get_stylesheet_directory_uri() ) . '/img/backend/favicon.png';
   
-	 echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_bloginfo('wpurl') . '/wp-content/themes/porto-child/img/backend/favicon.png" />';
+	 echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_bloginfo('wpurl') . '/wp-content/themes/prontomarco/img/backend/favicon.png" />';
 	}
 	 
 	// Agrega las miniaturas de las imagenes del producto a la plantilla de email de pedidos

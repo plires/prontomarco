@@ -687,7 +687,7 @@ function porto_register_style( $handle, $filename, $themedir = true, $load_defau
 		$css_uri    = $upload_dir['baseurl'] . '/porto_styles/' . $filename . '.css';
 	}
 	if ( file_exists( $css_file ) ) {
-		wp_register_style( $handle, $css_uri, $deps, PORTO_VERSION );
+		wp_register_style( $handle, $css_uri, $deps, time() );
 	} elseif ( $load_default ) {
 		if ( 'style-editor' == $filename ) {
 			ob_start();
@@ -696,7 +696,7 @@ function porto_register_style( $handle, $filename, $themedir = true, $load_defau
 			ob_end_clean();
 			wp_add_inline_style( 'porto-shortcodes', $css );
 		} else {
-			wp_register_style( $handle, PORTO_URI . '/css/' . $filename . '.css', $deps, PORTO_VERSION );
+			wp_register_style( $handle, PORTO_URI . '/css/' . $filename . '.css', $deps, time() );
 		}
 	}
 }
