@@ -52,7 +52,7 @@
 	margin-bottom: 10px;
 }
 
-.prontomarco_home .categorias .overlay {
+.prontomarco_home .categorias .home_overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@
     opacity: 0.2;
 }
 
-.prontomarco_home .categorias .col-12:hover .overlay {
+.prontomarco_home .categorias .col-12:hover .home_overlay {
     opacity: 0.6;
 }
 

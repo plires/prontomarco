@@ -91,7 +91,7 @@
 
 			<div class="col-12 col-sm-4">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ABSTRACTOS ) ); ?>">
-					<div class="overlay transition"></div>
+					<div class="home_overlay transition"></div>
 						<img 
 				      	class="img-fluid" 
 				      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/home/abstracto.jpg'; ?>" 
@@ -104,7 +104,7 @@
 
 			<div class="col-12 col-sm-8">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ANIMALES_PLANTAS ) ); ?>">
-					<div class="overlay transition"></div>
+					<div class="home_overlay transition"></div>
 						<img 
 					      	class="img-fluid img_category_mobile" 
 					      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/home/animales-mobile.jpg'; ?>" 
@@ -125,7 +125,7 @@
 
 			<div class="col-12 col-sm-8">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_BIKES ) ); ?>">
-					<div class="overlay transition"></div>
+					<div class="home_overlay transition"></div>
 						<img 
 					      	class="img-fluid img_category_mobile" 
 					      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/home/bikes-mobile.jpg'; ?>" 
@@ -142,7 +142,7 @@
 
 			<div class="col-12 col-sm-4">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_BLANCO_NEGRO ) ); ?>">
-					<div class="overlay transition"></div>
+					<div class="home_overlay transition"></div>
 						<img 
 				      	class="img-fluid" 
 				      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/home/byn.jpg'; ?>" 
@@ -159,7 +159,7 @@
 
 			<div class="col-12 col-sm-4">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_CONCEPTO ) ); ?>">
-					<div class="overlay transition"></div>
+					<div class="home_overlay transition"></div>
 						<img 
 				      	class="img-fluid" 
 				      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/home/concepto.jpg'; ?>" 
@@ -172,7 +172,7 @@
 
 			<div class="col-12 col-sm-8">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ILUSTRACION ) ); ?>">
-					<div class="overlay transition"></div>
+					<div class="home_overlay transition"></div>
 						<img 
 					      	class="img-fluid img_category_mobile" 
 					      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/home/ilustracion-mobile.jpg'; ?>" 
