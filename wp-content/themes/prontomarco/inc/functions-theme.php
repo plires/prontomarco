@@ -1,8 +1,8 @@
 <?php
 
-	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
 	use PHPMailer\PHPMailer\Exception;
+	use PHPMailer\PHPMailer\PHPMailer;
 
 	function sendEmail($destinatario, $template, $post, $url, $method = NULL) {
 
@@ -400,6 +400,32 @@
 	 return wc_get_email_order_items( $order, $args );
 	}
 	add_filter( 'woocommerce_email_order_items_table', 'dpw_add_images_woocommerce_emails', 10, 2 );
+
+	/* Funcion para poder acceder a propiedades protegidas de objetos
+	// - Recibe el objeto y la propiedad
+	// - Devuelve la propiedad en un array
+	*/
+	function accessProtected($obj, $prop) {
+	  $reflection = new ReflectionClass($obj);
+	  $property = $reflection->getProperty($prop);
+	  $property->setAccessible(true);
+	  return $property->getValue($obj);
+	}
+
+	// Hook en pagina de producto para agregar cuotas sin interes.
+	function prontomarco_woocommerce_single_product_summary() { 
+		global $product;
+		
+		$product_data = accessProtected($product, 'data');
+		$cuota = floatval($product_data['price'] / CUOTAS_SIN_INTERES);
+		$cuota_formated = number_format( $cuota,2,",","." );
+
+		include( dirname( __FILE__ ) .  '../../template-parts/cuotas-sin-interes.php');
+	}; 
+
+	// add the action 
+	add_action( 'woocommerce_single_product_summary', 'prontomarco_woocommerce_single_product_summary', 10, 2 );
+	         
 
 	// Modo mantenimiento
 	function mode_maintenance(){

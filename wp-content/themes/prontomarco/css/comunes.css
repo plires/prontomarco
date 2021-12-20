@@ -50,6 +50,26 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 /* Breadcums end */
 
+/* Cuotas sin interes */
+.cuotas .content {
+  margin-bottom: 15px;
+}
+
+.cuotas .content .detalle_cuotas {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.cuotas .content .frase_final {
+  background: #7fa8ae;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+}
+/* Cuotas sin interes end */
+
 /* Pagina de gracias por su pago */
 .post-9 a button {
   background: transparent;
