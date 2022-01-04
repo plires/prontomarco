@@ -12,8 +12,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-var_dump('asd');
-
 /* Agregado para cuotas sin interes */
 echo "
 <script>

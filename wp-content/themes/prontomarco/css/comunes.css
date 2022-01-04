@@ -38,6 +38,22 @@ body, h1, h2, h3, h4, h5, h6, p {
     top: 0;
   }
 }
+
+.bg_turquesa {
+  background: #48a6a6;
+}
+
+.bg_gold {
+  background: #a38a3e;
+}
+
+.bg_lila {
+  background: #98598f;
+}
+
+.bg_gris {
+  background: #999999;
+}
 /* Comunes end */
 
 /* Breadcums */

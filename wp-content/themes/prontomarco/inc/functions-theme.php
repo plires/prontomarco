@@ -46,7 +46,6 @@
 
 	    $mail->send();
 		} catch (Exception $e) {
-	    var_dump($e);exit;
 
 			if ($method === 'ajax') {
 				/* Retornar mensaje de error.	*/
