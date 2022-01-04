@@ -25,7 +25,7 @@
 	<!-- Formulario -->
 	<section id="contacto" class="formulario container">
 		<div class="row">
-			<div class="col-md-12 text-center">
+			<div data-aos="fade-up" class="col-md-12 text-center">
 				<h1>CONTACTANOS</h1>
 				<img 
 					class="img-fluid transition arrow" 
@@ -33,7 +33,7 @@
 			      	alt="flecha abajo categorias">
 			</div>
 
-			<div class="col-md-12">
+			<div data-aos="fade-up" class="col-md-12">
 
 				<?php if (isset($_GET['errors_contact'])): ?>
 
@@ -146,7 +146,7 @@
 	<!-- Formulario end -->
 
 	<!-- Mapa -->
-	<section class="mapa container-fluid">
+	<section data-aos="fade-up" class="mapa container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.3615368260157!2d-58.55373738477326!3d-34.493717580488166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb076560a8349%3A0x638ecb452b0b2a04!2sPronto%20Marco!5e0!3m2!1ses-419!2sar!4v1635272350599!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -161,5 +161,9 @@
 
 </section>
 <!-- Contacto end -->
+
+<script>
+	AOS.init();
+</script>
 
 <?php get_footer(); ?>

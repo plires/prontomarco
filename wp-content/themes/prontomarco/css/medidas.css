@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.prontomarco_medidas .header .header_medidas {
-  content:url("../img/medidas/header-medidas-mobile.jpg");
-}
-
 .prontomarco_medidas .image {
   order: 1;
   margin-bottom: 30px;
@@ -78,10 +74,6 @@
 /* MEDIA QUERIS */
 
 @media (min-width: 576px) {
-
-  .prontomarco_medidas .header .header_medidas {
-    content:url("../img/medidas/header-medidas.jpg");
-  }
 
   .prontomarco_medidas .image {
     order: initial;

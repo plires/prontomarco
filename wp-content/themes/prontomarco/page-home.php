@@ -77,7 +77,7 @@
 	<!-- Categorias -->
 	<section class="categorias container">
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 			<div class="col-md-12 text-center">
 				<h2>NUESTRAS CATEGORÍAS</h2>
 				<img 
@@ -87,7 +87,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 col-sm-4">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_ABSTRACTOS ) ); ?>">
@@ -121,7 +121,7 @@
 
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 col-sm-8">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_BIKES ) ); ?>">
@@ -155,7 +155,7 @@
 
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 col-sm-4">
 				<a href="<?php echo esc_url( get_category_link( ID_CATEGORY_CONCEPTO ) ); ?>">
@@ -193,7 +193,7 @@
 	<!-- Categorias end -->
 
 	<!-- Productos -->
-	<section class="mas_vistos container">
+	<section data-aos="fade-up" class="mas_vistos container">
 
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -215,7 +215,7 @@
 	<!-- Productos end -->
 
 	<!-- Ofertas -->
-	<section class="ofertas container">
+	<section data-aos="fade-up" class="ofertas container">
 
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -242,5 +242,9 @@
 
 </section>
 <!-- Home end -->
+
+<script>
+	AOS.init();
+</script>
 
 <?php get_footer(); ?>

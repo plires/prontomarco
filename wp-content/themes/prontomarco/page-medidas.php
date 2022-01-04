@@ -13,7 +13,7 @@
 			<div class="col-sm-12">
 				<img 
 	      	class="img-fluid header_medidas" 
-	      	src="#" 
+	      	src="<?= esc_url( get_stylesheet_directory_uri() ) . '/img/medidas/header-medidas.jpg'; ?>" 
 	      	alt="header medidas cuadros">
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 	<!-- Guia de Medidas -->
 	<section class="guia_medidas container">
 
-		<div data-aos="flip-Up" class="row">
+		<div data-aos="fade-up" class="row">
 			<div class="col-md-12 text-center">
 				<h2>GUÍA DE MEDIDAS</h2>
 				<img 
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 image col-sm-8">
 				<img 
@@ -61,7 +61,7 @@
 
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 col-sm-4">
 				<div class="datos bg_gold">
@@ -89,7 +89,7 @@
 
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 col-sm-8 image">
 				<img 
@@ -117,7 +117,7 @@
 
 		</div>
 
-		<div class="row">
+		<div data-aos="fade-up" class="row">
 
 			<div class="col-12 col-sm-4">
 				<div class="datos bg_gris">
@@ -198,5 +198,11 @@
 
 </section>
 <!-- Medidas end -->
+
+<script>
+	AOS.init({
+    once: true
+  });
+</script>
 
 <?php get_footer(); ?>
