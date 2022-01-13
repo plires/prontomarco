@@ -19,6 +19,10 @@
 	content:url("../img/slide-home/slide-d-mobile.jpg");
 }
 
+.prontomarco_home .slide_home #slide_e { 
+	content:url("../img/slide-home/slide-e-mobile.jpg");
+}
+
 .prontomarco_home .slide_home .carousel-indicators li {
 	width: 8px;
 	height: 8px;
@@ -120,6 +124,10 @@
 
 	.prontomarco_home .slide_home #slide_d { 
 		content:url("../img/slide-home/slide-d-desktop.jpg");
+	}
+
+	.prontomarco_home .slide_home #slide_e { 
+		content:url("../img/slide-home/slide-e-desktop.jpg");
 	}
 
 	.prontomarco_home .slide_home .carousel-indicators li {

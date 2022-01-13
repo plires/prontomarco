@@ -19,6 +19,7 @@
 				    <li data-target="#carouselIndicators" data-slide-to="1"></li>
 				    <li data-target="#carouselIndicators" data-slide-to="2"></li>
 				    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+				    <li data-target="#carouselIndicators" data-slide-to="4"></li>
 				  </ol>
 
 				  <div class="carousel-inner">
@@ -28,7 +29,7 @@
 				      	id="slide_a"  
 				      	class="d-block w-100" 
 				      	src="#" 
-				      	alt="cuadros prontomarco a">
+				      	alt="cuadros tiendacuadros a">
 				    </div>
 
 				    <div class="carousel-item">
@@ -36,7 +37,7 @@
 				      	id="slide_b"  
 				      	class="d-block w-100" 
 				      	src="#" 
-				      	alt="cuadros prontomarco b">
+				      	alt="cuadros tiendacuadros b">
 				    </div>
 
 				    <div class="carousel-item">
@@ -44,7 +45,7 @@
 				      	id="slide_c"  
 				      	class="d-block w-100" 
 				      	src="#" 
-				      	alt="cuadros prontomarco c">
+				      	alt="cuadros tiendacuadros c">
 				    </div>
 
 				    <div class="carousel-item">
@@ -52,7 +53,15 @@
 				      	id="slide_d"  
 				      	class="d-block w-100" 
 				      	src="#" 
-				      	alt="cuadros prontomarco d">
+				      	alt="cuadros tiendacuadros d">
+				    </div>
+
+				    <div class="carousel-item">
+				      <img 
+				      	id="slide_e"  
+				      	class="d-block w-100" 
+				      	src="#" 
+				      	alt="cuadros tiendacuadros e">
 				    </div>
 
 				  </div>
